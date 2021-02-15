@@ -3,57 +3,50 @@ document.addEventListener("DOMContentLoaded", function(){
     canvasEl.width = 1000;
     canvasEl.height = 1000;
     const ctx = canvasEl.getContext('2d');
+    
     let color = 'red';
-    
-    // function fillShape() {
-    //     ctx.clearRect(0, 0, 1000, 1000);
-    //     if (color === 'red'){
-    //         ctx.fillStyle = 'black';
-    //         ctx.fillRect(0, 0, 300, 300);
-    //         color = 'black';
-    //     } else {
-    //         ctx.fillStyle = 'red';
-    //         ctx.fillRect(0, 0, 300, 300);
-    //         color = 'red';
-    //     }
-    // }
-    
-    function fillShape() {
+    function draw() {
         let j = 0;
         ctx.clearRect(0, 0, 1000, 800);
         for (let i = 0; i < 299; i++){
             if (color === 'green'){
-                ctx.fillStyle = 'black';
-                ctx.fillRect(j, 0, 40, 800);
+                ctx.fillStyle = 'rgb(182, 220, 253)';
+                ctx.fillRect(j, 0, 20, 1000);
                 color = 'black';
             } else if (color === 'black') {
-                ctx.fillStyle = 'red';
-                ctx.fillRect(j, 0, 20, 800);
+                ctx.fillStyle = 'rgb(124, 191, 250)';
+                ctx.fillRect(j, 0, 20, 1000);
                 color = 'red';
             } else {
-                ctx.fillStyle = 'green';
-                ctx.fillRect(j, 0, 20, 800);
+                ctx.fillStyle = 'rgb(194, 194, 194)';
+                ctx.fillRect(j, 0, 20, 1000);
                 color = 'green';
             }
-            j += 10
+            j += 20
+            // ctx.fillStyle = 'pink';
+            // ctx.fillRect(0, 0, 1000, 1000);
         }
     }
-
-    setInterval(fillShape, 200);
     
+    setInterval(draw, 500);
 
-    // let j = 0
-    // for (let i = 0; i < 300; i++) {
-    //     if (i % 2 === 0) {
-    //         ctx.fillStyle = 'black';
-    //         ctx.fillRect(j, 0, 10, 1000);
-    //         // j += 10
-    //     } else {
-    //         ctx.fillStyle = 'green';
-    //         ctx.fillRect(j, 0, 10, 1000);
-    //     }
-    //     j += 10
-    // }
-
-
+    var opacity=0; 
+    var intervalID=0; 
+    window.onload=fadeout; 
+        function fadeout(){ 
+               setInterval(hide, 200); 
+        } 
+    function hide(){ 
+          var body=document.getElementById("splatter"); 
+          opacity = 
+    Number(window.getComputedStyle(body).getPropertyValue("opacity")) 
+  
+            if(opacity>0){ 
+                   opacity=opacity-0.1; 
+                           body.style.opacity=opacity 
+            } 
+            else{ 
+                clearInterval(intervalID);  
+            } 
+        }  
 });
