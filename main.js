@@ -10,15 +10,15 @@ document.addEventListener("DOMContentLoaded", function(){
         ctx.clearRect(0, 0, 1000, 800);
         for (let i = 0; i < 299; i++){
             if (color === 'green'){
-                ctx.fillStyle = 'rgb(182, 220, 253)';
-                ctx.fillRect(j, 0, 20, 1000);
+                ctx.fillStyle = 'white';
+                ctx.fillRect(j, 0, 5, 1000);
                 color = 'black';
             } else if (color === 'black') {
-                ctx.fillStyle = 'rgb(124, 191, 250)';
-                ctx.fillRect(j, 0, 20, 1000);
+                ctx.fillStyle = 'grey';
+                ctx.fillRect(j, 0, 10, 1000);
                 color = 'red';
             } else {
-                ctx.fillStyle = 'rgb(194, 194, 194)';
+                ctx.fillStyle = 'black';
                 ctx.fillRect(j, 0, 20, 1000);
                 color = 'green';
             }
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
     var intervalID=0; 
     window.onload=fadeout; 
         function fadeout(){ 
-               setInterval(hide, 200); 
+               setInterval(hide, 500); 
         } 
     function hide(){ 
           var body=document.getElementById("splatter"); 
