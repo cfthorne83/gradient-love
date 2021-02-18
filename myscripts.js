@@ -7,7 +7,11 @@ colorInput.addEventListener('input', () => {
     hexInput.value = color;
 });
 
-let colors = '';
+let colors = [];
+let colorOne; 
+let colorTwo;
+let colorThree;
+
 colorInput.addEventListener('blur', () => {
     let color = colorInput.value;
     colors.push(color);
@@ -23,6 +27,7 @@ colorInput.addEventListener('blur', () => {
 });
 
 let background = document.querySelector('.background')
-colors.forEach(color => {
-    background.style.backgroundImage = linearGradient()
-});
+// colors.forEach(color => {
+//     background.style.backgroundImage = linearGradient()
+// });
+

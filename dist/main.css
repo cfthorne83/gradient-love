@@ -25,10 +25,10 @@
     --gradient: linear-gradient(
         45deg,
         #845ec2,
-        #d65db1,
-        #ff6f91, 
+        /* #d65db1, */
+        /* #ff6f91,  */
         #ff9671, 
-        #ffc75f, 
+        /* #ffc75f,  */
         #f9f871    
     );
 }
@@ -48,7 +48,7 @@
     background-size: 400%;
     /* background-position: left; */
     /* transition: background-position 10s; */
-    animation: bg-animation 5s infinite alternate;
+    animation: bg-animation 2s infinite alternate;
     /* border-radius: 10px; */
 }
 
