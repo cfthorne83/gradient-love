@@ -49,7 +49,7 @@
     /* background-position: left; */
     /* transition: background-position 10s; */
     animation: bg-animation 5s infinite alternate;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 @keyframes bg-animation {
@@ -97,4 +97,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.picker-container{
+    display: flex;
 }
