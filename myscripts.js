@@ -5,26 +5,24 @@ const body = document.body
 colorInput.addEventListener('input', () => {
     let color = colorInput.value;
     hexInput.value = color;
-    document.body.style.backgroundColor = color;
-    // const div = document.createElement('div');
-    // div.innerText = "hello";
-    // div.style.color = color;
-    // body.append(div);
 });
 
+let colors = '';
 colorInput.addEventListener('blur', () => {
-    // let color = colorInput.value;
+    let color = colorInput.value;
+    colors.push(color);
     // hexInput.value = color;
     // document.body.style.backgroundColor = color;
     const div = document.createElement('div');
-    div.innerText = "hello";
-    div.style.color = color;
+    div.class = 'selecteCd-color'
+    div.style.backgroundColor = color;
+    div.style.width = '50px';
+    div.style.height = '50px';
+
     body.append(div);
 });
 
-// function handleBlur() {
-//     const div = document.createElement('div');
-//     div.innerText = "hello";
-//     div.style.color = color;
-//     body.append(div);
-// }
+let background = document.querySelector('.background')
+colors.forEach(color => {
+    background.style.backgroundImage = linearGradient()
+});

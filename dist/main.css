@@ -61,28 +61,6 @@
     }
 }
 
-li:first-child{
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
-}
-
-li:last-child{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(255, 0, 0);
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    
-}
-
-li {
-    margin: 10px;
-}
-
 #hex {
     width: 17em;
     height: 3em;
@@ -97,6 +75,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #e6f7f7;
 }
 
 .picker-container{
