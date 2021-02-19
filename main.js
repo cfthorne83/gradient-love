@@ -30,35 +30,35 @@ document.addEventListener("DOMContentLoaded", function(){
     
     // setInterval(draw, 500);
 
-    // var opacity=0; 
-    // var intervalID=0; 
-    // window.onload=fadeout; 
-    //     function fadeout(){ 
-    //            setInterval(hide, 500); 
-    //     } 
-    // function hide(){ 
-    //       var body=document.getElementById("splatter"); 
-    //       opacity = Number(window.getComputedStyle(body).getPropertyValue("opacity")) 
+    var opacity=0; 
+    var intervalID=0; 
+    window.onload=fadeout; 
+        function fadeout(){ 
+               setInterval(hide, 500); 
+        } 
+    function hide(){ 
+          var body=document.getElementById("splatter"); 
+          opacity = Number(window.getComputedStyle(body).getPropertyValue("opacity")) 
   
-    //         if(opacity>0){ 
-    //                opacity=opacity-0.1; 
-    //                        body.style.opacity=opacity 
-    //         } else { 
-    //             // clearInterval(intervalID); 
-    //             opacity=1; 
-    //                 body.style.opacity=opacity  
-    //         } 
-    //     } 
+            if(opacity>0){ 
+                   opacity=opacity-0.1; 
+                           body.style.opacity=opacity 
+            } else { 
+                // clearInterval(intervalID); 
+                opacity=1; 
+                    body.style.opacity=opacity  
+            } 
+        } 
         
-    //     var colors = ["red", "orange", "white", "yellow", "green", "blue", "purple", "black"];
-    //         var currentIndex = 0;
+        var colors = ["red", "orange", "white", "yellow", "green", "blue", "purple", "black"];
+            var currentIndex = 0;
 
-    //         setInterval(function () {
-    //             document.body.style.cssText = "background-color: " + colors[currentIndex];
-    //             currentIndex++;
-    //             if (currentIndex == undefined || currentIndex >= colors.length) {
-    //                 currentIndex = 0;
-    //             }
-    //         }, 1000);
+            setInterval(function () {
+                document.body.style.cssText = "background-color: " + colors[currentIndex];
+                currentIndex++;
+                if (currentIndex == undefined || currentIndex >= colors.length) {
+                    currentIndex = 0;
+                }
+            }, 1000);
     
 });

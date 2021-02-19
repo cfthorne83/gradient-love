@@ -2,31 +2,26 @@ let colorInput = document.querySelector('#colorpicker')
 let hexInput = document.querySelector('#hex')
 const body = document.body
 
-colorInput.addEventListener('input', () => {
+let colors = [];
+
+colorInput.addEventListener('blur', () => {
     let color = colorInput.value;
+    colors.push(color);
     hexInput.value = color;
+    // document.body.style.backgroundColor = color;
+    const div = document.createElement('div');
+    div.class = 'selecteCd-color'
+    div.style.backgroundColor = color;
+    div.style.width = '50px';
+    div.style.height = '50px';
+
+    body.append(div);
 });
 
-// let colors = [];
-let colorOne; 
-let colorTwo;
-let colorThree;
+let colorOne = document.querySelector('.color1') 
+let colorTwo = document.querySelector('.color2')
 
-// colorInput.addEventListener('blur', () => {
-//     let color = colorInput.value;
-//     colors.push(color);
-//     // hexInput.value = color;
-//     // document.body.style.backgroundColor = color;
-//     const div = document.createElement('div');
-//     div.class = 'selecteCd-color'
-//     div.style.backgroundColor = color;
-//     div.style.width = '50px';
-//     div.style.height = '50px';
 
-//     body.append(div);
-// });
-
-let background = document.querySelector('.background')
 
 
 

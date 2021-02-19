@@ -84,7 +84,7 @@
     <title>Painting Gif</title>
     <style>
        body {
-	transition: background-color 2s cubic-bezier(1, 1, 1, 1);
+	transition: background-color 5s cubic-bezier(1, 1, 1, 1);
 	transition-delay: 0s;
 }
     canvas {
@@ -98,6 +98,11 @@
         <canvas class="box" id="mycanvas"></canvas>
         <script type="application/javascript" src="main.js"></script>
         <img draggable="true" class="box stack-top" id="splatter" src="https://i.pinimg.com/originals/fd/6d/8a/fd6d8aa3c6e08e3cd54ba96e85a16647.png" alt="">
+        <div class='picker-container'>
+            <input type="color" id="colorpicker" value="#e0faff">
+            <input type="text" id="hex">
+        </div>
+        <div class="background"></div>
     </div>
 </body>
 
@@ -114,7 +119,9 @@
 
 <body>
     <div class='picker-container'>
-        <input type="color" id="colorpicker" value="#e0faff">
+        <input type="color" id="colorpicker" class='color1'>
+        <input type="color" id="colorpicker" class='color2'>
+        <input type="color" id="colorpicker" class='color3'>
         <input type="text" id="hex">
     </div>
     <div class="background"></div>
