@@ -1,0 +1,13 @@
+<style> 
+    /* Styling body */
+    body { 
+        font: "Roboto"; 
+        text-align: center; 
+        background: linear-gradient(to right, #0000ff, #add8e6); 
+    } 
+     
+    /* h1 tag text color */
+    h1 { 
+      color: white; 
+    } 
+    </style> 

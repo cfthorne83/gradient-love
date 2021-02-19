@@ -41,45 +41,45 @@ time, mark, audio, video {
             z-index: 9;
             margin: 20px;
         } */
-:root {
+/* :root {
     --gradient: linear-gradient(
         45deg,
         #845ec2,
-        /* #d65db1, */
-        /* #ff6f91,  */
+        #d65db1,
+        #ff6f91, 
         #ff9671, 
-        /* #ffc75f,  */
+        #ffc75f, 
         #f9f871    
     );
-}
+} */
 
-.background {
+.change {
     height: 75vh;
     width: 75vw;
     /* background-image: var(--gradient); */
     background: linear-gradient(
-        45deg,
+        to right,
         #845ec2,
         /* #d65db1,
         #ff6f91,  */
-        #ff9671, 
+        /* #ff9671,  */
         /* #ffc75f,  */
         #f9f871);
-    background-size: 600%;
+    /* background-size: 600%; */
     /* background-position: left; */
     /* transition: background-position 10s; */
-    animation: bg-animation 8s infinite alternate;
+    /* animation: bg-animation 8s infinite alternate; */
     /* border-radius: 10px; */
 }
 
-@keyframes bg-animation {
+/* @keyframes bg-animation {
     0% {
         background-position: left;
     }
     100% {
         background-position: right;
     }
-}
+} */
 
 #hex {
     width: 17em;
