@@ -53,24 +53,24 @@ time, mark, audio, video {
     );
 } */
 
-.change {
+/* .change {
     height: 75vh;
-    width: 75vw;
+    width: 75vw; */
     /* background-image: var(--gradient); */
-    background: linear-gradient(
-        to right,
-        #845ec2,
+    /* background: linear-gradient( */
+        /* to right, */
+        /* #845ec2, */
         /* #d65db1,
         #ff6f91,  */
         /* #ff9671,  */
         /* #ffc75f,  */
-        #f9f871);
+        /* #f9f871); */
     /* background-size: 600%; */
     /* background-position: left; */
     /* transition: background-position 10s; */
     /* animation: bg-animation 8s infinite alternate; */
     /* border-radius: 10px; */
-}
+/* } */
 
 /* @keyframes bg-animation {
     0% {
@@ -81,7 +81,7 @@ time, mark, audio, video {
     }
 } */
 
-#hex {
+/* #hex {
     width: 17em;
     height: 3em;
 }
@@ -96,4 +96,4 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #e6f7f7;
-}
+} */

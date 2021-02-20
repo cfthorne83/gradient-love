@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe,
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -23,11 +23,35 @@ time, mark, audio, video {
     text-align: inherit;
     color: inherit;
     background: transparent;
+} */
+
+.outer-gradient {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: 
+    repeating-radial-gradient( 
+      rgb(255, 0, 110),
+      #ff95f4 100px
+    ); */
+    background-color: blueviolet;
+    /* clip-path: circle(40%); */
 }
 
-.gradient {
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(#ffffff, #0addff); 
+.sky {
+    height: 85%;
+    width: 85%;
+    background: linear-gradient(rgb(255, 255, 255), rgb(174, 244, 255), rgb(0, 204, 255), rgb(0, 157, 255), rgb(0, 110, 255));
+    background-size: 400% 400%;
 
-}     
+    animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
