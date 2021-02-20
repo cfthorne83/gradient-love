@@ -40,21 +40,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(251, 118, 176);
-    background: 
+    background-color: darkmagenta;
+    /* background: 
     repeating-radial-gradient( 
         rgb(255, 0, 110),
         #ff95f4 100px
-        );
+        ); */
     /* box-shadow: 0px 0px 20px 20px rgb(255, 0, 111); */
 }
 
 .sky {
     height: 90%;
     width: 90%;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     background: linear-gradient(rgb(255, 255, 255), rgb(174, 244, 255), rgb(0, 204, 255), rgb(0, 157, 255), rgb(0, 110, 255));
-    background-size: 400% 400%;
+    background-size: 1000% 1000%;
     /* color: red; */
     /* box-shadow: 0px 0px 20px 20px rgb(255, 0, 110); */
 

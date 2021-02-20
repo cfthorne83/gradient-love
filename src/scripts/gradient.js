@@ -31,3 +31,15 @@ function sliderChange(val) {
     sliderNum.innerText = val;
     sky.style.animation = "gradient-animation " + val + "s ease infinite";
 }
+
+
+// var colors = ["red", "orange", "white", "yellow", "green", "blue", "purple", "black"];
+//             var currentIndex = 0;
+
+//             setInterval(function () {
+//                 document.body.style.cssText = "background-color: " + colors[currentIndex];
+//                 currentIndex++;
+//                 if (currentIndex == undefined || currentIndex >= colors.length) {
+//                     currentIndex = 0;
+//                 }
+//             }, 1000);
