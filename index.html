@@ -11,18 +11,23 @@
 </head>
 
 <body>
-    <div class='outer-gradient'>
-        <div class="sky"></div>     
-        <ul>
-            <input class="color1" type="color" value="#ffffff" />
-            <input class="color2" type="color" value="#0addff" />
-            <input class="color3" type="color" value="#3b0aff" />
-            <input class="color4" type="color" value="#1200c2" />
-            <input class="color5" type="color" value="#010008" />
-        </ul>
-    </div>
-    
+        <div class="outer-gradient">
+            <div class="sky"></div>     
+        </div>
 
+        <div>
+            <ul>
+                <input class="color1" type="color" value="#ffffff" />
+                <input class="color2" type="color" value="#0addff" />
+                <input class="color3" type="color" value="#3b0aff" />
+                <input class="color4" type="color" value="#1200c2" />
+                <input class="color5" type="color" value="#010008" />
+            </ul>
+            <input type="range" min="1" max="20" value="10" step="1" onChange="sliderChange(this.value)">
+            <span id=sliderStatus>10</span>
+        </div>
+    
+    
     <script src="./src/scripts/gradient.js"></script>
 </body>
 
