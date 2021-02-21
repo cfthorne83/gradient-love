@@ -2,34 +2,34 @@
 <html>
 
 <head>
-    <title>Sublime Generator</title>
+    <title>Gradient Animation Generator</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sublime Generator</title>
 
     <link rel="stylesheet" href="./src/styles/gradient.css" />
+    <link rel="stylesheet" href="./src/styles/stars.css" />
 </head>
 
 <body>
-        <div class="outer-gradient">
-            <div class="sky">
-                <img src="" alt="">
+        <div class="border">
+            <div class="inner">
+                <ul>
+                    <input class="color1" type="color" value="#ffffff" />
+                    <input class="color2" type="color" value="#eef00" />
+                    <input class="color3" type="color" value="#ff7b00" />
+                    <input class="color4" type="color" value="#c20084" />
+                    <input class="color5" type="color" value="#b30057" />
+                </ul>
+
+                <input type="range" min="1" max="20" value="10" step="1" onChange="speedChange(this.value)">
+                Speed:<span id=speedStatus>10</span>
+                <br>
+                <input type="range" min="1" max="359" value="1" step="1" onChange="angleChange(this.value)">
+                Angle:<span id=angleStatus>1</span>
             </div>     
         </div>
 
-        <div>
-            <ul>
-                <input class="color1" type="color" value="#ffffff" />
-                <input class="color2" type="color" value="#0addff" />
-                <input class="color3" type="color" value="#3b0aff" />
-                <input class="color4" type="color" value="#1200c2" />
-                <input class="color5" type="color" value="#010008" />
-            </ul>
-            <input type="range" min="1" max="20" value="10" step="1" onChange="sliderChange(this.value)">
-            <span id=sliderStatus>10</span>
-        </div>
-    
-    
     <script src="./src/scripts/gradient.js"></script>
 </body>
 

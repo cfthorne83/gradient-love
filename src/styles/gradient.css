@@ -23,42 +23,24 @@ time, mark, audio, video input{
     text-align: inherit;
     color: inherit;
     background: transparent;
+    color: white;
+}
+
+body, .border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
-     width: 100vw;
-     height: 100vh;
-     /* display: flex;
-     justify-content: center;
-     align-items: center; */
-}
-
-.outer-gradient {
-    width: 80%;
-    height: 80%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: darkmagenta;
-    /* background: 
-    repeating-radial-gradient( 
-        rgb(255, 0, 110),
-        #ff95f4 100px
-        ); */
-    /* box-shadow: 0px 0px 20px 20px rgb(255, 0, 111); */
-}
-
-.sky {
-    height: 90%;
-    width: 90%;
-    /* border-radius: 50%; */
-    background: linear-gradient(rgb(255, 255, 255), rgb(174, 244, 255), rgb(0, 204, 255), rgb(0, 157, 255), rgb(0, 110, 255));
-    background-size: 1000% 1000%;
-    /* color: red; */
-    /* box-shadow: 0px 0px 20px 20px rgb(255, 0, 110); */
-
-    animation: gradient-animation 10s ease infinite;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(255, 255, 255),  rgb(208, 255, 0), rgb(255, 157, 0), rgb(247, 0, 255), rgb(101, 0, 141));
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;    
 }
 
 @keyframes gradient-animation {
@@ -66,3 +48,61 @@ body {
     50%{background-position:49% 100%}
     100%{background-position:52% 0%}
 }
+
+.border {
+    height: 50%;
+    width: 50%;
+    background-color: transparent;
+    border: 60px solid rgb(36, 36, 36);
+}
+
+.inner {
+    height: 90%;
+    width: 90%;
+    background-color: rgb(36, 36, 36);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .outer-gradient {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    background: 
+    repeating-radial-gradient( 
+        rgb(255, 0, 110),
+        #ff95f4 100px
+        );
+    box-shadow: 0px 0px 20px 20px rgb(255, 0, 111);
+} */
+
+/* .sky {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    background: linear-gradient(rgb(255, 255, 255), rgb(174, 244, 255), rgb(0, 204, 255), rgb(0, 157, 255), rgb(0, 110, 255));
+    background-size: 1000% 1000%;
+    animation: gradient-animation 10s ease infinite;
+} */
+
+/* .inner {
+    height: 90%;
+    width: 90%;
+    background-color: transparent;
+    border: 10px solid black;
+} */
+
