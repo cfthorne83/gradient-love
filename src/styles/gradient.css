@@ -44,29 +44,29 @@ body {
     animation: top-bottom 10s ease infinite;    
 }
 /* top-bottom */
-@keyframes top-bottom {
+/* @keyframes top-bottom {
     0%{background-position:50% 0%}
     50%{background-position:50% 100%}
     100%{background-position:50% 0%}
-}
-/* left-bttm--right-top */
+} */
+/* left-bttm--right-top
 @keyframes left-bttm--right-top  {
     0%{background-position:100% 0%}
     50%{background-position:0% 100%}
     100%{background-position:100% 0%}
 }
-/* left-right */
+left-right
 @keyframes left-right {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-/* left-top--right-bttm */
+left-top--right-bttm
 @keyframes left-top--right-bttm  {
     0%{background-position:0% 0%}
     50%{background-position:100% 100%}
     100%{background-position:0% 0%}
-}
+} */
 
 
 

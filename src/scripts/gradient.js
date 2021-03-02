@@ -102,11 +102,20 @@ function scrollChange(val) {
         midTop = 100;
     }
     
+    animation.deleteRule("0%");
+    animation.deleteRule("50%");
+    animation.deleteRule("100%");
+    
+    animation.appendRule(`0%{background-position:${startLeft}% ${startTop}%}`);
+    animation.appendRule(`50%{background-position:${midLeft}% ${midTop}%}`);
+    animation.appendRule(`100%{background-position:${startLeft}% ${startTop}%}`);
+    
     scrollStart.innerText = startLeft + " " + startTop;
     scrollMid.innerText = midLeft + " " + midTop;
     scrollEnd.innerText = startLeft + " " + startTop;
 }
 
+let animation = (document.styleSheets[2].cssRules[0])
 
 
 
