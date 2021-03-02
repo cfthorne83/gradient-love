@@ -61,8 +61,8 @@ let scrollStart = document.querySelector("#scroll-start")
 let scrollMid = document.querySelector("#scroll-mid")
 let scrollEnd = document.querySelector("#scroll-end")
 
+
 function scrollChange(val) {
-    let three = 50;
     scrollStatus.innerText = val;
     
     if (val > 0 && val <= 50) {
@@ -77,17 +77,40 @@ function scrollChange(val) {
         midTop = parseInt(val) - 50;
     } else if (val > 100 && val <= 150) {
         startLeft = 0;
-        startTop = parseInt(val) - three;
+        startTop = Math.abs(parseInt(val) - 150);
         midLeft = 100;
         midTop = parseInt(val) - 50;
-        three += 2
     } else if (val > 150 && val <= 200) {
-        
+        startLeft = parseInt(val) - 150;
+        startTop = 0;
+        midLeft = Math.abs(parseInt(val) - 250);
+        midTop = 100;
+    } else if (val > 200 && val <= 250) {
+        startLeft = parseInt(val) - 150;
+        startTop = 0;
+        midLeft = Math.abs(parseInt(val) - 250);
+        midTop = 100;
+    } else if (val > 250 && val <= 300) {
+        startLeft = 0;
+        startTop = Math.abs(parseInt(val) - 350);
+        midLeft = 100;
+        midTop = parseInt(val) - 250;
+    } else if (val > 300 && val <= 350) {
+        startLeft = 0;
+        startTop = Math.abs(parseInt(val) - 350);
+        midLeft = 100;
+        midTop = parseInt(val) - 250;
+    } else if (val > 350 && val <= 400) {
+        startLeft = parseInt(val) - 350;
+        startTop = 0;
+        midLeft = Math.abs(parseInt(val) - 450);
+        midTop = 100;
     }
-
+    
     scrollStart.innerText = startLeft + " " + startTop;
     scrollMid.innerText = midLeft + " " + midTop;
     scrollEnd.innerText = startLeft + " " + startTop;
+
 }
 
 
