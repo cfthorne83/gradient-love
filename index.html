@@ -30,12 +30,18 @@
                 <input type="range" min="1" max="20" value="10" step="1" onInput="speedChange(this.value)">
                 Speed:&nbsp<span id=speedStatus>10</span>
                 <br>
+
                 <input type="range" min="1" max="359" value="1" step="1" onInput="angleChange(this.value)">
                 Gradient Angle:&nbsp<span id=angleStatus>1</span>
                 <br>
+
                 <input class="scroll-angle" type="range" min="0" max="400" value="1" step="1" onInput="scrollChange(this.value)">
                 <div id="scroll-status">0</div>
                 <div id="keyframes"></div>
+                <br>
+
+                <input type="text" value="AnimationName" id="name-input" onInput="nameChange(this.value)">
+                <div id="title">AnimationName</div>
                 <!-- <form>
                     <div>
                         <input id="rangeInput" type="range" min="0" max="200" oninput="amount.value=rangeInput.value" />

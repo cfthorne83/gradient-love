@@ -56,8 +56,10 @@ let startTop = 0;
 let midLeft = 50;
 let midTop = 100;
 
-let scrollStatus = document.querySelector("#scroll-status")
-let keyframes = document.querySelector("#keyframes")
+let scrollStatus = document.querySelector("#scroll-status");
+let keyframes = document.querySelector("#keyframes");
+let animation = (document.styleSheets[2].cssRules[0]);
+keyframes.innerText = animation.cssText;
 
 function scrollChange(val) {
     scrollStatus.innerText = val;
@@ -106,10 +108,17 @@ function scrollChange(val) {
     keyframes.innerText = animation.cssText;
 }
 
-let animation = (document.styleSheets[2].cssRules[0])
-keyframes.innerText = animation.cssText;
 
 
+
+//animation name change
+
+let title = document.querySelector("#title");
+function nameChange(val){
+    title.innerText = val;
+    animation.name = val;
+    keyframes.innerText = animation.cssText;
+}
 
 
 
