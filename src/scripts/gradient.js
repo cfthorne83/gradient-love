@@ -62,6 +62,7 @@ let scrollMid = document.querySelector("#scroll-mid")
 let scrollEnd = document.querySelector("#scroll-end")
 
 function scrollChange(val) {
+    let three = 50;
     scrollStatus.innerText = val;
     
     if (val > 0 && val <= 50) {
@@ -76,9 +77,12 @@ function scrollChange(val) {
         midTop = parseInt(val) - 50;
     } else if (val > 100 && val <= 150) {
         startLeft = 0;
-        startTop = 100 - (parseInt(val) - 50);
+        startTop = parseInt(val) - three;
         midLeft = 100;
         midTop = parseInt(val) - 50;
+        three += 2
+    } else if (val > 150 && val <= 200) {
+        
     }
 
     scrollStart.innerText = startLeft + " " + startTop;
