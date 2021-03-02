@@ -57,15 +57,7 @@ let midLeft = 50;
 let midTop = 100;
 
 let scrollStatus = document.querySelector("#scroll-status")
-let scrollStart = document.querySelector("#scroll-start")
-let scrollMid = document.querySelector("#scroll-mid")
-let scrollEnd = document.querySelector("#scroll-end")
-
-// @keyframes top-bottom {
-//     0%{background-position:50% 0%}
-//     50%{background-position:50% 100%}
-//     100%{background-position:50% 0%}
-// }
+let keyframes = document.querySelector("#keyframes")
 
 function scrollChange(val) {
     scrollStatus.innerText = val;
@@ -102,6 +94,7 @@ function scrollChange(val) {
         midTop = 100;
     }
     
+    // let animation = (document.styleSheets[2].cssRules[0])
     animation.deleteRule("0%");
     animation.deleteRule("50%");
     animation.deleteRule("100%");
@@ -109,13 +102,12 @@ function scrollChange(val) {
     animation.appendRule(`0%{background-position:${startLeft}% ${startTop}%}`);
     animation.appendRule(`50%{background-position:${midLeft}% ${midTop}%}`);
     animation.appendRule(`100%{background-position:${startLeft}% ${startTop}%}`);
-    
-    scrollStart.innerText = startLeft + " " + startTop;
-    scrollMid.innerText = midLeft + " " + midTop;
-    scrollEnd.innerText = startLeft + " " + startTop;
+
+    keyframes.innerText = animation.cssText;
 }
 
 let animation = (document.styleSheets[2].cssRules[0])
+keyframes.innerText = animation.cssText;
 
 
 
