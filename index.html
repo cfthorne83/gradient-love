@@ -28,8 +28,11 @@
                 <input type="range" min="1" max="359" value="1" step="1" onChange="angleChange(this.value)">
                 Gradient Angle:&nbsp<span id=angleStatus>1</span>
                 <br>
-                <input class="input-knob" type="range" min="0" max="100" value="1" step="1" onChange="scrollChange(this.value)">
-                Scroll Angle:&nbsp<span id=angleStatus>1</span>
+                <input type="range" min="0" max="400" value="1" step="1" onChange="scrollChange(this.value)">
+                <div id="scroll-status">0</div>
+                <div id="scroll-start"></div>
+                <div id="scroll-mid"></div>
+                <div id="scroll-end"></div>
                 <!-- <form>
                     <div>
                         <input id="rangeInput" type="range" min="0" max="200" oninput="amount.value=rangeInput.value" />
