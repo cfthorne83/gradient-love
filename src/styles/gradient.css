@@ -42,7 +42,7 @@ body {
     /* background: linear-gradient(45deg, #ffffff, #d0ff00, #ff9d00, #f700ff, #65008d); */
     background-position: 0% 50%;
     background-size: 400% 400%;
-    animation: top-bottom 10s ease infinite;    
+    animation: AnimationName 10s ease infinite;    
 }
 /* top-bottom */
 /* @keyframes top-bottom {

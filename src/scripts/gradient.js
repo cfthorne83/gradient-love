@@ -9,6 +9,9 @@ let color5 = document.querySelector(".color5");
 let speedStatus = document.querySelector("#speedStatus")
 let angleStatus = document.querySelector("#angleStatus")  
 
+let animation = (document.styleSheets[2].cssRules[0]);
+body.style.animation = animation.name + " " + speedStatus.innerText + "s ease infinite";
+
 function changeGradient() { 
     body.style.background = 
         "linear-gradient(" 
@@ -19,7 +22,7 @@ function changeGradient() {
         + color4.value + ", " 
         + color5.value + ")"; 
     body.style.backgroundSize = "400% 400%";
-    body.style.animation = "gradient-animation " + speedStatus.innerText + "s ease infinite";
+    body.style.animation = animation.name + " " + speedStatus.innerText + "s ease infinite";
 } 
 
 color1.addEventListener("input", changeGradient); 
@@ -31,7 +34,7 @@ color5.addEventListener("input", changeGradient);
 
 function speedChange(val) {
     speedStatus.innerText = val;
-    body.style.animation = "top-bottom " + val + "s ease infinite";
+    body.style.animation = animation.name + " " + val + "s ease infinite";
 }
 
 function angleChange(val) {
@@ -45,7 +48,7 @@ function angleChange(val) {
         + color4.value + ", " 
         + color5.value + ")"; 
     body.style.backgroundSize = "400% 400%";
-    body.style.animation = "top-bottom " + speedStatus.innerText + "s ease infinite";
+    body.style.animation = animation.name + " " + speedStatus.innerText + "s ease infinite";
 }
 
 
@@ -58,7 +61,6 @@ let midTop = 100;
 
 let scrollStatus = document.querySelector("#scroll-status");
 let keyframes = document.querySelector("#keyframes");
-let animation = (document.styleSheets[2].cssRules[0]);
 keyframes.innerText = animation.cssText;
 
 function scrollChange(val) {
@@ -96,7 +98,6 @@ function scrollChange(val) {
         midTop = 100;
     }
     
-    // let animation = (document.styleSheets[2].cssRules[0])
     animation.deleteRule("0%");
     animation.deleteRule("50%");
     animation.deleteRule("100%");
@@ -113,12 +114,15 @@ function scrollChange(val) {
 
 //animation name change
 
-let title = document.querySelector("#title");
 function nameChange(val){
-    title.innerText = val;
-    animation.name = val;
-    keyframes.innerText = animation.cssText;
+    if (val) {
+        animation.name = val;
+        keyframes.innerText = animation.cssText;
+        body.style.animation = animation.name + " " + speedStatus.innerText + "s ease infinite";
+    }
 }
+
+let name = document.querySelector("#name-input");
 
 
 
