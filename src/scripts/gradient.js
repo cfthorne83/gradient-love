@@ -31,7 +31,7 @@ color5.addEventListener("input", changeGradient);
 
 function speedChange(val) {
     speedStatus.innerText = val;
-    body.style.animation = "gradient-animation " + val + "s ease infinite";
+    body.style.animation = "top-bottom " + val + "s ease infinite";
 }
 
 function angleChange(val) {
@@ -61,11 +61,16 @@ let scrollStart = document.querySelector("#scroll-start")
 let scrollMid = document.querySelector("#scroll-mid")
 let scrollEnd = document.querySelector("#scroll-end")
 
+@keyframes top-bottom {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
 
 function scrollChange(val) {
     scrollStatus.innerText = val;
     
-    if (val > 0 && val <= 50) {
+    if (val >= 0 && val <= 50) {
         startLeft = 50 + parseInt(val);
         startTop = 0;
         midLeft = 50 - parseInt(val);
@@ -80,22 +85,12 @@ function scrollChange(val) {
         startTop = Math.abs(parseInt(val) - 150);
         midLeft = 100;
         midTop = parseInt(val) - 50;
-    } else if (val > 150 && val <= 200) {
+    } else if (val > 150 && val <= 250) {
         startLeft = parseInt(val) - 150;
         startTop = 0;
         midLeft = Math.abs(parseInt(val) - 250);
         midTop = 100;
-    } else if (val > 200 && val <= 250) {
-        startLeft = parseInt(val) - 150;
-        startTop = 0;
-        midLeft = Math.abs(parseInt(val) - 250);
-        midTop = 100;
-    } else if (val > 250 && val <= 300) {
-        startLeft = 0;
-        startTop = Math.abs(parseInt(val) - 350);
-        midLeft = 100;
-        midTop = parseInt(val) - 250;
-    } else if (val > 300 && val <= 350) {
+    } else if (val > 250 && val <= 350) {
         startLeft = 0;
         startTop = Math.abs(parseInt(val) - 350);
         midLeft = 100;
@@ -110,7 +105,6 @@ function scrollChange(val) {
     scrollStart.innerText = startLeft + " " + startTop;
     scrollMid.innerText = midLeft + " " + midTop;
     scrollEnd.innerText = startLeft + " " + startTop;
-
 }
 
 
