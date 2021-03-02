@@ -61,11 +61,11 @@ let scrollStart = document.querySelector("#scroll-start")
 let scrollMid = document.querySelector("#scroll-mid")
 let scrollEnd = document.querySelector("#scroll-end")
 
-@keyframes top-bottom {
-    0%{background-position:50% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:50% 0%}
-}
+// @keyframes top-bottom {
+//     0%{background-position:50% 0%}
+//     50%{background-position:50% 100%}
+//     100%{background-position:50% 0%}
+// }
 
 function scrollChange(val) {
     scrollStatus.innerText = val;
