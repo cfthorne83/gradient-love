@@ -83,7 +83,9 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: 3rem;
 padding-bottom: .5em;
 font-weight: 600;
-color: #ffffff;
+
+
+color: rgb(54, 54, 54);
 position: relative;
 z-index: 2;
 }
@@ -91,7 +93,7 @@ z-index: 2;
 .inner {
     height: 100%;
     width: 100%;
-    /* background: linear-gradient( #030303 20%, transparent 101%); */
+    background: linear-gradient( #252525bc, transparent 101%);
     /* background-color: #000000;    */
     padding: 3em;
     border-radius: 3%;
@@ -108,12 +110,11 @@ background-color: red;
 }
 
 #keyframes {
-    background-color: #6d707100;
+    /* background-color: #6d707100; */
     padding: 2em;
     font-family: Menlo, Monaco, 'Courier New', monospace;
     color: #ffffff;
     font-size: 1.05rem;
-    border-radius: 1rem;
     margin-bottom: 1.5em;
     position: relative;
     z-index: 2;
@@ -122,6 +123,7 @@ background-color: red;
 .keyframes-con {
     position: relative;
     z-index: 1;
+    /* border-radius: 1rem; */
 }
 
 .blur-overlay {
@@ -130,24 +132,22 @@ background-color: red;
     top: 0;
     right: 0;
     bottom: 0;
+    border-radius: 1rem;
     
-    /* background-image: url(https://s.abcnews.com/images/Entertainment/GTY_golden_girls_kab_150903_16x9_1600.jpg); */
-    /* background: linear-gradient(30deg, #030303 20%, transparent 101%); */
-    background-color: rgba(0, 0, 0, 0.527);
-    background-size: 400%;
-    backdrop-filter: blur(5px);
-    /* width: 150%; */
+    /* background: linear-gradient(#272727dc, #27272781); */
+    background-color: #272727c2;
+    backdrop-filter: blur(7px);
 
-    /* filter:blur(4px); */
-    /* -o-filter:blur(4px);
+    /* filter:blur(4px);
+    -o-filter:blur(4px);
     -ms-filter:blur(4px);
-    -moz-filter:blur(4px); */
-    /* -webkit-filter:blur(4px); */
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px); */
 }
 
 #name-input {
-    /* background-color: #252525; */
-    background: linear-gradient(90deg, #252525e3, transparent);
+    /* background-color: #25252570; */
+    background: linear-gradient(#252525e3, #2525257a);
     font-family: Menlo, Monaco, 'Courier New', monospace;
     font-size: 1rem;
     color: #ffffff;
@@ -155,6 +155,9 @@ background-color: red;
     border-radius: 3em;
     border: none;
     margin: 1em;
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(8px);
 }
 
 .splat-img {
