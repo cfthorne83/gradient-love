@@ -71,17 +71,14 @@ left-top--right-bttm
 
 
 
-.border {
-    height: 50%;
-    width: 50%;
-    background-color: transparent;
-    border: 60px solid rgb(36, 36, 36);
-}
+/*  */
 
 .inner {
-    height: 90%;
-    width: 90%;
-    background-color: rgb(36, 36, 36);
+    height: 100%;
+    width: 100%;
+        background: linear-gradient( #131313, transparent);
+    padding: 3em;
+    border-radius: 3%;
 }
 
 .scroll{
@@ -92,8 +89,13 @@ background-color: red;
     width: 50%;
 }
 
-
-
+#keyframes {
+    background-color: #6d707100;
+    padding: 2em;
+    font-family: Menlo, Monaco, 'Courier New', monospace;
+    color: #ffffffd4;
+    font-size: 1.05rem;
+}
 
 
 
