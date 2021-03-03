@@ -76,7 +76,7 @@ left-top--right-bttm
 .inner {
     height: 100%;
     width: 100%;
-        background: linear-gradient( #131313, transparent);
+    background: linear-gradient( #252525e3 10%, transparent 101%);
     padding: 3em;
     border-radius: 3%;
 }
@@ -93,8 +93,21 @@ background-color: red;
     background-color: #6d707100;
     padding: 2em;
     font-family: Menlo, Monaco, 'Courier New', monospace;
-    color: #ffffffd4;
+    color: #ffffff;
     font-size: 1.05rem;
+    background: linear-gradient(45deg, #252525e3, transparent);
+    border-radius: 1rem;
+}
+
+#name-input {
+    background-color: #252525;
+    font-family: Menlo, Monaco, 'Courier New', monospace;
+    font-size: 1rem;
+    color: #ffffff;
+    padding: .8em;
+    border-radius: 3em;
+    border: none;
+    margin: 1em;
 }
 
 
