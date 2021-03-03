@@ -77,8 +77,11 @@ left-top--right-bttm
     height: 100%;
     width: 100%;
     background: linear-gradient( #252525e3 10%, transparent 101%);
-    padding: 3em;
+    /* sbackground-color: #000000;    */
+     padding: 3em;
     border-radius: 3%;
+    position: relative;
+    z-index: 1;
 }
 
 .scroll{
@@ -110,6 +113,13 @@ background-color: red;
     margin: 1em;
 }
 
+.splat-img {
+    max-height: 35%;
+    position: absolute;
+    /* opacity: 90%; */
+    top: 0%;
+    right: 20%
+}
 
 
 
