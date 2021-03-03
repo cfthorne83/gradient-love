@@ -38,8 +38,8 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url(https://s.abcnews.com/images/Entertainment/GTY_golden_girls_kab_150903_16x9_1600.jpg);
-    /* background: linear-gradient(45deg, #ffffff, #d0ff00, #ff9d00, #f700ff, #65008d); */
+    /* background-image: url(https://s.abcnews.com/images/Entertainment/GTY_golden_girls_kab_150903_16x9_1600.jpg); */
+    background: linear-gradient(45deg, #ffffff, #d0ff00, #ff9d00, #f700ff, #65008d);
     background-position: 0% 50%;
     background-size: 400% 400%;
     animation: AnimationName 10s ease infinite;    
@@ -72,13 +72,28 @@ left-top--right-bttm
 
 
 /*  */
+.border {
+    display: flex;
+    flex-direction: column;
+}
+
+.border h1 {
+/* font-family: Menlo, Monaco, 'Courier New', monospace; */
+font-family: Arial, Helvetica, sans-serif;
+font-size: 3rem;
+padding-bottom: .5em;
+font-weight: 600;
+color: #ffffff;
+position: relative;
+z-index: 2;
+}
 
 .inner {
     height: 100%;
     width: 100%;
-    background: linear-gradient( #252525e3 10%, transparent 101%);
-    /* sbackground-color: #000000;    */
-     padding: 3em;
+    /* background: linear-gradient( #030303 20%, transparent 101%); */
+    /* background-color: #000000;    */
+    padding: 3em;
     border-radius: 3%;
     position: relative;
     z-index: 1;
@@ -98,12 +113,41 @@ background-color: red;
     font-family: Menlo, Monaco, 'Courier New', monospace;
     color: #ffffff;
     font-size: 1.05rem;
-    background: linear-gradient(45deg, #252525e3, transparent);
     border-radius: 1rem;
+    margin-bottom: 1.5em;
+    position: relative;
+    z-index: 2;
+}
+
+.keyframes-con {
+    position: relative;
+    z-index: 1;
+}
+
+.blur-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    
+    /* background-image: url(https://s.abcnews.com/images/Entertainment/GTY_golden_girls_kab_150903_16x9_1600.jpg); */
+    /* background: linear-gradient(30deg, #030303 20%, transparent 101%); */
+    background-color: rgba(0, 0, 0, 0.527);
+    background-size: 400%;
+    backdrop-filter: blur(5px);
+    /* width: 150%; */
+
+    /* filter:blur(4px); */
+    /* -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px); */
+    /* -webkit-filter:blur(4px); */
 }
 
 #name-input {
-    background-color: #252525;
+    /* background-color: #252525; */
+    background: linear-gradient(90deg, #252525e3, transparent);
     font-family: Menlo, Monaco, 'Courier New', monospace;
     font-size: 1rem;
     color: #ffffff;
@@ -114,11 +158,26 @@ background-color: red;
 }
 
 .splat-img {
-    max-height: 35%;
+    /* max-height: 90%; */
+    /* transform: rotate(180deg); */
     position: absolute;
+    /* width: 95%; */
+    height: 100%;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgb(31, 31, 31)), to(rgba(31, 31, 31, 0)));
+    /* mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0, 0, 0, 0)); */
+    /* background-image: linear-gradient(45deg, #ffffff, #d0ff00, #ff9d00, #f700ff, #65008d); */
+    /* background-clip: text; */
     /* opacity: 90%; */
-    top: 0%;
-    right: 20%
+    /* top: -8%; */
+    /* right: 65%; */
+    /* background-clip: text; */
+    /* -webkit-background-clip: img;
+    color: transparent;
+    font-size: 5rem; */
+    top: 0;
+    right:0;
+    left: 0;
+    bottom: -5;
 }
 
 
