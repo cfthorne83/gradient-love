@@ -135,7 +135,7 @@ background-color: red;
     border-radius: 1rem;
     
     /* background: linear-gradient(#272727dc, #27272781); */
-    background-color: #2929296c;
+    background-color: #2929297d;
     backdrop-filter: blur(7px);
 
     /* filter:blur(4px);
@@ -146,7 +146,7 @@ background-color: red;
 }
 
 #name-input {
-    background-color: #2929296c;
+    background-color: #2929297d;
     /* background: linear-gradient(#252525e3, #2525257a); */
     font-family: Menlo, Monaco, 'Courier New', monospace;
     font-size: 1rem;
