@@ -44,15 +44,23 @@ color4.addEventListener("input", changeGradient);
 color5.addEventListener("input", changeGradient); 
 
 
+
+let speedStatusRadial = document.querySelector("#speedStatus2")
 function speedChange(val) {
     speedStatus.innerText = val;
+    speedStatus2.innerText = val;
     body.style.animation = gradientVar + " " + val + "s ease infinite";
 }
 
+
+let angleDisplay = document.querySelector(".angle-display");
 let angle = 0;
+
 function angleChange(val) {
     angleStatus.innerText = val;
+    angleDisplay.innerText = val;
     angle = val;
+
     body.style.background = 
         "linear-gradient(" 
         + val + "deg,"
@@ -62,7 +70,7 @@ function angleChange(val) {
         + color4.value + ", " 
         + color5.value + ")"; 
     body.style.backgroundSize = "400% 400%";
-    body.style.animation = animation.name + " " + speedStatus.innerText + "s ease infinite";
+    body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
 }
 
 
@@ -140,9 +148,12 @@ function scrollChange(val) {
 
 
 //animation name change
+let animationName3 = document.querySelector(".animation-name3");
+
 function nameChange(val){
     animationName.innerText = val;
     animationName2.innerText = val;  
+    animationName3.innerText = val;  
 }
 
 let name = document.querySelector("#name-input");

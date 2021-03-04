@@ -39,7 +39,7 @@
 
                         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             background: linear-gradient(
-                                        <span>0</span>deg,
+                                        <span class="angle-display">0</span>deg,
                                         <span>#0011FF</span>,
                                         <span>#8100D6</span>,
                                         <span>#FF00BB</span>,
@@ -69,12 +69,26 @@
                     </ul>
 
                     <ul class="keyframes-radial">
-                        <li>.css-selector { animation: 
-                            <span class="animation-name"></span> 
-                            30s 
-                            ease 
-                            infinite; }</li>
+                        <li>.css-selector { background-size: 400% 400%;
+                        </li>
+                        
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            animation:
+                            <span class="animation-name"></span>
+                            <span id=speedStatus2>15</span>s ease infinite;
+                        </li>
+                        
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            background: <span class='animation-name3'>radial-gradient</span> (
+                            <span>#0011FF</span>,
+                            <span>#8100D6</span>,
+                            <span>#FF00BB</span>,
+                            <span>#E1FF00</span>,
+                            <span>#00EEFF</span> );
+                        </li>
+                        <li>}</li>
                         <br>
+
                         <li>@keyframes <span class="animation-name2"></span> {</li>
                         <li>&nbsp;&nbsp;&nbsp;&nbsp;
                             0% { background-position: 100% 100%; }
@@ -108,8 +122,8 @@
                 <!-- <span class='input'>Speed: </span><span id=speedStatus>15</span> -->
                 <br>
 
-                <input class='input gradient-angle' type="range" min="1" max="359" value="1" step="1" onInput="angleChange(this.value)">
-                <span class='input grad-ang'>Gradient Angle: </span><span class='input' id=angleStatus>1</span>
+                <input class='input gradient-angle' type="range" min="0" max="359" value="1" step="1" onInput="angleChange(this.value)">
+                <span class='input grad-ang'>Gradient Angle: </span><span class='input' id=angleStatus>0</span>
                 <br>
 
                 <input class='input scroll-angle' class="scroll-angle" type="range" min="0" max="400" value="1" step="1" onInput="scrollChange(this.value)">
