@@ -83,7 +83,7 @@ padding-bottom: .5em;
 font-weight: 600;
 
 
-color: rgba(0, 0, 0, 0.849);
+color: rgb(0, 0, 0);
 position: relative;
 z-index: 2;
 }
@@ -281,7 +281,7 @@ background-color: red;
 }
 
 .splat14 {
-    width: 2.8em;
+    width: 4em;
     /* height:2.0em; */
     /* -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(31, 31, 31, 0))); */
     padding-left: .5em;

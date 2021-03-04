@@ -125,6 +125,17 @@ function nameChange(val){
 let name = document.querySelector("#name-input");
 
 
+//Gradient handlers
+let gradientVar = "Linear";
+let gradientStatus = document.querySelector("#gradient-status");
+gradientStatus.innerText = gradientVar;
+
+function handleRadial() {
+    gradientVar = "Radial";
+    gradientStatus.innerText = gradientVar;
+
+    
+}
 
 
 
