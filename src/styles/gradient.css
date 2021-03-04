@@ -57,10 +57,10 @@ body {
     background-position: 100% 100%;
     background-size: 400% 400%;
     /* animation: AnimationName 10s ease infinite;     */
-    animation: radial-anim 25s ease infinite;    
+    /* animation: radial-gradient 25s ease infinite;     */
 }
 
-@keyframes radial-anim {
+@keyframes radial-gradient {
     0%{background-position: 100% 100%;}
     25%{background-position: 0% 100%;}
     75%{background-position: 100% 0%;}

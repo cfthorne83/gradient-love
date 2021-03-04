@@ -10,7 +10,7 @@ let speedStatus = document.querySelector("#speedStatus")
 let angleStatus = document.querySelector("#angleStatus")  
 
 let animation = (document.styleSheets[2].cssRules[0]);
-// body.style.animation = animation.name + " " + speedStatus.innerText + "s ease infinite";
+body.style.animation = animation.name + " " + speedStatus.innerText + "s ease infinite";
 
 function changeGradient() { 
     body.style.background = 
@@ -126,31 +126,42 @@ let name = document.querySelector("#name-input");
 
 
 //Gradient handlers
-let gradientVar = "Linear";
+let gradientVar = "linear-gradient";
 let gradientStatus = document.querySelector("#gradient-status");
 gradientStatus.innerText = gradientVar;
 
 function handleRadial() {
-    gradientVar = "Radial";
+    gradientVar = "radial-gradient";
     gradientStatus.innerText = gradientVar;
 
     body.style.background = 
-        "radial-gradient(" 
+        gradientVar + "(" 
         + color1.value + ", " 
         + color2.value + ", " 
         + color3.value + ", " 
         + color4.value + ", " 
         + color5.value + ")"; 
     body.style.backgroundSize = "400% 400%";
-    body.style.animation = radial-anim + " " + speedStatus.innerText + "s ease infinite";
+    body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
     
 }
 
 function handleLinear() {
-    gradientVar = "Linear";
+    gradientVar = "linear-gradient";
     gradientStatus.innerText = gradientVar;
 
-
+    body.style.background = 
+        gradientVar + "(" 
+        + angleStatus.innerText + "deg,"
+        + color1.value + ", " 
+        + color2.value + ", " 
+        + color3.value + ", " 
+        + color4.value + ", " 
+        + color5.value + ")"; 
+    body.style.backgroundSize = "400% 400%";
+    body.style.animation = gradientVar + " "
+                            + speedStatus.innerText
+                            + "s ease infinite";
 }
 
 
