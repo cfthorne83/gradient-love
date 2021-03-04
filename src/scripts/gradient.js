@@ -14,16 +14,27 @@ let gradientVar = "linear-gradient";
 body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
 
 function changeGradient() { 
+    
+    if (gradientVar === "linear-gradient"){
     body.style.background = 
-        "linear-gradient(" 
+        gradientVar + "(" 
         + angleStatus.innerText + "deg,"
         + color1.value + ", " 
         + color2.value + ", " 
         + color3.value + ", " 
         + color4.value + ", " 
         + color5.value + ")"; 
+    } else {
+        body.style.background = 
+        gradientVar + "(" 
+        + color1.value + ", " 
+        + color2.value + ", " 
+        + color3.value + ", " 
+        + color4.value + ", " 
+        + color5.value + ")";
+    }
     body.style.backgroundSize = "400% 400%";
-    body.style.animation = animation.name + " " + speedStatus.innerText + "s ease infinite";
+    body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
 } 
 
 color1.addEventListener("input", changeGradient); 
@@ -35,7 +46,7 @@ color5.addEventListener("input", changeGradient);
 
 function speedChange(val) {
     speedStatus.innerText = val;
-    body.style.animation = animation.name + " " + val + "s ease infinite";
+    body.style.animation = gradientVar + " " + val + "s ease infinite";
 }
 
 function angleChange(val) {
@@ -135,6 +146,7 @@ gradientStatus.innerText = gradientVar;
 function handleRadial() {
     gradientVar = "radial-gradient";
     gradientStatus.innerText = gradientVar;
+    angleStatus.innerText = null;
 
     body.style.background = 
         gradientVar + "(" 
@@ -153,7 +165,7 @@ function handleLinear() {
     gradientStatus.innerText = gradientVar;
 
     body.style.background = 
-        gradientVar + "(" 
+        "linear-gradient (" 
         + angleStatus.innerText + "deg,"
         + color1.value + ", " 
         + color2.value + ", " 
