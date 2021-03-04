@@ -90,6 +90,11 @@ position: relative;
 z-index: 2;
 }
 
+.input {
+    position: relative;
+    z-index: 2;
+}
+
 .inner {
     height: 100%;
     width: 100%;
