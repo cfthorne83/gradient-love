@@ -54,7 +54,7 @@ body {
     /* background-image: url(https://s.abcnews.com/images/Entertainment/GTY_golden_girls_kab_150903_16x9_1600.jpg); */
     background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
     /* background: radial-gradient( #6800bd, #FF00BB, #E1FF00); */
-    background-position: 100% 100%;
+    /* background-position: 100% 100%; */
     background-size: 400% 400%;
     /* animation: AnimationName 10s ease infinite;     */
     /* animation: radial-gradient 25s ease infinite;     */
@@ -122,6 +122,19 @@ background-color: red;
     margin-bottom: 1.5em;
     position: relative;
     z-index: 2;
+    list-style: none;
+    display: none;
+}
+
+.keyframes-radial{
+    /* background-color: #6d707100; */
+    padding: 2em;
+    font-family: Menlo, Monaco, 'Courier New', monospace;
+    color: #ff0202;
+    font-size: 1.05rem;
+    margin-bottom: 1.5em;
+    position: relative;
+    z-index: 3;
     list-style: none;
 }
 

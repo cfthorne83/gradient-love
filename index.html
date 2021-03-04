@@ -23,7 +23,9 @@
                 <img class="splat14" src="splat14.png" alt="splattaeu">
             </div>
             <div class="inner">
+
                 <input type="text" placeholder="Enter animation name" id="name-input" onInput="nameChange(this.value)">
+
                 <div class="keyframes-con">
                     <ul id="keyframes">
                         <li>.css-selector { animation: 
@@ -44,7 +46,33 @@
                                 <span class='mid-left'>50</span>% 
                                 <span class='mid-top'>100</span>% }
                         </li>
-                        <!-- <li>&nbsp;&nbsp;&nbsp;&nbsp;50% { background-position: 50% 100% }</li> -->
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;
+                            0% { background-position: 
+                            <span class='end-left'>50</span>% 
+                            <span class='end-top'>0</span>% }</li>
+                        <li></li>
+                        <li>}</li> 
+                    </ul>
+
+                    <ul class="keyframes-radial">
+                        <li>.css-selector { animation: 
+                            <span class="animation-name"></span> 
+                            30s 
+                            ease 
+                            infinite; }</li>
+                        <!-- <li>}</li> -->
+                        <br>
+                        <li>@keyframes <span class="animation-name2"></span> {</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;
+                            0% { background-position: 
+                                <span class='start-left'>50</span>% 
+                                <span class='start-top'>0</span>% }
+                        </li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;
+                            50% { background-position: 
+                                <span class='mid-left'>50</span>% 
+                                <span class='mid-top'>100</span>% }
+                        </li>
                         <li>&nbsp;&nbsp;&nbsp;&nbsp;
                             0% { background-position: 
                             <span class='end-left'>50</span>% 
