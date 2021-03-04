@@ -80,6 +80,10 @@ animationName.innerText = 'AnimationName';
 animationName2.innerText = 'AnimationName';
 let startLeftText = document.querySelector(".start-left");
 let startTopText = document.querySelector(".start-top");
+let endLeftText = document.querySelector(".end-left");
+let endTopText = document.querySelector(".end-top");
+let midLeftText = document.querySelector(".mid-left");
+let midTopText = document.querySelector(".mid-top");
 
 function scrollChange(val) {
     scrollStatus.innerText = val;
@@ -126,6 +130,10 @@ function scrollChange(val) {
 
     startLeftText.innerText = startLeft;
     startTopText.innerText = startTop;
+    endLeftText.innerText = startLeft;
+    endTopText.innerText = startTop;
+    midLeftText.innerText = midLeft;
+    midTopText.innerText = midTop;
 }
 
 
