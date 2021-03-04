@@ -49,8 +49,10 @@ function speedChange(val) {
     body.style.animation = gradientVar + " " + val + "s ease infinite";
 }
 
+let angle = 0;
 function angleChange(val) {
     angleStatus.innerText = val;
+    angle = val;
     body.style.background = 
         "linear-gradient(" 
         + val + "deg,"
@@ -172,17 +174,19 @@ function handleRadial() {
 function handleLinear() {
     gradientVar = "linear-gradient";
     gradientStatus.innerText = gradientVar;
+    angleStatus.innerText = angle;
+
     gradientAngle.type = "range";
     scrollAngle.type = "range";
 
     body.style.background = 
-        "linear-gradient (" 
+        gradientVar + "(" 
         + angleStatus.innerText + "deg,"
         + color1.value + ", " 
         + color2.value + ", " 
         + color3.value + ", " 
         + color4.value + ", " 
-        + color5.value + ")"; 
+        + color5.value + ")";  
     body.style.backgroundSize = "400% 400%";
     body.style.animation = gradientVar + " "
                             + speedStatus.innerText
