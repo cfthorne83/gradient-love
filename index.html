@@ -25,7 +25,21 @@
             <div class="inner">
                 <input type="text" placeholder="Enter animation name" id="name-input" onInput="nameChange(this.value)">
                 <div class="keyframes-con">
-                    <div id="keyframes"></div>
+                    <ul id="keyframes">
+                        <li>.css-selector { animation: 
+                            <span class="animation-name"></span> 
+                            30s 
+                            ease 
+                            infinite;</li>
+                        <li>}</li>
+                        <br>
+                        <li>@keyframes <span class="animation-name2"></span> {</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;0%{background-position:50% 0%}</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;50%{background-position:50% 100%}</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;100%{background-position:50% 0%}</li>
+                        <li></li>
+                        <li>}</li> 
+                    </ul>
                     <div class="blur-overlay"></div>
                 </div>
 

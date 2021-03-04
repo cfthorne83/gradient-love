@@ -10,7 +10,8 @@ let speedStatus = document.querySelector("#speedStatus")
 let angleStatus = document.querySelector("#angleStatus")  
 
 let animation = (document.styleSheets[2].cssRules[0]);
-body.style.animation = animation.name + " " + speedStatus.innerText + "s ease infinite";
+let gradientVar = "linear-gradient";
+body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
 
 function changeGradient() { 
     body.style.background = 
@@ -60,8 +61,10 @@ let midLeft = 50;
 let midTop = 100;
 
 let scrollStatus = document.querySelector("#scroll-status");
-let keyframes = document.querySelector("#keyframes");
-keyframes.innerText = animation.cssText;
+let animationName = document.querySelector(".animation-name");
+let animationName2 = document.querySelector(".animation-name2");
+animationName.innerText = 'AnimationName';
+animationName2.innerText = 'AnimationName';
 
 function scrollChange(val) {
     scrollStatus.innerText = val;
@@ -113,20 +116,19 @@ function scrollChange(val) {
 
 
 //animation name change
-
 function nameChange(val){
-    if (val) {
-        animation.name = val;
-        keyframes.innerText = animation.cssText;
-        body.style.animation = animation.name + " " + speedStatus.innerText + "s ease infinite";
-    }
+    // if (val) {
+    //     animation.name = val;
+    animationName.innerText = val;
+    animationName2.innerText = val;
+    //     body.style.animation = animation.name + " " + speedStatus.innerText + "s ease infinite";
+    // }
 }
 
 let name = document.querySelector("#name-input");
 
 
 //Gradient handlers
-let gradientVar = "linear-gradient";
 let gradientStatus = document.querySelector("#gradient-status");
 gradientStatus.innerText = gradientVar;
 

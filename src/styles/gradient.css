@@ -122,6 +122,7 @@ background-color: red;
     margin-bottom: 1.5em;
     position: relative;
     z-index: 2;
+    list-style: none;
 }
 
 .keyframes-con {
