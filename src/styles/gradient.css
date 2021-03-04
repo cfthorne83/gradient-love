@@ -183,6 +183,16 @@ background-color: red;
     bottom: -5;
 }
 
+.header {
+    display: flex;
+}
+
+.splat14 {
+    width: 5rem;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(31, 31, 31, 0)));
+
+}
+
 
 
 
