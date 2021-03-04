@@ -134,7 +134,23 @@ function handleRadial() {
     gradientVar = "Radial";
     gradientStatus.innerText = gradientVar;
 
+    body.style.background = 
+        "radial-gradient(" 
+        + color1.value + ", " 
+        + color2.value + ", " 
+        + color3.value + ", " 
+        + color4.value + ", " 
+        + color5.value + ")"; 
+    body.style.backgroundSize = "400% 400%";
+    body.style.animation = radial-anim + " " + speedStatus.innerText + "s ease infinite";
     
+}
+
+function handleLinear() {
+    gradientVar = "Linear";
+    gradientStatus.innerText = gradientVar;
+
+
 }
 
 

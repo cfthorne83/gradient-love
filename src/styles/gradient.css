@@ -52,8 +52,8 @@ body {
     width: 100vw;
     height: 100vh;
     /* background-image: url(https://s.abcnews.com/images/Entertainment/GTY_golden_girls_kab_150903_16x9_1600.jpg); */
-    /* background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF); */
-    background: radial-gradient( #6800bd, #FF00BB, #E1FF00);
+    background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
+    /* background: radial-gradient( #6800bd, #FF00BB, #E1FF00); */
     background-position: 100% 100%;
     background-size: 400% 400%;
     /* animation: AnimationName 10s ease infinite;     */
