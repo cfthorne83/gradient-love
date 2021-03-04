@@ -156,15 +156,22 @@ let gradientAngle = document.querySelector(".gradient-angle");
 let scrollAngle = document.querySelector(".scroll-angle");
 let gradAngleText = document.querySelector(".grad-ang");
 let scrollAngleText = document.querySelector(".scroll-angle");
+let linearKeyframes = document.querySelector("#keyframes");
+let radialKeyframes = document.querySelector(".keyframes-radial");
 
 function handleRadial() {
     gradientVar = "radial-gradient";
+
     gradientStatus.innerText = gradientVar;
     angleStatus.innerText = "";
     gradAngleText.innerText = "";
-    scrollStatus.innerText = "";    
+    scrollStatus.innerText = "";
+
     gradientAngle.type = "hidden";
     scrollAngle.type = "hidden";
+
+    linearKeyframes.style.display = "none";
+    radialKeyframes.style.display = "block";
 
     body.style.background = 
         gradientVar + "(" 
@@ -185,6 +192,9 @@ function handleLinear() {
 
     gradientAngle.type = "range";
     scrollAngle.type = "range";
+
+    linearKeyframes.style.display = "block";
+    radialKeyframes.style.display = "none";
 
     body.style.background = 
         gradientVar + "(" 
