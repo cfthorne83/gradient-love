@@ -10,7 +10,7 @@ let speedStatus = document.querySelector("#speedStatus")
 let angleStatus = document.querySelector("#angleStatus")  
 
 let animation = (document.styleSheets[2].cssRules[0]);
-body.style.animation = animation.name + " " + speedStatus.innerText + "s ease infinite";
+// body.style.animation = animation.name + " " + speedStatus.innerText + "s ease infinite";
 
 function changeGradient() { 
     body.style.background = 

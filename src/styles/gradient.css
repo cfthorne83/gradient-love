@@ -32,6 +32,19 @@ body, .border {
     align-items: center;
 }
 
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://s.abcnews.com/images/Entertainment/GTY_golden_girls_kab_150903_16x9_1600.jpg);
+    background: linear-gradient(45deg, #ffffff, #d0ff00, #ff9d00, #f700ff, #65008d);
+    background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
+    background-position: 0% 50%;
+    background-size: 400% 400%;
+    animation: AnimationName 10s ease infinite;    
+} */
 body {
     display: flex;
     justify-content: center;
@@ -39,37 +52,21 @@ body {
     width: 100vw;
     height: 100vh;
     /* background-image: url(https://s.abcnews.com/images/Entertainment/GTY_golden_girls_kab_150903_16x9_1600.jpg); */
-    /* background: linear-gradient(45deg, #ffffff, #d0ff00, #ff9d00, #f700ff, #65008d); */
-    background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
-    background-position: 0% 50%;
+    /* background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF); */
+    background: radial-gradient( #8100D6, #FF00BB, #E1FF00);
+    background-position: 100% 100%;
     background-size: 400% 400%;
-    animation: AnimationName 10s ease infinite;    
+    /* animation: AnimationName 10s ease infinite;     */
+    animation: radial-anim 25s ease infinite;    
 }
-/* top-bottom */
-/* @keyframes top-bottom {
-    0%{background-position:50% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:50% 0%}
-} */
-/* left-bttm--right-top
-@keyframes left-bttm--right-top  {
-    0%{background-position:100% 0%}
-    50%{background-position:0% 100%}
-    100%{background-position:100% 0%}
-}
-left-right
-@keyframes left-right {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-left-top--right-bttm
-@keyframes left-top--right-bttm  {
-    0%{background-position:0% 0%}
-    50%{background-position:100% 100%}
-    100%{background-position:0% 0%}
-} */
 
+@keyframes radial-anim {
+    0%{background-position: 100% 100%;}
+    25%{background-position: 0% 100%;}
+    75%{background-position: 100% 0%;}
+    50%{background-position: 0% 0%;}
+    100%{background-position: 100% 100%;}
+}
 
 
 /*  */
