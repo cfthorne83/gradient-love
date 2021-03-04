@@ -80,7 +80,7 @@ left-top--right-bttm
 .border h1 {
 /* font-family: Menlo, Monaco, 'Courier New', monospace; */
 font-family: Arial, Helvetica, sans-serif;
-font-size: 3rem;
+font-size: 3.5rem;
 padding-bottom: .5em;
 font-weight: 600;
 
@@ -135,7 +135,7 @@ background-color: red;
     border-radius: 1rem;
     
     /* background: linear-gradient(#272727dc, #27272781); */
-    background-color: #272727c2;
+    background-color: #2929296c;
     backdrop-filter: blur(7px);
 
     /* filter:blur(4px);
@@ -146,8 +146,8 @@ background-color: red;
 }
 
 #name-input {
-    /* background-color: #25252570; */
-    background: linear-gradient(#252525e3, #2525257a);
+    background-color: #2929296c;
+    /* background: linear-gradient(#252525e3, #2525257a); */
     font-family: Menlo, Monaco, 'Courier New', monospace;
     font-size: 1rem;
     color: #ffffff;
