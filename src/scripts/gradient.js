@@ -78,6 +78,8 @@ let animationName = document.querySelector(".animation-name");
 let animationName2 = document.querySelector(".animation-name2");
 animationName.innerText = 'AnimationName';
 animationName2.innerText = 'AnimationName';
+let startLeftText = document.querySelector(".start-left");
+let startTopText = document.querySelector(".start-top");
 
 function scrollChange(val) {
     scrollStatus.innerText = val;
@@ -122,7 +124,8 @@ function scrollChange(val) {
     animation.appendRule(`50%{background-position:${midLeft}% ${midTop}%}`);
     animation.appendRule(`100%{background-position:${startLeft}% ${startTop}%}`);
 
-    keyframes.innerText = animation.cssText;
+    startLeftText.innerText = startLeft;
+    startTopText.innerText = startTop;
 }
 
 
@@ -130,12 +133,8 @@ function scrollChange(val) {
 
 //animation name change
 function nameChange(val){
-    // if (val) {
-    //     animation.name = val;
     animationName.innerText = val;
-    animationName2.innerText = val;
-    //     body.style.animation = animation.name + " " + speedStatus.innerText + "s ease infinite";
-    // }
+    animationName2.innerText = val;  
 }
 
 let name = document.querySelector("#name-input");
