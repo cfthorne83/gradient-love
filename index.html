@@ -30,7 +30,7 @@
                     <ul id="keyframes">
                         <li>.css-selector { animation: 
                             <span class="animation-name"></span> 
-                            30s 
+                            <span id=speedStatus>15</span>s 
                             ease 
                             infinite; }</li>
                         <!-- <li>}</li> -->
@@ -91,7 +91,7 @@
                 </ul>
 
                 <input class='input' type="range" min="1" max="30" value="15" step="1" onInput="speedChange(this.value)">
-                <span class='input'>Speed: </span><span id=speedStatus>15</span>
+                <!-- <span class='input'>Speed: </span><span id=speedStatus>15</span> -->
                 <br>
 
                 <input class='input gradient-angle' type="range" min="1" max="359" value="1" step="1" onInput="angleChange(this.value)">
