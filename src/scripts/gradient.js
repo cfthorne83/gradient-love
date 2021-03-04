@@ -143,10 +143,19 @@ let name = document.querySelector("#name-input");
 let gradientStatus = document.querySelector("#gradient-status");
 gradientStatus.innerText = gradientVar;
 
+let gradientAngle = document.querySelector(".gradient-angle");
+let scrollAngle = document.querySelector(".scroll-angle");
+let gradAngleText = document.querySelector(".grad-ang");
+let scrollAngleText = document.querySelector(".scroll-angle");
+
 function handleRadial() {
     gradientVar = "radial-gradient";
     gradientStatus.innerText = gradientVar;
-    angleStatus.innerText = null;
+    angleStatus.innerText = "";
+    gradAngleText.innerText = "";
+    scrollStatus.innerText = "";    
+    gradientAngle.type = "hidden";
+    scrollAngle.type = "hidden";
 
     body.style.background = 
         gradientVar + "(" 
@@ -163,6 +172,8 @@ function handleRadial() {
 function handleLinear() {
     gradientVar = "linear-gradient";
     gradientStatus.innerText = gradientVar;
+    gradientAngle.type = "range";
+    scrollAngle.type = "range";
 
     body.style.background = 
         "linear-gradient (" 

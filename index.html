@@ -30,8 +30,8 @@
                             <span class="animation-name"></span> 
                             30s 
                             ease 
-                            infinite;</li>
-                        <li>}</li>
+                            infinite; }</li>
+                        <!-- <li>}</li> -->
                         <br>
                         <li>@keyframes <span class="animation-name2"></span> {</li>
                         <li>&nbsp;&nbsp;&nbsp;&nbsp;0%{background-position:50% 0%}</li>
@@ -51,16 +51,16 @@
                     <input class="color5 input" type="color" value="#0011FF" />
                 </ul>
 
-                <input class='input' type="range" min="1" max="20" value="10" step="1" onInput="speedChange(this.value)">
-                <span class='input'>Speed: </span><span id=speedStatus>10</span>
+                <input class='input' type="range" min="1" max="30" value="15" step="1" onInput="speedChange(this.value)">
+                <span class='input'>Speed: </span><span id=speedStatus>15</span>
                 <br>
 
-                <input class='input' type="range" min="1" max="359" value="1" step="1" onInput="angleChange(this.value)">
-                <span class='input'>Gradient Angle: </span><span class='input' id=angleStatus>1</span>
+                <input class='input gradient-angle' type="range" min="1" max="359" value="1" step="1" onInput="angleChange(this.value)">
+                <span class='input grad-ang'>Gradient Angle: </span><span class='input' id=angleStatus>1</span>
                 <br>
 
-                <input class='input' class="scroll-angle" type="range" min="0" max="400" value="1" step="1" onInput="scrollChange(this.value)">
-                <div class='input' id="scroll-status">0</div>
+                <input class='input scroll-angle' class="scroll-angle" type="range" min="0" max="400" value="1" step="1" onInput="scrollChange(this.value)">
+                <div class='input scroll-text' id="scroll-status">0</div>
                 <br>
 
                 <input class="input radial-button" 
