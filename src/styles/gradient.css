@@ -255,6 +255,28 @@ background-color: red;
     left: -500px;
     bottom: 0;
 }
+.splat-img5 {
+    /* max-height: 90%; */
+    /* transform: rotate(180deg); */
+    position: absolute;
+    /* width: 95%; */
+    height: 100%;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgb(31, 31, 31)), to(rgba(31, 31, 31, 0)));
+    /* mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0, 0, 0, 0)); */
+    /* background-image: linear-gradient(45deg, #ffffff, #d0ff00, #ff9d00, #f700ff, #65008d); */
+    /* background-clip: text; */
+    /* opacity: 90%; */
+    /* top: -8%; */
+    /* right: 65%; */
+    /* background-clip: text; */
+    /* -webkit-background-clip: img;
+    color: transparent;
+    font-size: 5rem; */
+    top: -200px;
+    right: -100px;
+    left: 0;
+    bottom: 0;
+}
 
 .header {
     display: flex;
