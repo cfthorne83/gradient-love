@@ -1,11 +1,5 @@
 let body = document.querySelector("body"); 
 
-let color1 = document.querySelector(".color1"); 
-let color2 = document.querySelector(".color2"); 
-let color3 = document.querySelector(".color3"); 
-let color4 = document.querySelector(".color4"); 
-let color5 = document.querySelector(".color5");
-
 let speedStatus = document.querySelector("#speedStatus")
 let angleStatus = document.querySelector("#angleStatus")  
 
@@ -14,33 +8,53 @@ let gradientVar = "linear-gradient";
 body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
 
 //color changes
-let colors = [];
+let colors = "";
 let colorButton = document.querySelector(".color-button");
-let innerDiv = document.querySelector(".inner");
-let colorSelected = document.querySelector(".colors-selected");
 let colorInput = document.querySelector(".color-input");
 let colorContainer = document.querySelector(".color-container");
-let keyframesCon = document.querySelector(".keyframes-con"); 
 
 function addColorTile() {
     let colorTile = document.createElement("li");
     colorTile.style.width = "50px";
     colorTile.style.height = "50px";
     colorTile.style.display = "inline-block";
+    colorTile.style.position = "relative";
     colorTile.style.backgroundColor = colorInput.value;
     colorContainer.append(colorTile);
+
+    if (colors.length === 0) {
+        colors += colorInput.value;
+    } else {
+        colors += ", " + colorInput.value;
+    }
 }
 
 colorButton.addEventListener("click", addColorTile);
 
-// function changeGradient() { 
-//     colors.push(color1.value);
+function applyColors() {
+    
+    if (gradientVar === "linear-gradient"){
+    body.style.background = 
+        gradientVar + "(" 
+        + angleStatus.innerText + "deg,"
+        + colors + ")"; 
+    } else {
+        body.style.background = 
+        gradientVar + "(" 
+        + colors + ")";
+    }
 
-    // let colorTile = document.createElement("span");
-    // colorSelected.style.width = "200px";
-    // colorSelected.style.height = "200px";
-    // colorSelected.style.backgroundColor = "blue";
-    // document.body.append(colorTile);
+    body.style.backgroundSize = "400% 400%";
+    body.style.animation = gradientVar
+                            + " " + speedStatus.innerText
+                            + "s ease infinite";
+}
+
+let applyClrBtn = document.querySelector(".apply-clr-button");
+applyClrBtn.addEventListener("click", applyColors);
+
+// function changeGradient() { 
+
     // if (gradientVar === "linear-gradient"){
     // body.style.background = 
     //     gradientVar + "(" 

@@ -199,6 +199,7 @@ background-color: red;
     right:0;
     left: 0;
     bottom: -5;
+    z-index: -1;
 }
 
 .splat-img2 {
@@ -222,6 +223,8 @@ background-color: red;
     right:0;
     left: 0;
     bottom: 0;
+        z-index: -1;
+
 }
 .splat-img3 {
     /* max-height: 90%; */
@@ -244,6 +247,8 @@ background-color: red;
     right: -125px;
     left: 0;
     bottom: 0;
+        z-index: -1;
+
 }
 .splat-img4 {
     /* max-height: 90%; */
@@ -266,6 +271,8 @@ background-color: red;
     right: 0;
     left: -500px;
     bottom: 0;
+        z-index: -1;
+
 }
 .splat-img5 {
     /* max-height: 90%; */
@@ -288,6 +295,8 @@ background-color: red;
     right: -100px;
     left: 0;
     bottom: 0;
+        z-index: -1;
+
 }
 
 .header {
@@ -307,6 +316,10 @@ background-color: red;
 .color-button {
     position: relative;
     z-index: 2;
+}
+
+.color-container li {
+    opacity: 100%;
 }
 
 /* .colors-selected {
