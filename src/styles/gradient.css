@@ -26,6 +26,12 @@ time, mark, audio, video input{
     color: white;
 }
 
+:root {
+    --back-g: rgb(32 32 32 / 75%);
+    --border-radius: .7em;
+    --blur: blur(20px);
+}
+
 body, .border {
     display: flex;
     justify-content: center;
@@ -99,15 +105,15 @@ z-index: 2;
     background: linear-gradient( #252525bc, transparent 101%);
     /* background-color: #000000;    */
     padding: 3em;
-    border-radius: 3%;
+    border-radius: var(--border-radius);
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
 
-.scroll{
+/* .scroll{
 background-color: red;
-}
+} */
 
 .scroll-angle {
     width: 50%;
@@ -150,51 +156,30 @@ background-color: red;
     top: 0;
     right: 0;
     bottom: 0;
-    border-radius: 1rem;
-    
-    /* background: linear-gradient(#272727dc, #27272781); */
-    background-color: #2929297d;
-    backdrop-filter: blur(20px);
-
-    /* filter:blur(4px);
-    -o-filter:blur(4px);
-    -ms-filter:blur(4px);
-    -moz-filter:blur(4px);
-    -webkit-filter:blur(4px); */
+    border-radius: var(--border-radius);
+    background-color: var(--back-g);
+    backdrop-filter: var(--blur);
 }
 
 #name-input {
-    background-color: #2929297d;
+    background-color: var(--back-g);
     /* background: linear-gradient(#252525e3, #2525257a); */
     font-family: Menlo, Monaco, 'Courier New', monospace;
     font-size: 1rem;
     color: #ffffff;
     padding: .8em;
-    border-radius: 3em;
+    border-radius: var(--border-radius);
     border: none;
     margin: 1em;
     position: relative;
     z-index: 2;
-    backdrop-filter: blur(8px);
+    backdrop-filter: var(--blur);
 }
 
 .splat-img {
-    /* max-height: 90%; */
-    /* transform: rotate(180deg); */
     position: absolute;
-    /* width: 95%; */
     height: 100%;
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgb(31, 31, 31)), to(rgba(31, 31, 31, 0)));
-    /* mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0, 0, 0, 0)); */
-    /* background-image: linear-gradient(45deg, #ffffff, #d0ff00, #ff9d00, #f700ff, #65008d); */
-    /* background-clip: text; */
-    /* opacity: 90%; */
-    /* top: -8%; */
-    /* right: 65%; */
-    /* background-clip: text; */
-    /* -webkit-background-clip: img;
-    color: transparent;
-    font-size: 5rem; */
     top: 0;
     right:0;
     left: 0;
@@ -203,51 +188,26 @@ background-color: red;
 }
 
 .splat-img2 {
-    /* max-height: 90%; */
-    /* transform: rotate(180deg); */
     position: absolute;
-    /* width: 95%; */
     height: 100%;
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgb(31, 31, 31)), to(rgba(31, 31, 31, 0)));
-    /* mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0, 0, 0, 0)); */
-    /* background-image: linear-gradient(45deg, #ffffff, #d0ff00, #ff9d00, #f700ff, #65008d); */
-    /* background-clip: text; */
-    /* opacity: 90%; */
-    /* top: -8%; */
-    /* right: 65%; */
-    /* background-clip: text; */
-    /* -webkit-background-clip: img;
-    color: transparent;
-    font-size: 5rem; */
+  
     top: -100px;
     right:0;
     left: 0;
     bottom: 0;
-        z-index: -1;
+    z-index: -1;
 
 }
 .splat-img3 {
-    /* max-height: 90%; */
-    /* transform: rotate(180deg); */
     position: absolute;
-    /* width: 95%; */
     height: 100%;
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgb(31, 31, 31)), to(rgba(31, 31, 31, 0)));
-    /* mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0, 0, 0, 0)); */
-    /* background-image: linear-gradient(45deg, #ffffff, #d0ff00, #ff9d00, #f700ff, #65008d); */
-    /* background-clip: text; */
-    /* opacity: 90%; */
-    /* top: -8%; */
-    /* right: 65%; */
-    /* background-clip: text; */
-    /* -webkit-background-clip: img;
-    color: transparent;
-    font-size: 5rem; */
     top: -200px;
     right: -125px;
     left: 0;
     bottom: 0;
-        z-index: -1;
+    z-index: -1;
 
 }
 .splat-img4 {
@@ -324,9 +284,16 @@ background-color: red;
 
 .color-form {
     width: 50%;
-    background-color: rgba(32, 32, 32, 0.609);
-    backdrop-filter: blur(10px);
-    padding: 1em;
+    background-color: var(--back-g);
+    backdrop-filter: var(--blur);
+    padding: 1.5em;
+    border-radius: var(--border-radius);
+}
+
+.apply-clr-err {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 0, 255);
+    font-size: 1.2rem;
 }
 
 

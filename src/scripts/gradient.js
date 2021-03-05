@@ -8,12 +8,18 @@ let gradientVar = "linear-gradient";
 body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
 
 //color changes
-let colors = "";
+let colorNum = 5;
+let colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
+// let colors = "#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF";
+
 let colorButton = document.querySelector(".color-button");
 let colorInput = document.querySelector(".color-input");
 let colorForm = document.querySelector(".color-form");
 
 function addColorTile() {
+
+    let colorErr = document.querySelector(".apply-clr-err");
+    colorErr.innerText = "";
 
     if (colors.length === 0) {
         let colorContainer = document.createElement("ul");
@@ -36,6 +42,7 @@ function addColorTile() {
     } else {
         colors += ", " + colorInput.value;
     }
+    colorNum++;
 }
 
 colorButton.addEventListener("click", addColorTile);
@@ -43,9 +50,9 @@ colorButton.addEventListener("click", addColorTile);
 
 function applyColors() {
 
-    if (!colors.length){
+    if (colorNum < 2){
         let colorErr = document.querySelector(".apply-clr-err");
-        colorErr.innerText = "Please select at least two colors."
+        colorErr.innerText = "Please select at least two colors.";
     }
     
     if (gradientVar === "linear-gradient"){
@@ -73,6 +80,7 @@ let colorTiles = document.querySelectorAll(".color-tile");
 
 function resetColors() {
     colors = "";
+    colorNum = 0;
     
     let colorContainer = document.querySelector(".color-container");
     colorContainer.remove()
@@ -97,16 +105,17 @@ function angleChange(val) {
     angleDisplay.innerText = val;
     angle = val;
 
-    body.style.background = 
-        "linear-gradient(" 
-        + val + "deg,"
-        + color1.value + ", " 
-        + color2.value + ", " 
-        + color3.value + ", " 
-        + color4.value + ", " 
-        + color5.value + ")"; 
-    body.style.backgroundSize = "400% 400%";
-    body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
+    // body.style.background = 
+    //     "linear-gradient(" 
+    //     + val + "deg,"
+    //     + color1.value + ", " 
+    //     + color2.value + ", " 
+    //     + color3.value + ", " 
+    //     + color4.value + ", " 
+    //     + color5.value + ")"; 
+    // body.style.backgroundSize = "400% 400%";
+    // body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
+    applyColors();
 }
 
 
@@ -220,16 +229,16 @@ function handleRadial() {
     linearKeyframes.style.display = "none";
     radialKeyframes.style.display = "block";
 
-    body.style.background = 
-        gradientVar + "(" 
-        + color1.value + ", " 
-        + color2.value + ", " 
-        + color3.value + ", " 
-        + color4.value + ", " 
-        + color5.value + ")"; 
-    body.style.backgroundSize = "400% 400%";
-    body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
-    
+    // body.style.background = 
+    //     gradientVar + "(" 
+    //     + color1.value + ", " 
+    //     + color2.value + ", " 
+    //     + color3.value + ", " 
+    //     + color4.value + ", " 
+    //     + color5.value + ")"; 
+    // body.style.backgroundSize = "400% 400%";
+    // body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
+    applyColors();
 }
 
 function handleLinear() {
