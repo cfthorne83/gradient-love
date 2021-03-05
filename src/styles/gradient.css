@@ -296,13 +296,18 @@ background-color: red;
     font-size: 1.2rem;
 }
 
-.angle-display {
+.angle-display-div {
     width: 20%;
     min-height: 10em;
     background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
-
+    /* border-radius: var(--border-radius); */
+    border: .1em solid rgb(255, 255, 255);
 }
 
+/* .angle-disp-con {
+    width: 20%;
+    background-color: red;
+} */
 
 /* .outer-gradient {
     width: 80%;

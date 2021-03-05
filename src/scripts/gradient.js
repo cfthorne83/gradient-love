@@ -47,6 +47,7 @@ function addColorTile() {
 
 colorButton.addEventListener("click", addColorTile);
 
+let angleDisplayDiv = document.querySelector(".angle-display-div");
 
 function applyColors() {
 
@@ -56,12 +57,19 @@ function applyColors() {
     }
     
     if (gradientVar === "linear-gradient"){
-    body.style.background = 
+        body.style.background = 
         gradientVar + "(" 
         + angleStatus.innerText + "deg,"
         + colors + ")"; 
+        angleDisplayDiv.style.background = 
+        gradientVar + "(" 
+        + angleStatus.innerText + "deg,"
+        + colors + ")";
     } else {
         body.style.background = 
+        gradientVar + "(" 
+        + colors + ")";
+        angleDisplayDiv.style.background = 
         gradientVar + "(" 
         + colors + ")";
     }
@@ -105,16 +113,6 @@ function angleChange(val) {
     angleDisplay.innerText = val;
     angle = val;
 
-    // body.style.background = 
-    //     "linear-gradient(" 
-    //     + val + "deg,"
-    //     + color1.value + ", " 
-    //     + color2.value + ", " 
-    //     + color3.value + ", " 
-    //     + color4.value + ", " 
-    //     + color5.value + ")"; 
-    // body.style.backgroundSize = "400% 400%";
-    // body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
     applyColors();
 }
 
