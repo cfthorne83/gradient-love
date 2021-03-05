@@ -296,7 +296,12 @@ background-color: red;
     font-size: 1.2rem;
 }
 
+.angle-display {
+    width: 20%;
+    min-height: 10em;
+    background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
 
+}
 
 
 /* .outer-gradient {
