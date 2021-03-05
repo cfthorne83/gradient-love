@@ -252,18 +252,7 @@ function handleLinear() {
     linearKeyframes.style.display = "block";
     radialKeyframes.style.display = "none";
 
-    body.style.background = 
-        gradientVar + "(" 
-        + angleStatus.innerText + "deg,"
-        + color1.value + ", " 
-        + color2.value + ", " 
-        + color3.value + ", " 
-        + color4.value + ", " 
-        + color5.value + ")";  
-    body.style.backgroundSize = "400% 400%";
-    body.style.animation = gradientVar + " "
-                            + speedStatus.innerText
-                            + "s ease infinite";
+    applyColors();
 }
 
 
