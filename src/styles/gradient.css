@@ -320,12 +320,14 @@ background-color: red;
 }
 
 .grandparent {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
     display: flex;
     justify-content: center;
     align-items: center;
+    border: .2rem solid rgb(255, 255, 255);
+
 }
 
 .parent {
@@ -334,14 +336,14 @@ background-color: red;
     align-items: center;
     width: 90%;
     height: 90%;
-    border: 5px solid black;
+    border: .2rem solid rgb(36, 36, 36);
     border-radius: 50%;
 }
 
 .child {
-    width: 5px;
+    width: .2rem;
     height: 101%;
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(36, 36, 36);
 }
 
 
