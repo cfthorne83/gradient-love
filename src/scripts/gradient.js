@@ -15,8 +15,14 @@ let colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
 let colorButton = document.querySelector(".color-button");
 let colorInput = document.querySelector(".color-input");
 let colorForm = document.querySelector(".color-form");
+let first = true;
 
 function addColorTile() {
+    if (first) {
+        first = false;
+        colors = "";
+        colorNum = 0;
+    }
 
     let colorErr = document.querySelector(".apply-clr-err");
     colorErr.innerText = "";
@@ -48,6 +54,7 @@ function addColorTile() {
 colorButton.addEventListener("click", addColorTile);
 
 let angleDisplayDiv = document.querySelector(".angle-display-div");
+let scrollDisplay = document.querySelector(".grandparent");
 
 function applyColors() {
 
@@ -65,11 +72,18 @@ function applyColors() {
         gradientVar + "(" 
         + angleStatus.innerText + "deg,"
         + colors + ")";
+        scrollDisplay.style.background = 
+        gradientVar + "(" 
+        + angleStatus.innerText + "deg,"
+        + colors + ")";
     } else {
         body.style.background = 
         gradientVar + "(" 
         + colors + ")";
         angleDisplayDiv.style.background = 
+        gradientVar + "(" 
+        + colors + ")";
+        scrollDisplay.style.background = 
         gradientVar + "(" 
         + colors + ")";
     }
@@ -212,6 +226,8 @@ let gradAngleText = document.querySelector(".grad-ang");
 let scrollAngleText = document.querySelector(".scroll-angle");
 let linearKeyframes = document.querySelector("#keyframes");
 let radialKeyframes = document.querySelector(".keyframes-radial");
+let knobBorder = document.querySelector(".parent");
+let knobNeedle = document.querySelector(".child");
 
 function handleRadial() {
     gradientVar = "radial-gradient";
@@ -227,6 +243,10 @@ function handleRadial() {
     linearKeyframes.style.display = "none";
     radialKeyframes.style.display = "block";
 
+    knobNeedle.style.display = "none";
+    knobBorder.style.display = "none";
+
+
     applyColors();
 }
 
@@ -241,6 +261,10 @@ function handleLinear() {
     linearKeyframes.style.display = "block";
     radialKeyframes.style.display = "none";
 
+    knobNeedle.style.display = "flex";
+    // knobBorder.style.display = "inline-block";
+    knobBorder.style.display = "flex";
+
     applyColors();
 }
 
@@ -248,7 +272,6 @@ function handleLinear() {
 //------------------------------------------------------------------------------
 //knob-trial
 let knobInput = document.querySelector(".knob-input");
-let knobNeedle = document.querySelector(".child");
 let knobValue = document.querySelector(".knob-value");
 
 function knobChange() {
