@@ -11,15 +11,24 @@ body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infin
 let colors = "";
 let colorButton = document.querySelector(".color-button");
 let colorInput = document.querySelector(".color-input");
-let colorContainer = document.querySelector(".color-container");
+let colorForm = document.querySelector(".color-form");
 
 function addColorTile() {
+
+    if (colors.length === 0) {
+        let colorContainer = document.createElement("ul");
+        colorContainer.setAttribute("class", "color-container");
+        colorForm.append(colorContainer);
+    }
+
+    let colorContainer = document.querySelector(".color-container");
     let colorTile = document.createElement("li");
     colorTile.style.width = "50px";
     colorTile.style.height = "50px";
     colorTile.style.display = "inline-block";
     colorTile.style.position = "relative";
     colorTile.style.backgroundColor = colorInput.value;
+    colorTile.setAttribute("class", "color-tile");
     colorContainer.append(colorTile);
 
     if (colors.length === 0) {
@@ -31,7 +40,13 @@ function addColorTile() {
 
 colorButton.addEventListener("click", addColorTile);
 
+
 function applyColors() {
+
+    if (!colors.length){
+        let colorErr = document.querySelector(".apply-clr-err");
+        colorErr.innerText = "Please select at least two colors."
+    }
     
     if (gradientVar === "linear-gradient"){
     body.style.background = 
@@ -53,39 +68,18 @@ function applyColors() {
 let applyClrBtn = document.querySelector(".apply-clr-button");
 applyClrBtn.addEventListener("click", applyColors);
 
-// function changeGradient() { 
+//-----------------------------------------------------------
+let colorTiles = document.querySelectorAll(".color-tile");
 
-    // if (gradientVar === "linear-gradient"){
-    // body.style.background = 
-    //     gradientVar + "(" 
-    //     + angleStatus.innerText + "deg,"
-    //     + color1.value + ", " 
-    //     + color2.value + ", " 
-    //     + color3.value + ", " 
-    //     + color4.value + ", " 
-    //     + color5.value + ")"; 
-    // } else {
-    //     body.style.background = 
-    //     gradientVar + "(" 
-    //     + color1.value + ", " 
-    //     + color2.value + ", " 
-    //     + color3.value + ", " 
-    //     + color4.value + ", " 
-    //     + color5.value + ")";
-    // }
-    // body.style.backgroundSize = "400% 400%";
-    // body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
-// } 
+function resetColors() {
+    colors = "";
+    
+    let colorContainer = document.querySelector(".color-container");
+    colorContainer.remove()
+}
 
-// colorButton.addEventListener("click", changeGradient);
-
-// color1.addEventListener("input", changeGradient); 
-// color2.addEventListener("input", changeGradient); 
-// color3.addEventListener("input", changeGradient); 
-// color4.addEventListener("input", changeGradient); 
-// color5.addEventListener("input", changeGradient); 
-
-
+let resetClrBtn = document.querySelector(".reset-clr-btn");
+resetClrBtn.addEventListener("click", resetColors);
 
 let speedStatusRadial = document.querySelector("#speedStatus2")
 function speedChange(val) {
@@ -94,7 +88,7 @@ function speedChange(val) {
     body.style.animation = gradientVar + " " + val + "s ease infinite";
 }
 
-
+//------------------------------------------------------------------------------
 let angleDisplay = document.querySelector(".angle-display");
 let angle = 0;
 
@@ -116,8 +110,8 @@ function angleChange(val) {
 }
 
 
+//------------------------------------------------------------------------------
 // scroll angle
-
 let startLeft = 50;
 let startTop = 0;
 let midLeft = 50;
@@ -187,8 +181,7 @@ function scrollChange(val) {
 }
 
 
-
-
+//------------------------------------------------------------------------------
 //animation name change
 let animationName3 = document.querySelector(".animation-name3");
 
@@ -201,6 +194,7 @@ function nameChange(val){
 let name = document.querySelector("#name-input");
 
 
+//------------------------------------------------------------------------------
 //Gradient handlers
 let gradientStatus = document.querySelector("#gradient-status");
 gradientStatus.innerText = gradientVar;

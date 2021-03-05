@@ -110,7 +110,7 @@
                     <div class="blur-overlay"></div>
                 </div>
 
-                <ul class="color-container">
+                <ul class="color-form">
                     <input class="color-input input" 
                             type="color"       
                             value="#00EEFF"/>
@@ -119,10 +119,12 @@
                             value="Select Color">            
                     <input class="apply-clr-button" 
                             type="submit" 
-                            value="Apply Colors">            
+                            value="Apply Colors"> 
+                    <div class="apply-clr-err"></div>           
                     <input class="reset-clr-btn" 
                             type="submit" 
-                            value="Reset Colors">            
+                            value="Reset"> 
+                               
                 </ul>
 
                 <input class='input' type="range" min="1" max="30" value="15" step="1" onInput="speedChange(this.value)">Speed

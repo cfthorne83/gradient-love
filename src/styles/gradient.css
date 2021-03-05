@@ -322,11 +322,12 @@ background-color: red;
     opacity: 100%;
 }
 
-/* .colors-selected {
-    width: 200px;
-    height: 200px;
-    background-color: blueviolet;
-} */
+.color-form {
+    width: 50%;
+    background-color: rgba(32, 32, 32, 0.609);
+    backdrop-filter: blur(10px);
+    padding: 1em;
+}
 
 
 
