@@ -304,6 +304,47 @@ background-color: red;
     border: .1em solid rgb(255, 255, 255);
 }
 
+.scroll-knob {
+    width: 10em;
+    min-height: 10em;
+    /* padding-bottom: 20%; */
+    background-color: rgb(39, 39, 39);
+    border-radius: 50%;
+}
+
+.knob-line {
+    background-color: white;
+    width: 50%;
+    height: 50%;
+
+}
+
+.grandparent {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+.child {
+    width: 5px;
+    height: 101%;
+    background-color: rgb(37, 37, 37);
+}
+
+
 /* .angle-disp-con {
     width: 20%;
     background-color: red;

@@ -136,8 +136,15 @@
                     <div class="angle-display-div"></div>
                 <br>
 
-                <input class='input scroll-angle' class="scroll-angle" type="range" min="0" max="400" value="1" step="1" onInput="scrollChange(this.value)">
+                <input class='input scroll-angle'
+                        type="range" 
+                        min="0" max="400" 
+                        value="1" step="1" 
+                        onInput="scrollChange(this.value)">
                 <div class='input scroll-text' id="scroll-status">0</div>
+                <div class="scroll-knob">
+                    <div class="knob-line"></div>
+                </div>
                 <br>
 
                 <input class="input radial-button" 
@@ -170,6 +177,14 @@
                 <img src="splat2.png" class='splat-img5' alt="splatter">
                 <!-- <img src="splat.png" class='splat-img' alt="splatter"> -->
             </div> 
+
+            <div class="knob-value">asdfas</div>
+            <input class="knob-input" type="range" min="0" max="359" value="0" step="1">
+            <div class="grandparent">
+                <div class="parent">
+                    <div class="child"></div>
+                </div>
+            </div>
         </div>
 
     <script src="./src/scripts/gradient.js"></script>

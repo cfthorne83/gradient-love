@@ -227,15 +227,6 @@ function handleRadial() {
     linearKeyframes.style.display = "none";
     radialKeyframes.style.display = "block";
 
-    // body.style.background = 
-    //     gradientVar + "(" 
-    //     + color1.value + ", " 
-    //     + color2.value + ", " 
-    //     + color3.value + ", " 
-    //     + color4.value + ", " 
-    //     + color5.value + ")"; 
-    // body.style.backgroundSize = "400% 400%";
-    // body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
     applyColors();
 }
 
@@ -252,6 +243,21 @@ function handleLinear() {
 
     applyColors();
 }
+
+
+//------------------------------------------------------------------------------
+//knob-trial
+let knobInput = document.querySelector(".knob-input");
+let knobNeedle = document.querySelector(".child");
+let knobValue = document.querySelector(".knob-value");
+
+function knobChange() {
+    knobValue.innerText = knobInput.value;
+    knobNeedle.style.transform = "rotate(" + knobInput.value + "deg)";
+}
+
+knobInput.addEventListener("input", knobChange);
+
 
 
 
