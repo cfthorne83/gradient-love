@@ -13,35 +13,63 @@ let animation = (document.styleSheets[2].cssRules[0]);
 let gradientVar = "linear-gradient";
 body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
 
-function changeGradient() { 
-    
-    if (gradientVar === "linear-gradient"){
-    body.style.background = 
-        gradientVar + "(" 
-        + angleStatus.innerText + "deg,"
-        + color1.value + ", " 
-        + color2.value + ", " 
-        + color3.value + ", " 
-        + color4.value + ", " 
-        + color5.value + ")"; 
-    } else {
-        body.style.background = 
-        gradientVar + "(" 
-        + color1.value + ", " 
-        + color2.value + ", " 
-        + color3.value + ", " 
-        + color4.value + ", " 
-        + color5.value + ")";
-    }
-    body.style.backgroundSize = "400% 400%";
-    body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
-} 
+//color changes
+let colors = [];
+let colorButton = document.querySelector(".color-button");
+let innerDiv = document.querySelector(".inner");
+let colorSelected = document.querySelector(".colors-selected");
+let colorInput = document.querySelector(".color-input");
+let colorContainer = document.querySelector(".color-container");
+let keyframesCon = document.querySelector(".keyframes-con"); 
 
-color1.addEventListener("input", changeGradient); 
-color2.addEventListener("input", changeGradient); 
-color3.addEventListener("input", changeGradient); 
-color4.addEventListener("input", changeGradient); 
-color5.addEventListener("input", changeGradient); 
+function addColorTile() {
+    let colorTile = document.createElement("li");
+    colorTile.style.width = "50px";
+    colorTile.style.height = "50px";
+    colorTile.style.display = "inline-block";
+    colorTile.style.backgroundColor = colorInput.value;
+    colorContainer.append(colorTile);
+}
+
+colorButton.addEventListener("click", addColorTile);
+
+// function changeGradient() { 
+//     colors.push(color1.value);
+
+    // let colorTile = document.createElement("span");
+    // colorSelected.style.width = "200px";
+    // colorSelected.style.height = "200px";
+    // colorSelected.style.backgroundColor = "blue";
+    // document.body.append(colorTile);
+    // if (gradientVar === "linear-gradient"){
+    // body.style.background = 
+    //     gradientVar + "(" 
+    //     + angleStatus.innerText + "deg,"
+    //     + color1.value + ", " 
+    //     + color2.value + ", " 
+    //     + color3.value + ", " 
+    //     + color4.value + ", " 
+    //     + color5.value + ")"; 
+    // } else {
+    //     body.style.background = 
+    //     gradientVar + "(" 
+    //     + color1.value + ", " 
+    //     + color2.value + ", " 
+    //     + color3.value + ", " 
+    //     + color4.value + ", " 
+    //     + color5.value + ")";
+    // }
+    // body.style.backgroundSize = "400% 400%";
+    // body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
+// } 
+
+// colorButton.addEventListener("click", changeGradient);
+
+// color1.addEventListener("input", changeGradient); 
+// color2.addEventListener("input", changeGradient); 
+// color3.addEventListener("input", changeGradient); 
+// color4.addEventListener("input", changeGradient); 
+// color5.addEventListener("input", changeGradient); 
 
 
 
