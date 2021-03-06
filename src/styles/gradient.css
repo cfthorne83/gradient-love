@@ -51,6 +51,13 @@ body, .border {
     background-size: 400% 400%;
     animation: AnimationName 10s ease infinite;    
 } */
+.gradient-back {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
+    /* background-color: black; */
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -148,7 +155,7 @@ background-color: red;
     /* border-radius: 1rem; */
 }
 
-.blur-overlay {
+/* .blur-overlay {
     position: absolute;
     left: 0;
     top: 0;
@@ -157,7 +164,7 @@ background-color: red;
     border-radius: var(--border-radius);
     background-color: var(--back-g);
     backdrop-filter: var(--blur);
-}
+} */
 
 #name-input {
     background-color: var(--back-g);
@@ -379,8 +386,8 @@ background-color: red;
 
 .outer {
     box-sizing: border-box;
-    width: 50vw;
-    height: 50vh;
+    width: 35vw;
+    height: 35vh;
     background: linear-gradient(red, green);
     border: 3px solid white;
 }

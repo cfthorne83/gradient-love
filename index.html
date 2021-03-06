@@ -17,114 +17,135 @@
 </head>
 
 <body>
+    <section class="gradient-back">
+        <div class="header">
+            <h1>gradient</h1>
+            <img class="splat14" src="splat14.png" alt="splattaeu">
+            <h1>love</h1>
+        </div>
+
+        <input type="text" placeholder="Enter animation name" id="name-input" onInput="nameChange(this.value)">
+        
+        <!-- <div class="keyframes-con"> -->
+            <ul id="keyframes">
+                <li>
+                    .css-selector { background-size: 400% 400%;
+                </li>
+        
+                <li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    animation:
+                    <span class="animation-name"></span>
+                    <span id=speedStatus>15</span>s ease infinite;
+                </li>
+        
+                <li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    background: linear-gradient(
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="angle-display">0</span>deg,
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>#0011FF</span>,
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>#8100D6</span>,
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>#FF00BB</span>,
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>#E1FF00</span>,
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>#00EEFF</span>
+                </li>
+
+                <li>
+                    &nbsp;&nbsp;);
+                </li>
+
+                <li>
+                    }
+                </li>
+                <br>
+
+                <!-- keyframes -->
+                <li>
+                    @keyframes <span class="animation-name2"></span> {
+                </li>
+        
+                <li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    0% { background-position:
+                    <span class='start-left'>50</span>%
+                    <span class='start-top'>0</span>% }
+                </li>
+        
+                <li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    50% { background-position:
+                    <span class='mid-left'>50</span>%
+                    <span class='mid-top'>100</span>% }
+                </li>
+        
+                <li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    0% { background-position:
+                    <span class='end-left'>50</span>%
+                    <span class='end-top'>0</span>% }
+                </li>
+                <li>}</li>
+            </ul>
+        
+        
+            <ul class="keyframes-radial">
+                <li>.css-selector { background-size: 400% 400%;
+                </li>
+        
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    animation:
+                    <span class="animation-name"></span>
+                    <span id=speedStatus2>15</span>s ease infinite;
+                </li>
+        
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    background: <span class='animation-name3'>radial-gradient</span> (
+                    <span>#0011FF</span>,
+                    <span>#8100D6</span>,
+                    <span>#FF00BB</span>,
+                    <span>#E1FF00</span>,
+                    <span>#00EEFF</span> );
+                </li>
+                <li>}</li>
+                <br>
+        
+                <li>@keyframes <span class="animation-name2"></span> {</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    0% { background-position: 100% 100%; }
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    25% { background-position: 0% 100%; }
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    50% { background-position: 0% 0%; }
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    75% { background-position: 100% 0%; }
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    100% { background-position: 100% 100%; }
+                </li>
+                <li>}</li>
+            </ul>
+            
+        <!-- </div> -->
+    </section>
         <!-- <div class="border"> -->
-            <div class="header">
-                <h1>gradient</h1>
-                <img class="splat14" src="splat14.png" alt="splattaeu">
-                <h1>love</h1>
-            </div>
             <!-- <div class="inner"> -->
 
-            <section>
-                <input type="text" placeholder="Enter animation name" id="name-input" onInput="nameChange(this.value)">
-
-                <div class="keyframes-con">
-                    <ul id="keyframes">
-                        <li>
-                            .css-selector { background-size: 400% 400%;
-                        </li>
-
-                        <li>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            animation: 
-                            <span class="animation-name"></span> 
-                            <span id=speedStatus>15</span>s ease infinite;
-                        </li>
-
-                        <li>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            background: linear-gradient(
-                                        <span class="angle-display">0</span>deg,
-                                        <span>#0011FF</span>,
-                                        <span>#8100D6</span>,
-                                        <span>#FF00BB</span>,
-                                        <span>#E1FF00</span>,
-                                        <span>#00EEFF</span> );
-                        </li>
-
-                        <li>
-                            }
-                        </li>
-                            <br>
-                        <li>
-                            @keyframes <span class="animation-name2"></span> {
-                        </li>
-
-                        <li>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            0% { background-position: 
-                                <span class='start-left'>50</span>% 
-                                <span class='start-top'>0</span>% }
-                        </li>
-
-                        <li>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            50% { background-position: 
-                                <span class='mid-left'>50</span>% 
-                                <span class='mid-top'>100</span>% }
-                        </li>
-                        
-                        <li>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            0% { background-position: 
-                            <span class='end-left'>50</span>% 
-                            <span class='end-top'>0</span>% }</li>
-                        <li>}</li> 
-                    </ul>
-                </section>
-
-
-                    <ul class="keyframes-radial">
-                        <li>.css-selector { background-size: 400% 400%;
-                        </li>
-                        
-                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            animation:
-                            <span class="animation-name"></span>
-                            <span id=speedStatus2>15</span>s ease infinite;
-                        </li>
-                        
-                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            background: <span class='animation-name3'>radial-gradient</span> (
-                            <span>#0011FF</span>,
-                            <span>#8100D6</span>,
-                            <span>#FF00BB</span>,
-                            <span>#E1FF00</span>,
-                            <span>#00EEFF</span> );
-                        </li>
-                        <li>}</li>
-                        <br>
-
-                        <li>@keyframes <span class="animation-name2"></span> {</li>
-                        <li>&nbsp;&nbsp;&nbsp;&nbsp;
-                            0% { background-position: 100% 100%; }
-                        </li>
-                        <li>&nbsp;&nbsp;&nbsp;&nbsp;
-                            25% { background-position: 0% 100%; }
-                        </li>
-                        <li>&nbsp;&nbsp;&nbsp;&nbsp;
-                            50% { background-position: 0% 0%; }
-                        </li>
-                        <li>&nbsp;&nbsp;&nbsp;&nbsp;
-                            75% { background-position: 100% 0%; }
-                        </li>
-                        <li>&nbsp;&nbsp;&nbsp;&nbsp;
-                            100% { background-position: 100% 100%; }
-                        </li>
-                        <li>}</li> 
-                    </ul>
-                    <div class="blur-overlay"></div>
-                </div>
+                
 
                 <input class="input radial-button" type="submit" value="Radial" onClick="handleRadial()">
                 <input class="input linear-button" type="submit" value="Linear" onClick="handleLinear()">
