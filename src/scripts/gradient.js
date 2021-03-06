@@ -138,11 +138,12 @@ let startTop = 0;
 let midLeft = 50;
 let midTop = 100;
 
-let scrollStatus = document.querySelector("#scroll-status");
 let animationName = document.querySelector(".animation-name");
 let animationName2 = document.querySelector(".animation-name2");
+
 animationName.innerText = 'AnimationName';
 animationName2.innerText = 'AnimationName';
+
 let startLeftText = document.querySelector(".start-left");
 let startTopText = document.querySelector(".start-top");
 let endLeftText = document.querySelector(".end-left");
@@ -150,8 +151,9 @@ let endTopText = document.querySelector(".end-top");
 let midLeftText = document.querySelector(".mid-left");
 let midTopText = document.querySelector(".mid-top");
 
+let knobValue = document.querySelector(".knob-value");
+
 function scrollChange(val) {
-    scrollStatus.innerText = val;
     
     if (val >= 0 && val <= 50) {
         startLeft = 50 + parseInt(val);
@@ -199,8 +201,10 @@ function scrollChange(val) {
     endTopText.innerText = startTop;
     midLeftText.innerText = midLeft;
     midTopText.innerText = midTop;
-}
 
+    knobValue.innerText = Math.round(val * .9) + "°";
+    knobNeedle.style.transform = "rotate(" + (val * .9) + "deg)";
+}
 
 //------------------------------------------------------------------------------
 //animation name change
@@ -235,7 +239,6 @@ function handleRadial() {
     gradientStatus.innerText = gradientVar;
     angleStatus.innerText = "";
     gradAngleText.innerText = "";
-    scrollStatus.innerText = "";
 
     gradientAngle.type = "hidden";
     scrollAngle.type = "hidden";
@@ -269,17 +272,6 @@ function handleLinear() {
 }
 
 
-//------------------------------------------------------------------------------
-//knob-trial
-let knobInput = document.querySelector(".knob-input");
-let knobValue = document.querySelector(".knob-value");
-
-function knobChange() {
-    knobValue.innerText = knobInput.value;
-    knobNeedle.style.transform = "rotate(" + knobInput.value + "deg)";
-}
-
-knobInput.addEventListener("input", knobChange);
 
 
 

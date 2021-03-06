@@ -109,15 +109,12 @@ z-index: 2;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    margin-bottom: 10em;
 }
 
 /* .scroll{
 background-color: red;
 } */
-
-.scroll-angle {
-    width: 50%;
-}
 
 #keyframes {
     /* background-color: #6d707100; */
@@ -313,12 +310,11 @@ background-color: red;
     border-radius: 50%;
 }
 
-.knob-line {
+/* .knob-line {
     background-color: white;
     width: 50%;
     height: 50%;
-
-}
+} */
 
 .grandparent {
     width: 300px;
@@ -328,7 +324,9 @@ background-color: red;
     justify-content: center;
     align-items: center;
     border: .2rem solid rgb(255, 255, 255);
-
+    padding: 1em;
+    margin: .5em 2em 2em 2em;
+    border-radius: var(--border-radius);
 }
 
 .parent {
@@ -345,6 +343,22 @@ background-color: red;
     width: .2rem;
     height: 101%;
     background-color: rgb(36, 36, 36);
+}
+
+.knob-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 50%; */
+}
+
+.scroll-angle-con {
+    display: flex;
+}
+
+.scroll-angle {
+    transform: rotate(90deg);
+    width: 300px;
 }
 
 

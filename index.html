@@ -111,6 +111,11 @@
                     <div class="blur-overlay"></div>
                 </div>
 
+                <input class="input radial-button" type="submit" value="Radial" onClick="handleRadial()">
+                <input class="input linear-button" type="submit" value="Linear" onClick="handleLinear()">
+                <div class='input' id="gradient-status"></div>
+                <br>
+
                 <ul class="color-form">
                     <input class="color-input input" 
                             type="color"       
@@ -133,41 +138,30 @@
                 <br>
 
                 <input class='input gradient-angle' type="range" min="0" max="359" value="1" step="1" onInput="angleChange(this.value)">
-                <span class='input grad-ang'>Gradient Angle: </span><span class='input' id=angleStatus>0</span>
-                    
+                <span class='input grad-ang'>Gradient Angle: </span><span class='input' id=angleStatus>0</span>     
                 <br>
 
-                <input class='input scroll-angle'
-                        type="range" 
-                        min="0" max="400" 
-                        value="1" step="1" 
-                        onInput="scrollChange(this.value)">
-                <div class='input scroll-text' id="scroll-status">0</div>
-                <div class="scroll-knob">
-                    <div class="knob-line"></div>
-                </div>
-                <br>
-
-                <input class="input radial-button" 
-                        type="submit" 
-                        value="Radial" 
-                        onClick="handleRadial()">
-                <input class="input linear-button" 
-                        type="submit" 
-                        value="Linear" 
-                        onClick="handleLinear()">
-                <div class='input' id="gradient-status"></div>
-                <br>
-
-                
-
-
-                <!-- <form>
-                    <div>
-                        <input id="rangeInput" type="range" min="0" max="200" oninput="amount.value=rangeInput.value" />
-                        <input id="amount" type="number" value="100" min="0" max="200" oninput="rangeInput.value=amount.value" />
+                <section class="scroll-angle-con">
+                    <input class='input scroll-angle'
+                            type="range" 
+                            min="0" max="400" 
+                            value="1" step="1" 
+                            onInput="scrollChange(this.value)">
+                    <div class="knob-con">
+                        <div class="knob-value">0°</div>
+                        <div class="grandparent">
+                            <div class="parent">
+                                <div class="child"></div>
+                            </div>
+                        </div>
                     </div>
-                </form> -->
+                </section>
+
+                <section>
+
+                </section>
+                
+                
                 <!-- <img src="splat8.png" class='splat-img' alt="splatter"> -->
                 <!-- <img src="splat3.png" class='splat-img' alt="splatter"> -->
                 <img src="splat5.png" class='splat-img' alt="splatter">
@@ -177,15 +171,9 @@
                 <img src="splat2.png" class='splat-img4' alt="splatter">
                 <img src="splat2.png" class='splat-img5' alt="splatter">
                 <!-- <img src="splat.png" class='splat-img' alt="splatter"> -->
+                
+                
             </div> 
-
-            <div class="knob-value">asdfas</div>
-            <input class="knob-input" type="range" min="0" max="359" value="0" step="1">
-            <div class="grandparent">
-                <div class="parent">
-                    <div class="child"></div>
-                </div>
-            </div>
         </div>
 
     <script src="./src/scripts/gradient.js"></script>
