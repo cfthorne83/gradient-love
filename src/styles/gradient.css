@@ -23,7 +23,6 @@ time, mark, audio, video input{
     text-align: inherit;
     color: inherit;
     background: transparent;
-    color: white;
 }
 
 :root {
@@ -52,10 +51,13 @@ body, .border {
     animation: AnimationName 10s ease infinite;    
 } */
 .gradient-back {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
-    /* background-color: black; */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 body {
@@ -125,15 +127,15 @@ background-color: red;
 } */
 
 #keyframes {
-    /* background-color: #6d707100; */
+    background-color: var(--back-g);
     padding: 2em;
     font-family: Menlo, Monaco, 'Courier New', monospace;
-    color: #ffffff;
-    font-size: 1.05rem;
-    margin-bottom: 1.5em;
-    position: relative;
-    z-index: 2;
+    color: #cecece;
+    font-size: .9rem;
+    /* margin-bottom: 1.5em; */
     list-style: none;
+    width: 42%;
+    align-self: flex-end;
 }
 
 .keyframes-radial{
@@ -150,9 +152,9 @@ background-color: red;
 }
 
 .keyframes-con {
-    position: relative;
-    z-index: 1;
-    /* border-radius: 1rem; */
+
+    width: 90%;
+    background-color: var(--back-g);
 }
 
 /* .blur-overlay {
