@@ -390,21 +390,37 @@ background-color: red;
     border: 3px solid rgb(0, 0, 0);
     width: 25%;
     height: 25%;
-    animation: box-animation 1s ease-in forwards;
+    /* animation: box-animation 1s ease-in forwards; */
     /* transform: translate(150%, 0%); */
-    transition: transform 1s ease;
+    /* transition: transform 1s ease-in; */
+    animation: left-to-right 10s ease infinite;
+    /* transform: translate(150% 0%); */
 }
 
 .outer:hover .inner2 {
-    transform: translate(0%, 300%);
-
+    /* transform: translate(100%); */
+    /* animation: box-animation 1s ease; */
 }
-
-@keyframes box-animation {
+@keyframes left-to-right {
+    0% {
+        transform: translateX(150%) translateY(0%);
+    }
+    50% {
+        transform: translateX(150%) translateY(300%);
+    }
+    /* 66% {
+        transform: translateX(100%) translateY(100%);
+    } */
+    100% {
+        /* transform: translate(150px 300px); */
+        transform: translateX(150%) translateY(0%);
+    }
+}
+/* @keyframes box-animation {
     0%{transform: translate(150% 0%)}
     50%{transform: translate(150% 300%)}
     100%{transform: translate(150% 0%)}
-}
+} */
 
 /* .angle-disp-con {
     width: 20%;
