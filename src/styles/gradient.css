@@ -379,8 +379,8 @@ background-color: red;
 
 .outer {
     box-sizing: border-box;
-    width: 50%;
-    height: 50%;
+    width: 50vw;
+    height: 50vh;
     background: linear-gradient(red, green);
     border: 3px solid white;
 }
