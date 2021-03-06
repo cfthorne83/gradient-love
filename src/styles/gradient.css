@@ -125,6 +125,22 @@ z-index: 2;
 /* .scroll{
 background-color: red;
 } */
+.container {
+    display: flex;
+    justify-content: flex-start;
+    /* flex-direction: column; */
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+.keyframes-con {
+    /* display: flex;
+
+    flex-direction: column; */
+    background-color: brown;
+    width: 50%;
+    /* align-self: flex-end; */
+}
 
 #keyframes {
     background-color: var(--back-g);
@@ -134,8 +150,8 @@ background-color: red;
     font-size: .9rem;
     /* margin-bottom: 1.5em; */
     list-style: none;
-    width: 42%;
-    align-self: flex-end;
+    /* width: 42%; */
+    /* align-self: flex-end; */
 }
 
 .keyframes-radial{
@@ -149,12 +165,6 @@ background-color: red;
     z-index: 3;
     list-style: none;
     display: none;
-}
-
-.keyframes-con {
-
-    width: 90%;
-    background-color: var(--back-g);
 }
 
 /* .blur-overlay {
