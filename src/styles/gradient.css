@@ -56,8 +56,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
     /* background-image: url(https://s.abcnews.com/images/Entertainment/GTY_golden_girls_kab_150903_16x9_1600.jpg); */
     background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
     /* background: radial-gradient( #6800bd, #FF00BB, #E1FF00); */
@@ -362,7 +362,7 @@ background-color: red;
     width: 300px;
 }
 
-.box-anim-con {
+/* .box-anim-con {
     width: 50%;
     height: 50%;
     background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
@@ -373,9 +373,9 @@ background-color: red;
     width: 50%;
     height: 50%;
     border: .2rem solid rgb(0, 0, 0);
-    /* animation: linear-gradient 10s ease infinite;     */
+    animation: linear-gradient 10s ease infinite;    
     transform: translateX(100%);
-}
+} */
 
 .outer {
     box-sizing: border-box;
@@ -393,7 +393,7 @@ background-color: red;
     /* animation: box-animation 1s ease-in forwards; */
     /* transform: translate(150%, 0%); */
     /* transition: transform 1s ease-in; */
-    animation: left-to-right 10s ease infinite;
+    animation: box-anim 10s ease infinite;
     /* transform: translate(150% 0%); */
 }
 
@@ -401,7 +401,7 @@ background-color: red;
     /* transform: translate(100%); */
     /* animation: box-animation 1s ease; */
 }
-@keyframes left-to-right {
+@keyframes box-anim {
     0% {
         transform: translateX(150%) translateY(0%);
     }
