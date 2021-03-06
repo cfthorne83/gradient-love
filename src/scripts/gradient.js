@@ -53,7 +53,7 @@ function addColorTile() {
 
 colorButton.addEventListener("click", addColorTile);
 
-let angleDisplayDiv = document.querySelector(".angle-display-div");
+// let angleDisplayDiv = document.querySelector(".angle-display-div");
 let scrollDisplay = document.querySelector(".grandparent");
 
 function applyColors() {
@@ -68,10 +68,10 @@ function applyColors() {
         gradientVar + "(" 
         + angleStatus.innerText + "deg,"
         + colors + ")"; 
-        angleDisplayDiv.style.background = 
-        gradientVar + "(" 
-        + angleStatus.innerText + "deg,"
-        + colors + ")";
+        // angleDisplayDiv.style.background = 
+        // gradientVar + "(" 
+        // + angleStatus.innerText + "deg,"
+        // + colors + ")";
         scrollDisplay.style.background = 
         gradientVar + "(" 
         + angleStatus.innerText + "deg,"
@@ -80,9 +80,9 @@ function applyColors() {
         body.style.background = 
         gradientVar + "(" 
         + colors + ")";
-        angleDisplayDiv.style.background = 
-        gradientVar + "(" 
-        + colors + ")";
+        // angleDisplayDiv.style.background = 
+        // gradientVar + "(" 
+        // + colors + ")";
         scrollDisplay.style.background = 
         gradientVar + "(" 
         + colors + ")";

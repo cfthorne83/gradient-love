@@ -267,8 +267,9 @@ background-color: red;
     width: 4em;
     /* height:2.0em; */
     /* -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(31, 31, 31, 0))); */
-    padding-left: .5em;
-    align-self: flex-end;
+    padding-left: .8em;
+    padding-right: .8em;
+    /* align-self: flex-end; */
     padding-bottom: 1em;
     /* opacity: 55%; */
 }
