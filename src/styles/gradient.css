@@ -378,7 +378,7 @@ background-color: red;
 }
 
 .outer {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     width: 50%;
     height: 50%;
     background: linear-gradient(red, green);
@@ -391,12 +391,12 @@ background-color: red;
     width: 25%;
     height: 25%;
     animation: box-animation 1s ease-in forwards;
-    transition: transform 1s;
-    transform: translate(150%, 0%);
+    /* transform: translate(150%, 0%); */
+    transition: transform 1s ease;
 }
 
 .outer:hover .inner2 {
-    transform: translate(150%, 300%);
+    transform: translate(0%, 300%);
 
 }
 
