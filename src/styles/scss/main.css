@@ -400,5 +400,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  top: 0;
+  color: black;
+  font-family: var(--font);
+  font-size: 3rem;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */
