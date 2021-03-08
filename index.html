@@ -28,7 +28,24 @@
         
         
         <div class="container">
-             
+
+            <div>
+                <input class="button input radial-button" type="submit" value="Radial" onClick="handleRadial()">
+                <input class="button input linear-button" type="submit" value="Linear" onClick="handleLinear()">
+                <div class="input" id="gradient-status"></div>
+            </div>
+            <br>
+
+            <ul class="color-form">
+                <input class="color-input input" type="color" value="#00EEFF" />
+                <input class="color-button" type="submit" value="Select Color">
+                <input class="apply-clr-button" type="submit" value="Apply Colors">
+                <div class="apply-clr-err"></div>
+                <input class="reset-clr-btn" type="submit" value="Reset">
+            </ul>
+
+
+
             <div class="keyframes-con">
                 <input type="text" placeholder="Enter animation name" id="name-input" onInput="nameChange(this.value)">
                 <ul id="keyframes">
@@ -147,32 +164,6 @@
 
         </div>
     </section>
-        <!-- <div class="border"> -->
-            <!-- <div class="inner"> -->
-
-                
-
-                <input class="input radial-button" type="submit" value="Radial" onClick="handleRadial()">
-                <input class="input linear-button" type="submit" value="Linear" onClick="handleLinear()">
-                <div class='input' id="gradient-status"></div>
-                <br>
-
-                <ul class="color-form">
-                    <input class="color-input input" 
-                            type="color"       
-                            value="#00EEFF"/>
-                    <input class="color-button" 
-                            type="submit" 
-                            value="Select Color">            
-                    <input class="apply-clr-button" 
-                            type="submit" 
-                            value="Apply Colors"> 
-                    <div class="apply-clr-err"></div>           
-                    <input class="reset-clr-btn" 
-                            type="submit" 
-                            value="Reset"> 
-                               
-                </ul>
 
                 <input class='input' type="range" min="1" max="30" value="15" step="1" onInput="speedChange(this.value)">Speed
                 <span class='input'>Speed: </span><span id=speedStatus>15</span>
@@ -212,14 +203,6 @@
                 <div class="outer">
                     <div class="inner2"></div>
                 </div>
-
-            <!-- </div> -->
-        <!-- </div> -->
-
-        <!-- <section class="box-anim-con">
-            <div class="moving-box"></div>
-        
-        </section> -->
 
 
     <script src="./src/scripts/gradient.js"></script>
