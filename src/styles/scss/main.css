@@ -96,6 +96,7 @@ body {
           justify-content: flex-start;
   width: 90%;
   background-color: rgba(0, 0, 0, 0.281);
+  border-radius: var(--border-radius);
 }
 
 @-webkit-keyframes radial-gradient {
@@ -233,15 +234,6 @@ body {
           backdrop-filter: var(--blur);
 }
 
-.color-button {
-  position: relative;
-  z-index: 2;
-}
-
-.color-container li {
-  opacity: 100%;
-}
-
 .color-form {
   width: 50%;
   background-color: var(--back-g);
@@ -249,6 +241,8 @@ body {
           backdrop-filter: var(--blur);
   padding: 1.5em;
   border-radius: var(--border-radius);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .apply-clr-err {
@@ -400,5 +394,11 @@ body {
   border-radius: 9999px;
   border: 0.15rem solid var(--mid-grey);
   cursor: pointer;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
