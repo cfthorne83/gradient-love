@@ -1,0 +1,29 @@
+.keyframes-con {
+    background-color: brown;
+    width: 50%;
+}
+
+#keyframes, .keyframes-radial  {
+    background-color: var(--back-g);
+    padding: 2em;
+    font-family: var(--code-font);
+    color: #cecece;
+    font-size: .9rem;
+    list-style: none;
+}
+
+.keyframes-radial{
+    display: none;
+}
+
+#name-input {
+    background-color: var(--back-g);
+    font-family: var(--code-font);
+    font-size: 1rem;
+    color: #ffffff;
+    padding: .8em;
+    border-radius: var(--border-radius);
+    border: none;
+    margin: 1em;
+    backdrop-filter: var(--blur);
+}

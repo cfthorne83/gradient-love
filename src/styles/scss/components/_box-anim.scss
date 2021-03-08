@@ -1,0 +1,48 @@
+.outer {
+    box-sizing: border-box;
+    width: 35vw;
+    height: 35vh;
+    background: linear-gradient(red, green);
+    border: 3px solid white;
+
+    
+    
+    
+    .inner2 {
+        box-sizing: border-box;
+        border: 3px solid rgb(0, 0, 0);
+        width: 25%;
+        height: 25%;
+        /* animation: box-animation 1s ease-in forwards; */
+        /* transform: translate(150%, 0%); */
+        /* transition: transform 1s ease-in; */
+        animation: box-anim 10s ease infinite;
+        /* transform: translate(150% 0%); */
+    }
+}
+
+.outer:hover .inner2 {
+    /* transform: translate(100%); */
+    /* animation: box-animation 1s ease; */
+}
+@keyframes box-anim {
+    0% {
+        transform: translateX(150%) translateY(0%);
+    }
+    50% {
+        transform: translateX(150%) translateY(300%);
+    }
+    100% {
+        transform: translateX(150%) translateY(0%);
+    }
+}
+/* @keyframes box-animation {
+    0%{transform: translate(150% 0%)}
+    50%{transform: translate(150% 300%)}
+    100%{transform: translate(150% 0%)}
+} */
+
+/* .angle-disp-con {
+    width: 20%;
+    background-color: red;
+} */

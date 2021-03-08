@@ -1,0 +1,48 @@
+.splat {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgb(31, 31, 31)), to(rgba(31, 31, 31, 0)));
+}
+
+.splat.a { 
+    top: 0;
+    right:0;
+    left: 0;
+    bottom: -5;
+}
+
+.splat.b {
+    top: -100px;
+    right:0;
+    left: 0;
+    bottom: 0;
+}
+
+.splat.c {
+    top: -200px;
+    right: -125px;
+    left: 0;
+    bottom: 0;
+}
+
+.splat.d {
+    top: 0;
+    right: 0;
+    left: -500px;
+    bottom: 0;
+}
+
+.splat.e {
+    top: -200px;
+    right: -100px;
+    left: 0;
+    bottom: 0;
+}
+
+.splat14 {
+    width: 4em;
+    padding-left: .8em;
+    padding-right: .8em;
+    padding-bottom: 1em;
+}

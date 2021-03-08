@@ -1,0 +1,60 @@
+.angle-display-div {
+    width: 20%;
+    min-height: 10em;
+    background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
+    /* border-radius: var(--border-radius); */
+    border: .1em solid rgb(255, 255, 255);
+}
+
+.scroll-knob {
+    width: 10em;
+    min-height: 10em;
+    /* padding-bottom: 20%; */
+    background-color: rgb(39, 39, 39);
+    border-radius: 50%;
+}
+
+.grandparent {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .2rem solid rgb(255, 255, 255);
+    padding: 1em;
+    margin: .5em 2em 2em 2em;
+    border-radius: var(--border-radius);
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    border: .2rem solid rgb(36, 36, 36);
+    border-radius: 50%;
+}
+
+.child {
+    width: .2rem;
+    height: 101%;
+    background-color: rgb(36, 36, 36);
+}
+
+.knob-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 50%; */
+}
+
+.scroll-angle-con {
+    display: flex;
+}
+
+.scroll-angle {
+    transform: rotate(90deg);
+    width: 300px;
+}

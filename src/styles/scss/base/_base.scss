@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(https://s.abcnews.com/images/Entertainment/GTY_golden_girls_kab_150903_16x9_1600.jpg); */
+    background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
+    /* background: radial-gradient( #6800bd, #FF00BB, #E1FF00); */
+    /* background-position: 100% 100%; */
+    background-size: 400% 400%;
+    /* animation: AnimationName 10s ease infinite;     */
+    /* animation: radial-gradient 25s ease infinite;     */
+}
+
+.header { 
+    display: flex;
+}
+
+.gradient-back {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    /* flex-direction: column; */
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.281);
+}
