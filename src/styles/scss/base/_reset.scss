@@ -24,3 +24,7 @@ time, mark, audio, video, input{
     color: inherit;
     background: transparent;
 }
+
+input[type="color"] {
+    box-sizing: border-box;
+}

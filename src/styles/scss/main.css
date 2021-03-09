@@ -37,6 +37,11 @@ time, mark, audio, video, input {
   background: transparent;
 }
 
+input[type="color"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,6 +254,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: magenta;
   font-size: 1.2rem;
+}
+
+::-webkit-color-swatch-wrapper {
+  background-color: transparent;
 }
 
 .splat {
