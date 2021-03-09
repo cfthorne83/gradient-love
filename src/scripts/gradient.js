@@ -222,7 +222,6 @@ function nameChange(val){
 
 let name = document.querySelector("#name-input");
 
-
 //------------------------------------------------------------------------------
 //Gradient handlers
 let gradientStatus = document.querySelector("#gradient-status");
@@ -275,7 +274,13 @@ function handleLinear() {
     applyColors();
 }
 
+function getfocus() {
+  document.getElementById("myAnchor").focus();
+}
 
+function losefocus() {
+  document.getElementById("myAnchor").blur();
+}
 
 
 

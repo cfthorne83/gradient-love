@@ -22,10 +22,14 @@
     font-size: 1.2rem;
 }
 
-.color-input {
-    // display: none;
+.color-input:focus {
+    background-color: white;
 }
 
 ::-webkit-color-swatch-wrapper {
     background-color: transparent;
 }
+
+// #myAnchor:focus, a:active {
+//   background-color: green;
+// }
