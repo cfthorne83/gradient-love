@@ -274,13 +274,13 @@ function handleLinear() {
     applyColors();
 }
 
-function getfocus() {
-  document.getElementById("myAnchor").focus();
-}
+// function getfocus() {
+//   document.getElementById("myAnchor").focus();
+// }
 
-function losefocus() {
-  document.getElementById("myAnchor").blur();
-}
+// function losefocus() {
+//   document.getElementById("myAnchor").blur();
+// }
 
 
 
