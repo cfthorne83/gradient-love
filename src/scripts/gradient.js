@@ -37,7 +37,7 @@ function addColorTile() {
     // let colorTile = document.createElement("li");
     let colorLabel = document.createElement("label");
     colorLabel.innerText = "Edit";
-    
+
     let colorTile = document.createElement("input");
     colorTile.type = "color";
     colorTile.style.width = "50px";
@@ -51,11 +51,14 @@ function addColorTile() {
 
     let deleteClrBtn = document.createElement("input");
     deleteClrBtn.setAttribute("class", "delete-clr-btn");
-    deleteClrBtn.innerText = "Delete";
+    deleteClrBtn.setAttribute("type", "submit");
+    deleteClrBtn.setAttribute("value", "Delete");
+    deleteClrBtn.style.backgroundColor = "red";
 
     colorContainer.append(colorLabel);
     colorLabel.append(colorTile);
-    colorTile.append(deleteClrBtn);
+    colorLabel.append(deleteClrBtn);
+    colorLabel.focus();
 
     if (colors.length === 0) {
         // colors += colorInput.value;
