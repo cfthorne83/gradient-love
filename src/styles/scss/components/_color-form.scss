@@ -38,7 +38,8 @@
 //    position: relative;
 // }
 
-// ::-webkit-color-swatch-wrapper {
-//    background-color: transparent;
-//    border: none;
-// }
+input::-webkit-color-swatch-wrapper {
+    content: "";
+    background-color: transparent;
+    border: none;
+}

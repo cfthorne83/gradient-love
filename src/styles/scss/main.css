@@ -257,6 +257,12 @@ body {
   font-size: 1.2rem;
 }
 
+input::-webkit-color-swatch-wrapper {
+  content: "";
+  background-color: transparent;
+  border: none;
+}
+
 .splat {
   position: absolute;
   z-index: -1;
