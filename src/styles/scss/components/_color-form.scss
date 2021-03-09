@@ -38,8 +38,13 @@
 //    position: relative;
 // }
 
-input::-webkit-color-swatch-wrapper {
-    content: "";
-    background-color: transparent;
-    border: none;
+// input::-webkit-color-swatch-wrapper {
+//     content: "";
+//     background-color: transparent;
+//     border: none;
+// }
+
+.color-tile-label {
+    display: flex;
+    flex-direction: column;
 }

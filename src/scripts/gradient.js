@@ -35,6 +35,8 @@ function addColorTile() {
 
     let colorContainer = document.querySelector(".color-container");
     // let colorTile = document.createElement("li");
+    let colorLabel = document.createElement("label");
+    colorLabel.innerText = "Edit";
     let colorTile = document.createElement("input");
     colorTile.type = "color";
     colorTile.style.width = "50px";
@@ -44,8 +46,10 @@ function addColorTile() {
     // colorTile.style.backgroundColor = colorInput.value;
     // colorTile.value = colorInput.value;
     colorTile.setAttribute("class", "color-tile");
-    colorContainer.append(colorTile);
-    colorTile.focus();
+    colorLabel.setAttribute("class", "color-tile-label");
+    colorContainer.append(colorLabel);
+    colorLabel.append(colorTile);
+    // colorTile.focus();
 
     if (colors.length === 0) {
         // colors += colorInput.value;
