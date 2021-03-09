@@ -257,10 +257,6 @@ body {
   font-size: 1.2rem;
 }
 
-::-webkit-color-swatch-wrapper {
-  background-color: transparent;
-}
-
 .splat {
   position: absolute;
   z-index: -1;
