@@ -61,8 +61,7 @@ function addColorTile() {
     deleteClrBtn.setAttribute("value", "Delete");
     deleteClrBtn.setAttribute("id", `${colorsArr.length}`);
     deleteClrBtn.setAttribute("class", "delete-clr-btn");
-    // deleteClrBtn.setAttribute("id", "delete-clr-btn");
-    // colorLabel.setAttribute("id", `${colorsArr.length}`);
+
     deleteClrBtn.style.backgroundColor = "red";
 
     colorContainer.append(colorLabel);
