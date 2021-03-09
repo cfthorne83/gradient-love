@@ -18,6 +18,8 @@ let colorInput = document.querySelector(".color-input");
 let colorForm = document.querySelector(".color-form");
 let first = true;
 
+let deleteBtn = document.querySelector(".delete-clr-btn");
+
 function addColorTile() {
     if (first) {
         first = false;
@@ -58,6 +60,7 @@ function addColorTile() {
     deleteClrBtn.setAttribute("type", "submit");
     deleteClrBtn.setAttribute("value", "Delete");
     deleteClrBtn.setAttribute("id", `${colorsArr.length}`);
+    deleteClrBtn.setAttribute("class", "delete-clr-btn");
     // deleteClrBtn.setAttribute("id", "delete-clr-btn");
     // colorLabel.setAttribute("id", `${colorsArr.length}`);
     deleteClrBtn.style.backgroundColor = "red";
@@ -81,9 +84,17 @@ colorButton.addEventListener("click", addColorTile);
 
 
 function deleteColor(id) {
-    let deletedTile = document.querySelector(`.${id}`);
-    deletedTile.remove();
+    deleteBtn = document.querySelector(".delete-clr-btn");
+    // console.log(deleteBtn);
+    // let buttonId = deleteBtn.id;
+    // let deletedTile = document.querySelector(`.${id}`);
+    // deletedTile.remove();
 }
+
+if (deleteBtn){
+    deleteBtn.addEventListener("click", deleteColor);
+}
+
 
 // let angleDisplayDiv = document.querySelector(".angle-display-div");
 let scrollDisplay = document.querySelector(".grandparent");
