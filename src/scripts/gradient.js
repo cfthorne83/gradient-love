@@ -40,7 +40,8 @@ function addColorTile() {
     let colorLabel = document.createElement("label");
     colorLabel.innerText = "Edit";
     colorLabel.setAttribute("class", "color-tile-label");
-
+    // colorLabel.setAttribute("id", `${colorsArr.length}`);
+    
     let colorTile = document.createElement("input");
     colorTile.type = "color";
     colorTile.style.width = "50px";
@@ -50,11 +51,14 @@ function addColorTile() {
     // colorTile.style.backgroundColor = colorInput.value;
     colorTile.value = "#FFFFFF";
     colorTile.setAttribute("class", "color-tile");
-
+    
+    
     let deleteClrBtn = document.createElement("input");
-    deleteClrBtn.setAttribute("class", "delete-clr-btn");
     deleteClrBtn.setAttribute("type", "submit");
     deleteClrBtn.setAttribute("value", "Delete");
+    deleteClrBtn.setAttribute("class", "delete-clr-btn");
+    // deleteClrBtn.setAttribute("id", "delete-clr-btn");
+    colorLabel.setAttribute("id", `${colorsArr.length}`);
     deleteClrBtn.style.backgroundColor = "red";
 
     colorContainer.append(colorLabel);
@@ -133,7 +137,15 @@ function resetColors() {
 let resetClrBtn = document.querySelector(".reset-clr-btn");
 resetClrBtn.addEventListener("click", resetColors);
 
+
+function deleteColor() {
+    let deletedTile = document.querySelector("");
+}
+
+//-----------------------------------------------------------------------------
+//speed change
 let speedStatusRadial = document.querySelector("#speedStatus2")
+
 function speedChange(val) {
     speedStatus.innerText = val;
     speedStatus2.innerText = val;
