@@ -42,8 +42,10 @@ function addColorTile() {
     colorTile.style.display = "inline-block";
     colorTile.style.position = "relative";
     // colorTile.style.backgroundColor = colorInput.value;
+    colorTile.value = colorInput.value;
     colorTile.setAttribute("class", "color-tile");
     colorContainer.append(colorTile);
+    colorTile.focus();
 
     if (colors.length === 0) {
         colors += colorInput.value;
