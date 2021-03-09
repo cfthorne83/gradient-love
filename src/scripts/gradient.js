@@ -23,6 +23,7 @@ function addColorTile() {
         first = false;
         colors = "";
         colorNum = 0;
+        colorsArr = [];
     }
 
     let colorErr = document.querySelector(".apply-clr-err");
@@ -38,6 +39,7 @@ function addColorTile() {
     // let colorTile = document.createElement("li");
     let colorLabel = document.createElement("label");
     colorLabel.innerText = "Edit";
+    colorLabel.setAttribute("class", "color-tile-label");
 
     let colorTile = document.createElement("input");
     colorTile.type = "color";
@@ -46,13 +48,11 @@ function addColorTile() {
     colorTile.style.display = "inline-block";
     colorTile.style.position = "relative";
     // colorTile.style.backgroundColor = colorInput.value;
-    // colorTile.value = colorInput.value;
+    colorTile.value = "#FFFFFF";
     colorTile.setAttribute("class", "color-tile");
-    colorLabel.setAttribute("class", "color-tile-label");
 
     let deleteClrBtn = document.createElement("input");
     deleteClrBtn.setAttribute("class", "delete-clr-btn");
-    deleteClrBtn.setAttribute("class", "0");
     deleteClrBtn.setAttribute("type", "submit");
     deleteClrBtn.setAttribute("value", "Delete");
     deleteClrBtn.style.backgroundColor = "red";
@@ -68,14 +68,11 @@ function addColorTile() {
         colors += ", " + colorTile.value;
     }
     colorNum++;
+    colorsArr.push(colorTile.value);
 }
 
 colorButton.addEventListener("click", addColorTile);
 
-
-function deleteColor() {
-    let 
-}
 
 // let angleDisplayDiv = document.querySelector(".angle-display-div");
 let scrollDisplay = document.querySelector(".grandparent");
@@ -127,9 +124,10 @@ let colorTiles = document.querySelectorAll(".color-tile");
 function resetColors() {
     colors = "";
     colorNum = 0;
+    colorsArr = [];
     
     let colorContainer = document.querySelector(".color-container");
-    colorContainer.remove()
+    colorContainer.remove();
 }
 
 let resetClrBtn = document.querySelector(".reset-clr-btn");
