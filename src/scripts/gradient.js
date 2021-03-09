@@ -37,9 +37,10 @@ function addColorTile() {
 
     let colorContainer = document.querySelector(".color-container");
     // let colorTile = document.createElement("li");
+
     let colorLabel = document.createElement("label");
     colorLabel.innerText = "Edit";
-    colorLabel.setAttribute("class", "color-tile-label");
+    colorLabel.setAttribute("class", `${colorsArr.length}`);
     // colorLabel.setAttribute("id", `${colorsArr.length}`);
     
     let colorTile = document.createElement("input");
@@ -56,9 +57,9 @@ function addColorTile() {
     let deleteClrBtn = document.createElement("input");
     deleteClrBtn.setAttribute("type", "submit");
     deleteClrBtn.setAttribute("value", "Delete");
-    deleteClrBtn.setAttribute("class", "delete-clr-btn");
+    deleteClrBtn.setAttribute("id", `${colorsArr.length}`);
     // deleteClrBtn.setAttribute("id", "delete-clr-btn");
-    colorLabel.setAttribute("id", `${colorsArr.length}`);
+    // colorLabel.setAttribute("id", `${colorsArr.length}`);
     deleteClrBtn.style.backgroundColor = "red";
 
     colorContainer.append(colorLabel);
@@ -77,6 +78,12 @@ function addColorTile() {
 
 colorButton.addEventListener("click", addColorTile);
 
+
+
+function deleteColor(id) {
+    let deletedTile = document.querySelector(`.${id}`);
+    deletedTile.remove();
+}
 
 // let angleDisplayDiv = document.querySelector(".angle-display-div");
 let scrollDisplay = document.querySelector(".grandparent");
@@ -137,10 +144,6 @@ function resetColors() {
 let resetClrBtn = document.querySelector(".reset-clr-btn");
 resetClrBtn.addEventListener("click", resetColors);
 
-
-function deleteColor() {
-    let deletedTile = document.querySelector("");
-}
 
 //-----------------------------------------------------------------------------
 //speed change
