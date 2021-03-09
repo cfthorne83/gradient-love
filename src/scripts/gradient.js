@@ -34,12 +34,14 @@ function addColorTile() {
     }
 
     let colorContainer = document.querySelector(".color-container");
-    let colorTile = document.createElement("li");
+    // let colorTile = document.createElement("li");
+    let colorTile = document.createElement("input");
+    colorTile.type = "color";
     colorTile.style.width = "50px";
     colorTile.style.height = "50px";
     colorTile.style.display = "inline-block";
     colorTile.style.position = "relative";
-    colorTile.style.backgroundColor = colorInput.value;
+    // colorTile.style.backgroundColor = colorInput.value;
     colorTile.setAttribute("class", "color-tile");
     colorContainer.append(colorTile);
 
