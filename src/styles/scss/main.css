@@ -388,7 +388,7 @@ body {
   font-family: "Open Sans", Arial, "Helvetica Neue", sans-serif;
   font-size: 4rem;
   font-weight: 300;
-  color: #202020;
+  color: black;
   letter-spacing: 3px;
   padding: .6em 0;
 }
@@ -398,8 +398,8 @@ body {
 }
 
 .splat14 {
-  width: 4rem;
-  height: 4rem;
+  width: 3.7rem;
+  height: 3.7rem;
   -webkit-transform: rotate(36deg);
           transform: rotate(36deg);
 }
