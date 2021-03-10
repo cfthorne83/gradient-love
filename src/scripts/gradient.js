@@ -18,8 +18,6 @@ let colorInput = document.querySelector(".color-input");
 let colorForm = document.querySelector(".color-form");
 let first = true;
 
-let deleteClrBtn;
-
 // class ColorTile {
 //     constructor(){
 
@@ -27,9 +25,10 @@ let deleteClrBtn;
 
 
 // }
+let colorTile;
 
 function createColorTile() {
-    // let colorTile = document.createElement("input");
+    colorTile = document.createElement("input");
     colorTile.type = "color";
     colorTile.style.width = "50px";
     colorTile.style.height = "50px";
@@ -37,6 +36,21 @@ function createColorTile() {
     colorTile.style.position = "relative";
     colorTile.value = "#FFFFFF";
     colorTile.setAttribute("class", "color-tile");
+}
+
+let deleteClrBtn;
+
+function createDltClrBtn() {
+    deleteClrBtn = document.createElement("input");
+    deleteClrBtn.setAttribute("type", "submit");
+    deleteClrBtn.setAttribute("value", "Delete");
+    // deleteClrBtn.setAttribute("id", `_${colorsArr.length}`);
+    deleteClrBtn.setAttribute("id", "_0");
+    deleteClrBtn.setAttribute("class", "delete-clr-btn");
+    deleteClrBtn.style.backgroundColor = "red";
+
+    // deleteBtn = document.querySelector(".delete-clr-btn");
+    deleteClrBtn.addEventListener("click", deleteColor);
 }
 
 function addColorTile() {
@@ -62,32 +76,21 @@ function addColorTile() {
     let colorLabel = document.createElement("label");
     colorLabel.innerText = "Edit";
     colorLabel.setAttribute("class", `_${colorsArr.length}`);
-    // colorLabel.setAttribute("class", "color-tile-label");
-    // colorLabel.setAttribute("id", `${colorsArr.length}`);
     
-    colorTile = document.createElement("input");
-    // let colorTile = document.createElement("input");
-    // colorTile.type = "color";
-    // colorTile.style.width = "50px";
-    // colorTile.style.height = "50px";
-    // colorTile.style.display = "inline-block";
-    // colorTile.style.position = "relative";
-    // // colorTile.style.backgroundColor = colorInput.value;
-    // colorTile.value = "#FFFFFF";
-    // colorTile.setAttribute("class", "color-tile");
     createColorTile();
     
     
-    deleteClrBtn = document.createElement("input");
-    deleteClrBtn.setAttribute("type", "submit");
-    deleteClrBtn.setAttribute("value", "Delete");
-    // deleteClrBtn.setAttribute("id", `_${colorsArr.length}`);
-    deleteClrBtn.setAttribute("id", "_0");
-    deleteClrBtn.setAttribute("class", "delete-clr-btn");
-    deleteClrBtn.style.backgroundColor = "red";
+    // deleteClrBtn = document.createElement("input");
+    // deleteClrBtn.setAttribute("type", "submit");
+    // deleteClrBtn.setAttribute("value", "Delete");
+    // // deleteClrBtn.setAttribute("id", `_${colorsArr.length}`);
+    // deleteClrBtn.setAttribute("id", "_0");
+    // deleteClrBtn.setAttribute("class", "delete-clr-btn");
+    // deleteClrBtn.style.backgroundColor = "red";
 
-    // deleteBtn = document.querySelector(".delete-clr-btn");
-    deleteClrBtn.addEventListener("click", deleteColor);
+    // // deleteBtn = document.querySelector(".delete-clr-btn");
+    // deleteClrBtn.addEventListener("click", deleteColor);
+    createDltClrBtn();
 
 
     colorContainer.append(colorLabel);
