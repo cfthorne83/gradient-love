@@ -1,17 +1,25 @@
 .button {
-    background-color: #00000081;
+    background-color: #ffffff48;
     // background-color: #e6a162;
     // background-color: #24bae8c5;
-    color: #a2adcc;
+    color: #dddddd;
     // color: #cc99e6;
     font-family: var(--font);
-    padding: .7em .9em;
+    padding: .8em 1em;
     margin: .2em;
     border-radius: 9999px;
-    border: .15rem solid rgb(0, 0, 0);
+    // border: .15rem solid rgb(109, 109, 109);
     cursor: pointer;
     font-weight: 600;
     letter-spacing: .03rem;
+    backdrop-filter: blur(5px);
+    transition: .5s;
+}
+
+.button:hover, .button:active, .button:focus {
+    background-color: rgba(255, 255, 255, 0.507);
+    outline: none;
+    color: white;
 }
 
 input[type="range"] {

@@ -240,7 +240,7 @@ body {
   padding: .8em;
   border-radius: var(--border-radius);
   border: none;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   -webkit-backdrop-filter: var(--blur);
           backdrop-filter: var(--blur);
 }
@@ -350,16 +350,25 @@ body {
 }
 
 .button {
-  background-color: #00000081;
-  color: #a2adcc;
+  background-color: #ffffff48;
+  color: #dddddd;
   font-family: var(--font);
-  padding: .7em .9em;
+  padding: .8em 1em;
   margin: .2em;
   border-radius: 9999px;
-  border: 0.15rem solid black;
   cursor: pointer;
   font-weight: 600;
   letter-spacing: .03rem;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.button:hover, .button:active, .button:focus {
+  background-color: rgba(255, 255, 255, 0.507);
+  outline: none;
+  color: white;
 }
 
 input[type="range"] {
