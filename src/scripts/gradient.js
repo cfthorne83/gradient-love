@@ -26,6 +26,7 @@ let first = true;
 
 // }
 let colorTile;
+let colorLabel;
 
 function createColorTile() {
     colorTile = document.createElement("input");
@@ -53,6 +54,23 @@ function createDltClrBtn() {
     deleteClrBtn.addEventListener("click", deleteColor);
 }
 
+
+let colorContainer;
+
+function createClrContainer() {
+    if (colors.length === 0) {
+        colorContainer = document.createElement("ul");
+        colorContainer.setAttribute("class", "color-container");
+        colorForm.append(colorContainer);
+    }
+}
+
+function createClrLabel() {
+    colorLabel = document.createElement("label");
+    colorLabel.innerText = "Edit";
+    colorLabel.setAttribute("class", `_${colorsArr.length}`);
+}
+
 function addColorTile() {
     if (first) {
         first = false;
@@ -64,32 +82,9 @@ function addColorTile() {
     let colorErr = document.querySelector(".apply-clr-err");
     colorErr.innerText = "";
 
-    if (colors.length === 0) {
-        let colorContainer = document.createElement("ul");
-        colorContainer.setAttribute("class", "color-container");
-        colorForm.append(colorContainer);
-    }
-
-    let colorContainer = document.querySelector(".color-container");
-    // let colorTile = document.createElement("li");
-
-    let colorLabel = document.createElement("label");
-    colorLabel.innerText = "Edit";
-    colorLabel.setAttribute("class", `_${colorsArr.length}`);
-    
+    createClrContainer();
+    createClrLabel();
     createColorTile();
-    
-    
-    // deleteClrBtn = document.createElement("input");
-    // deleteClrBtn.setAttribute("type", "submit");
-    // deleteClrBtn.setAttribute("value", "Delete");
-    // // deleteClrBtn.setAttribute("id", `_${colorsArr.length}`);
-    // deleteClrBtn.setAttribute("id", "_0");
-    // deleteClrBtn.setAttribute("class", "delete-clr-btn");
-    // deleteClrBtn.style.backgroundColor = "red";
-
-    // // deleteBtn = document.querySelector(".delete-clr-btn");
-    // deleteClrBtn.addEventListener("click", deleteColor);
     createDltClrBtn();
 
 
