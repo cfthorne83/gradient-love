@@ -6,6 +6,7 @@
 
 #keyframes, .keyframes-radial  {
     background-color: var(--back-g);
+    backdrop-filter: var(--blur);
     padding: 2em;
     font-family: var(--code-font);
     color: #cecece;
