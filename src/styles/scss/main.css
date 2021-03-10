@@ -100,9 +100,7 @@ body {
   width: 90%;
   background-color: rgba(82, 82, 82, 0.801);
   border-radius: .7em .7em 0 0;
-  background-image: url(./img/splat2.png);
-  background-size: 140%;
-  background-position: 80% 60%;
+  background-image: url(./img/splat5.png);
 }
 
 @-webkit-keyframes radial-gradient {
@@ -277,18 +275,6 @@ body {
   background-color: red;
 }
 
-.splat14 {
-  width: 2.3rem;
-  height: 2.3rem;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  -webkit-transform: rotate(171deg);
-          transform: rotate(171deg);
-  margin-top: .56em;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-}
-
 .angle-display-div {
   width: 20%;
   min-height: 10em;
@@ -391,16 +377,30 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 0;
   font-family: "Open Sans", Arial, "Helvetica Neue", sans-serif;
   font-size: 4rem;
   font-weight: 300;
-  color: white;
+  color: black;
   letter-spacing: 3px;
   padding: .6em 0;
 }
 
 .header h1 {
   padding: 0 .03em;
+}
+
+.splat14 {
+  width: 5rem;
+  height: 5rem;
+  -webkit-transform: rotate(36deg);
+          transform: rotate(36deg);
 }
 /*# sourceMappingURL=main.css.map */

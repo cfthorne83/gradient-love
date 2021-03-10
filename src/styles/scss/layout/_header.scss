@@ -1,12 +1,14 @@
 .header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     top: 0;
     // color: rgb(0, 0, 0);
     // font-family: var(--font);
     font-family: "Open Sans", Arial, "Helvetica Neue", sans-serif;;
     font-size: 4rem;
     font-weight: 300;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     letter-spacing: 3px;
     padding: .6em 0;
 }
@@ -14,4 +16,13 @@
 .header h1 {
     padding: 0 .03em;
     // opacity: 80%;
+}
+
+.splat14 {
+    width: 5rem;
+    height: 5rem;
+    // align-self: flex-end;
+    transform: rotate(36deg);
+    // margin-top: .56em;
+    // filter: invert(100%);
 }
