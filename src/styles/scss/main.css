@@ -361,8 +361,8 @@ body {
 }
 
 .button {
-  background-color: #1a1a1a;
-  color: #c9b7ff;
+  background-color: #1d122e;
+  color: #e2e2e2;
   font-family: var(--font);
   padding: .7em .9em;
   margin: .2em;
@@ -388,7 +388,7 @@ body {
   font-family: "Open Sans", Arial, "Helvetica Neue", sans-serif;
   font-size: 4rem;
   font-weight: 300;
-  color: black;
+  color: #202020;
   letter-spacing: 3px;
   padding: .6em 0;
 }
@@ -398,8 +398,8 @@ body {
 }
 
 .splat14 {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   -webkit-transform: rotate(36deg);
           transform: rotate(36deg);
 }
