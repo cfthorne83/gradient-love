@@ -72,6 +72,9 @@ body {
   width: 100vw;
   background: -webkit-gradient(linear, left top, left bottom, from(#0011FF), color-stop(#8100D6), color-stop(#FF00BB), color-stop(#E1FF00), to(#00EEFF));
   background: linear-gradient(#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
+  background-size: 400% 400%;
+  -webkit-animation: linear-gradient 10s ease infinite;
+          animation: linear-gradient 10s ease infinite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,10 +312,13 @@ body {
 }
 
 .splat14 {
-  width: 4em;
-  padding-left: .8em;
-  padding-right: .8em;
-  padding-bottom: 1em;
+  width: 2.3rem;
+  height: 2.3rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: rotate(171deg);
+          transform: rotate(171deg);
+  margin-top: .56em;
 }
 
 .angle-display-div {
