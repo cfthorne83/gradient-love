@@ -60,7 +60,8 @@ function addColorTile() {
     deleteClrBtn = document.createElement("input");
     deleteClrBtn.setAttribute("type", "submit");
     deleteClrBtn.setAttribute("value", "Delete");
-    deleteClrBtn.setAttribute("id", `${colorsArr.length}`);
+    // deleteClrBtn.setAttribute("id", `_${colorsArr.length}`);
+    deleteClrBtn.setAttribute("id", "_0");
     deleteClrBtn.setAttribute("class", "delete-clr-btn");
     deleteClrBtn.style.backgroundColor = "red";
 
@@ -87,11 +88,13 @@ colorButton.addEventListener("click", addColorTile);
 
 
 function deleteColor() {
-    deletedTile = document.querySelector("._0");
+    // let tile = document.querySelector(`.${id}`);
+    let tile = document.querySelector("._0");
+    // let deletedTile = document.querySelector("." + id);
     // console.log('sdfa');
     // let buttonId = deleteBtn.id;
     // let deletedTile = document.querySelector(`.${id}`);
-    deletedTile.remove();
+    tile.remove();
 }
 
 // if (deleteBtn){
