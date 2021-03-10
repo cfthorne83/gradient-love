@@ -207,8 +207,8 @@ body {
     background-color: red;
 } */
 .keyframes-con {
-  background-color: #ffe600;
   width: 50%;
+  padding: 1em;
 }
 
 #keyframes, .keyframes-radial {
@@ -218,6 +218,7 @@ body {
   color: #cecece;
   font-size: .9rem;
   list-style: none;
+  border-radius: var(--border-radius);
 }
 
 .keyframes-radial {
@@ -232,7 +233,7 @@ body {
   padding: .8em;
   border-radius: var(--border-radius);
   border: none;
-  margin: 1em;
+  margin-bottom: 1em;
   -webkit-backdrop-filter: var(--blur);
           backdrop-filter: var(--blur);
 }
@@ -246,6 +247,7 @@ body {
   border-radius: var(--border-radius);
   -ms-flex-item-align: start;
       align-self: flex-start;
+  margin: 1em;
 }
 
 .apply-clr-err {
