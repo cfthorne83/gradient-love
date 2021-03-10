@@ -1,14 +1,14 @@
 .button {
-    background-color: #000000;
+    background-color: #00000081;
     // background-color: #e6a162;
     // background-color: #24bae8c5;
-    color: #a8a2f1;
+    color: #a2adcc;
     // color: #cc99e6;
     font-family: var(--font);
     padding: .7em .9em;
     margin: .2em;
     border-radius: 9999px;
-    border: .15rem solid var(--mid-grey);
+    border: .15rem solid rgb(0, 0, 0);
     cursor: pointer;
     font-weight: 600;
     letter-spacing: .03rem;

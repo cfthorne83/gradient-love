@@ -213,7 +213,6 @@ body {
     background-color: red;
 } */
 .keyframes-con {
-  width: 50%;
   padding: 1em;
 }
 
@@ -254,14 +253,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.color-form div {
-  -webkit-backdrop-filter: var(--blur);
-          backdrop-filter: var(--blur);
-  padding: 1.5em;
-  border-radius: var(--border-radius);
-  background-color: var(--back-g);
 }
 
 .apply-clr-err {
@@ -359,13 +350,13 @@ body {
 }
 
 .button {
-  background-color: #000000;
-  color: #a8a2f1;
+  background-color: #00000081;
+  color: #a2adcc;
   font-family: var(--font);
   padding: .7em .9em;
   margin: .2em;
   border-radius: 9999px;
-  border: 0.15rem solid var(--mid-grey);
+  border: 0.15rem solid black;
   cursor: pointer;
   font-weight: 600;
   letter-spacing: .03rem;
