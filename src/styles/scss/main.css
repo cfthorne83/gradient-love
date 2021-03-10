@@ -386,21 +386,26 @@ body {
           align-items: center;
   top: 0;
   font-family: "Open Sans", Arial, "Helvetica Neue", sans-serif;
-  font-size: 4rem;
-  font-weight: 300;
-  color: black;
-  letter-spacing: 3px;
-  padding: .6em 0;
 }
 
 .header h1 {
   padding: 0 .03em;
+  font-size: 3.3rem;
+  font-weight: 300;
+  color: #dadada;
+  letter-spacing: 3px;
+  padding: .6em 0 .3em 0;
+}
+
+.header h2 {
+  font-family: var(--code-font);
+  font-size: 1.3rem;
+  color: #292929;
 }
 
 .splat14 {
-  width: 3.7rem;
-  height: 3.7rem;
-  -webkit-transform: rotate(36deg);
-          transform: rotate(36deg);
+  width: 3.5rem;
+  -webkit-filter: invert(40%);
+          filter: invert(40%);
 }
 /*# sourceMappingURL=main.css.map */

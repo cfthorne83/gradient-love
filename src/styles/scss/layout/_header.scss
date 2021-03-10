@@ -6,23 +6,30 @@
     // color: rgb(0, 0, 0);
     // font-family: var(--font);
     font-family: "Open Sans", Arial, "Helvetica Neue", sans-serif;;
-    font-size: 4rem;
-    font-weight: 300;
-    color: rgb(0, 0, 0);
-    letter-spacing: 3px;
-    padding: .6em 0;
+    
 }
 
 .header h1 {
     padding: 0 .03em;
     // opacity: 80%;
+    font-size: 3.3rem;
+    font-weight: 300;
+    color: rgb(218, 218, 218);
+    letter-spacing: 3px;
+    padding: .6em 0 .3em 0;
+}
+
+.header h2 {
+    font-family: var(--code-font);
+    font-size: 1.3rem;
+    color: rgb(41, 41, 41);
 }
 
 .splat14 {
-    width: 3.7rem;
-    height: 3.7rem;
+    width: 3.5rem;
+    // height: 3.7rem;
     // align-self: flex-end;
-    transform: rotate(36deg);
+    // transform: rotate(36deg);
     // margin-top: .56em;
-    // filter: invert(100%);
+    filter: invert(40%);
 }
