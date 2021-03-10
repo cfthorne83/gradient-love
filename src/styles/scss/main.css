@@ -375,14 +375,16 @@ body {
 }
 
 .button {
-  background-color: var(--drk-grey);
-  color: var(--font-grey);
+  background-color: #1a1a1a;
+  color: #c9b7ff;
   font-family: var(--font);
   padding: .7em .9em;
   margin: .2em;
   border-radius: 9999px;
   border: 0.15rem solid var(--mid-grey);
   cursor: pointer;
+  font-weight: 600;
+  letter-spacing: .03rem;
 }
 
 .header {
@@ -390,11 +392,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   top: 0;
-  font-family: var(--font);
+  font-family: "Open Sans", Arial, "Helvetica Neue", sans-serif;
   font-size: 4rem;
-  font-weight: 900;
+  font-weight: 300;
   color: white;
-  letter-spacing: .34rem;
+  letter-spacing: 3px;
   padding: .6em 0;
 }
 

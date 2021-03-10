@@ -1,10 +1,12 @@
 .button {
-    background-color: var(--drk-grey);
-    color: var(--font-grey);
+    background-color: rgb(26, 26, 26);
+    color: #c9b7ff;
     font-family: var(--font);
     padding: .7em .9em;
     margin: .2em;
     border-radius: 9999px;
     border: .15rem solid var(--mid-grey);
     cursor: pointer;
+    font-weight: 600;
+    letter-spacing: .03rem;
 }
