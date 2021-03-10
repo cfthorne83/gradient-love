@@ -17,7 +17,7 @@ body {
     width: 100vw;
     background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
     background-size: 400% 400%;
-    animation: linear-gradient 10s ease infinite;
+    animation: linear-gradient 60s ease infinite;
 
     display: flex;
     flex-direction: column;
@@ -31,6 +31,7 @@ body {
     width: 90%;
     background-color: rgba(82, 82, 82, 0.801);
     border-radius: .7em .7em 0 0;
-    background-image: url(./img/splat5.png);
-    // background-size: cover;
+    background-image: url(./img/splat2.png);
+    background-size: 140%;
+    background-position: 80% 60%;
 }
