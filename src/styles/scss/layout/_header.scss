@@ -1,8 +1,10 @@
 .header {
     display: flex;
     top: 0;
-    color: rgb(0, 0, 0);
+    // color: rgb(0, 0, 0);
     font-family: var(--font);
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    letter-spacing: .3rem;
 }

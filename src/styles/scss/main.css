@@ -67,12 +67,6 @@ body {
   /* animation: radial-gradient 25s ease infinite;     */
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .gradient-back {
   min-height: 100vh;
   width: 100vw;
@@ -268,6 +262,10 @@ body {
   background-color: grey;
 }
 
+._0 {
+  background-color: red;
+}
+
 .splat {
   position: absolute;
   z-index: -1;
@@ -418,9 +416,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   top: 0;
-  color: black;
   font-family: var(--font);
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: white;
+  letter-spacing: .3rem;
 }
 /*# sourceMappingURL=main.css.map */
