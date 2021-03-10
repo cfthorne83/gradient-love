@@ -18,7 +18,7 @@ let colorInput = document.querySelector(".color-input");
 let colorForm = document.querySelector(".color-form");
 let first = true;
 
-let deleteBtn = document.querySelector(".delete-clr-btn");
+let deleteClrBtn;
 
 function addColorTile() {
     if (first) {
@@ -42,7 +42,8 @@ function addColorTile() {
 
     let colorLabel = document.createElement("label");
     colorLabel.innerText = "Edit";
-    colorLabel.setAttribute("class", `${colorsArr.length}`);
+    colorLabel.setAttribute("class", `_${colorsArr.length}`);
+    // colorLabel.setAttribute("class", "color-tile-label");
     // colorLabel.setAttribute("id", `${colorsArr.length}`);
     
     let colorTile = document.createElement("input");
@@ -56,13 +57,16 @@ function addColorTile() {
     colorTile.setAttribute("class", "color-tile");
     
     
-    let deleteClrBtn = document.createElement("input");
+    deleteClrBtn = document.createElement("input");
     deleteClrBtn.setAttribute("type", "submit");
     deleteClrBtn.setAttribute("value", "Delete");
     deleteClrBtn.setAttribute("id", `${colorsArr.length}`);
     deleteClrBtn.setAttribute("class", "delete-clr-btn");
-
     deleteClrBtn.style.backgroundColor = "red";
+
+    // deleteBtn = document.querySelector(".delete-clr-btn");
+    deleteClrBtn.addEventListener("click", deleteColor);
+
 
     colorContainer.append(colorLabel);
     colorLabel.append(colorTile);
@@ -82,17 +86,17 @@ colorButton.addEventListener("click", addColorTile);
 
 
 
-function deleteColor(id) {
-    deleteBtn = document.querySelector(".delete-clr-btn");
-    // console.log(deleteBtn);
+function deleteColor() {
+    deletedTile = document.querySelector("._0");
+    // console.log('sdfa');
     // let buttonId = deleteBtn.id;
     // let deletedTile = document.querySelector(`.${id}`);
-    // deletedTile.remove();
+    deletedTile.remove();
 }
 
-if (deleteBtn){
-    deleteBtn.addEventListener("click", deleteColor);
-}
+// if (deleteBtn){
+//     deleteBtn.addEventListener("click", deleteColor);
+// }
 
 
 // let angleDisplayDiv = document.querySelector(".angle-display-div");
