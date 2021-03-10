@@ -319,6 +319,8 @@ body {
   -webkit-transform: rotate(171deg);
           transform: rotate(171deg);
   margin-top: .56em;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 .angle-display-div {
@@ -423,9 +425,9 @@ body {
   display: flex;
   top: 0;
   font-family: var(--font);
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 900;
   color: white;
-  letter-spacing: .3rem;
+  letter-spacing: .34rem;
 }
 /*# sourceMappingURL=main.css.map */
