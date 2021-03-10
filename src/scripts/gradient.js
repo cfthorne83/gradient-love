@@ -65,6 +65,14 @@ function createClrContainer() {
     }
 }
 
+function updateClrTile() {
+    if (colors.length === 0) {
+        colors += colorTile.value;
+    } else {
+        colors += ", " + colorTile.value;
+    }
+}
+
 function createClrLabel() {
     colorLabel = document.createElement("label");
     colorLabel.innerText = "Edit";
@@ -86,18 +94,12 @@ function addColorTile() {
     createClrLabel();
     createColorTile();
     createDltClrBtn();
-
-
+    
     colorContainer.append(colorLabel);
     colorLabel.append(colorTile);
     colorLabel.append(deleteClrBtn);
 
-    if (colors.length === 0) {
-        // colors += colorInput.value;
-        colors += colorTile.value;
-    } else {
-        colors += ", " + colorTile.value;
-    }
+    updateClrTile();
     colorNum++;
     colorsArr.push(colorTile.value);
 }
