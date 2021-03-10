@@ -20,6 +20,25 @@ let first = true;
 
 let deleteClrBtn;
 
+// class ColorTile {
+//     constructor(){
+
+//     }
+
+
+// }
+
+function createColorTile() {
+    // let colorTile = document.createElement("input");
+    colorTile.type = "color";
+    colorTile.style.width = "50px";
+    colorTile.style.height = "50px";
+    colorTile.style.display = "inline-block";
+    colorTile.style.position = "relative";
+    colorTile.value = "#FFFFFF";
+    colorTile.setAttribute("class", "color-tile");
+}
+
 function addColorTile() {
     if (first) {
         first = false;
@@ -46,15 +65,17 @@ function addColorTile() {
     // colorLabel.setAttribute("class", "color-tile-label");
     // colorLabel.setAttribute("id", `${colorsArr.length}`);
     
-    let colorTile = document.createElement("input");
-    colorTile.type = "color";
-    colorTile.style.width = "50px";
-    colorTile.style.height = "50px";
-    colorTile.style.display = "inline-block";
-    colorTile.style.position = "relative";
-    // colorTile.style.backgroundColor = colorInput.value;
-    colorTile.value = "#FFFFFF";
-    colorTile.setAttribute("class", "color-tile");
+    colorTile = document.createElement("input");
+    // let colorTile = document.createElement("input");
+    // colorTile.type = "color";
+    // colorTile.style.width = "50px";
+    // colorTile.style.height = "50px";
+    // colorTile.style.display = "inline-block";
+    // colorTile.style.position = "relative";
+    // // colorTile.style.backgroundColor = colorInput.value;
+    // colorTile.value = "#FFFFFF";
+    // colorTile.setAttribute("class", "color-tile");
+    createColorTile();
     
     
     deleteClrBtn = document.createElement("input");
