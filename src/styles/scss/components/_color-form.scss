@@ -8,12 +8,13 @@
 // }
 
 .color-form {
-    width: 50%;
+    // width: 50%;
+    display: flex;
     background-color: var(--back-g);
     backdrop-filter: var(--blur);
     padding: 1.5em;
     border-radius: var(--border-radius);
-    align-self: flex-start;
+    // align-self: flex-start;
     margin: 1em;
 }
 

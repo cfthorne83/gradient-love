@@ -15,7 +15,9 @@
 }
 
 input[type="range"] {
- -webkit-appearance: none;
+    -webkit-appearance: none;
+    // height: 20rem;
+    // width: 10rem;
 }
 
 input[type="range"]:focus {
@@ -49,3 +51,5 @@ input[type="range"]::-moz-range-thumb {
  margin-top: -5px;
  border-radius: 50%;
 }
+
+// -webkit-appearance: slider-vertical.

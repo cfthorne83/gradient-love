@@ -94,6 +94,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -243,14 +247,14 @@ body {
 }
 
 .color-form {
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: var(--back-g);
   -webkit-backdrop-filter: var(--blur);
           backdrop-filter: var(--blur);
   padding: 1.5em;
   border-radius: var(--border-radius);
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   margin: 1em;
 }
 

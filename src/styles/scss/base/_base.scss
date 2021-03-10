@@ -27,6 +27,7 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     width: 90%;
     background-color: rgba(82, 82, 82, 0.801);

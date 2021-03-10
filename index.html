@@ -26,13 +26,8 @@
         
         
         <div class="container">
-            <div>
-                <input class="button input radial-button" type="submit" value="Radial" onClick="handleRadial()">
-                <input class="button input linear-button" type="submit" value="Linear" onClick="handleLinear()">
-                <div class="input" id="gradient-status"></div>
-            </div>
             <br>
-
+            
             <ul class="color-form">
                 <input class="button color-button" type="submit" value="Add Color">
                 <!-- <label >
@@ -40,11 +35,13 @@
                     edit
                 </label> -->
                 <input class="button apply-clr-button" type="submit" value="Apply Colors">
-                <div class="apply-clr-err"></div>
                 <input class="button reset-clr-btn" type="submit" value="Reset">
-                <!-- <a id="myAnchor" href="https://www.google.com/search?q=sdf&oq=sdf&aqs=chrome..69i57j69i65l2j69i60l2j69i61j69i60l2.328j0j7&sourceid=chrome&ie=UTF-8">gooble</a> -->
-                <!-- <input type="button" onclick="getfocus()" value="Get focus">
-                <input type="button" onclick="losefocus()" value="Lose focus"> -->
+                <div class="apply-clr-err"></div>
+                    <div>
+                        <input class="button input radial-button" type="submit" value="Radial" onClick="handleRadial()">
+                        <input class="button input linear-button" type="submit" value="Linear" onClick="handleLinear()">
+                        <!-- <div class="input" id="gradient-status"></div> -->
+                    </div>
             </ul>
 
             <div class="outer box-anim">
@@ -171,20 +168,22 @@
         </div>
     </section>
 
-                <input class='input' type="range" min="1" max="30" value="15" step="1" onInput="speedChange(this.value)">Speed
-                <span class='input'>Speed: </span><span id=speedStatus>15</span>
-                <br>
-
-                <input class='input gradient-angle' type="range" min="0" max="359" value="1" step="1" onInput="angleChange(this.value)">
-                <span class='input grad-ang'>Gradient Angle: </span><span class='input' id=angleStatus>0</span>     
-                <br>
-
-                <section class="scroll-angle-con">
+    <span class='input'>Speed: </span><span id=speedStatus>15</span>
+    <br>
+    
+    <span class='input grad-ang'>Gradient Angle: </span><span class='input' id=angleStatus>0</span>     
+    <br>
+    
+                <section class="slider-con">
+                    <input class='input' type="range" min="1" max="30" value="15" step="1" onInput="speedChange(this.value)">Speed
+                    <input class='input gradient-angle' type="range" min="0" max="359" value="1" step="1" onInput="angleChange(this.value)">Angle
                     <input class='input scroll-angle'
                             type="range" 
                             min="0" max="400" 
                             value="1" step="1" 
-                            onInput="scrollChange(this.value)">
+                            onInput="scrollChange(this.value)">Scroll
+                </section>
+
                     <div class="knob-con">
                         <div class="knob-value">0°</div>
                         <div class="grandparent">
@@ -193,7 +192,6 @@
                             </div>
                         </div>
                     </div>
-                </section>
 
                 
                 
