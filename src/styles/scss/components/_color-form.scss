@@ -10,12 +10,17 @@
 .color-form {
     // width: 50%;
     display: flex;
-    background-color: var(--back-g);
+    
+    // align-self: flex-start;
+    margin: 1em;
+    justify-content: space-between;
+}
+
+.color-form div {
     backdrop-filter: var(--blur);
     padding: 1.5em;
     border-radius: var(--border-radius);
-    // align-self: flex-start;
-    margin: 1em;
+background-color: var(--back-g);
 }
 
 .apply-clr-err {

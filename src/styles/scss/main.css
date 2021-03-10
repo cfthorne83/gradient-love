@@ -250,12 +250,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: var(--back-g);
+  margin: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.color-form div {
   -webkit-backdrop-filter: var(--blur);
           backdrop-filter: var(--blur);
   padding: 1.5em;
   border-radius: var(--border-radius);
-  margin: 1em;
+  background-color: var(--back-g);
 }
 
 .apply-clr-err {
