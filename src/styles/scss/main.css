@@ -99,7 +99,7 @@ body {
           justify-content: flex-start;
   width: 90%;
   background-color: rgba(0, 0, 0, 0.281);
-  border-radius: var(--border-radius);
+  border-radius: .7em .7em 0 0;
 }
 
 @-webkit-keyframes radial-gradient {
@@ -146,6 +146,7 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(red), to(green));
   background: linear-gradient(red, green);
   border: 3px solid white;
+  margin: 1em 0;
 }
 
 .outer .inner2 {
