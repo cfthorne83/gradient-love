@@ -349,8 +349,8 @@ body {
 }
 
 .button {
-  background-color: #1d122e;
-  color: #e2e2e2;
+  background-color: #000000;
+  color: #a8a2f1;
   font-family: var(--font);
   padding: .7em .9em;
   margin: .2em;
@@ -416,7 +416,7 @@ input[type="range"]::-moz-range-thumb {
   padding: 0 .03em;
   font-size: 3.3rem;
   font-weight: 300;
-  color: white;
+  color: #ffffff;
   letter-spacing: 3px;
   padding: .6em 0 .3em 0;
 }
