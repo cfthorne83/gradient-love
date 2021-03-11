@@ -102,7 +102,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 90%;
-  background-color: rgba(82, 82, 82, 0.801);
+  background-color: #00000063;
   border-radius: .7em .7em 0 0;
   background-image: url(./img/splat5.png);
 }
@@ -253,6 +253,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 1em;
 }
 
 .apply-clr-err {
@@ -350,19 +351,20 @@ body {
 }
 
 .button {
-  background-color: #ffffff48;
-  color: #dddddd;
+  background-color: #ffffff3a;
+  color: #d6d6d6;
   font-family: var(--font);
-  padding: .8em 1em;
+  padding: 1em 1.2em;
   margin: .2em;
   border-radius: 9999px;
   cursor: pointer;
   font-weight: 600;
-  letter-spacing: .03rem;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  letter-spacing: .04rem;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   -webkit-transition: .5s;
   transition: .5s;
+  margin: 0 .8em;
 }
 
 .button:hover, .button:active, .button:focus {
