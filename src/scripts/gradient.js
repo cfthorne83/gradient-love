@@ -8,6 +8,10 @@ let animation = (document.styleSheets[2].cssRules[0]);
 let gradientVar = "linear-gradient";
 gradient.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
 
+let boxAnimInner = document.querySelector(".inner");
+let boxAnimMode = "box-anim";
+boxAnimInner.style.animation = boxAnimMode + " " + speedStatus.innerText + "s ease infinite";
+
 //color changes
 let colorNum = 5;
 let colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
