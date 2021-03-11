@@ -357,6 +357,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #252525;
+  font-family: var(--code-font);
+  color: var(--font-grey);
+  padding: .5em;
+  border-radius: 0 0 .4rem .4rem;
+}
+
+.color-tiles div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -367,8 +378,21 @@ body {
   border-radius: 0 0 .4rem .4rem;
 }
 
+.color-tiles label:hover div {
+  background-color: black;
+}
+
+.color-tiles label:hover h2 {
+  color: white;
+}
+
 .color-tiles input {
   cursor: pointer;
+}
+
+.color-tiles input:hover, .color-tiles span:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .color-tiles h2 {

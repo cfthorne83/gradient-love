@@ -105,6 +105,17 @@
 
     div {
         display: flex;
+        // justify-content: space-between;
+        background-color: #252525;
+        // background-color: var(--mid-grey);
+        font-family: var(--code-font);
+        color: var(--font-grey);
+        padding: .5em;
+        border-radius: 0 0 .4rem .4rem;
+    }
+
+    div {
+        display: flex;
         justify-content: space-between;
         background-color: #252525;
         // background-color: var(--mid-grey);
@@ -113,10 +124,23 @@
         padding: .5em;
         border-radius: 0 0 .4rem .4rem;
     }
+
+    label:hover div{
+        background-color: black;
+    }
+
+    label:hover h2 {
+        color: rgb(255, 255, 255);
+    }
     
     input {
         cursor: pointer;
     }
+
+    input:hover, span:hover  {
+        color: #ffffff;
+        text-decoration: underline;
+    }     
 
     h2 {
         text-align: center;
