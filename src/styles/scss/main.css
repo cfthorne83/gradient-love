@@ -101,7 +101,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 90%;
+  width: 83%;
   background-color: #5a5a5aa1;
   border-radius: .7em .7em 0 0;
   background-image: url(./img/splat5.png);
@@ -351,6 +351,8 @@ body {
 }
 
 .button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #1d1d1d8f;
   color: #c2c2c2;
   font-family: var(--font);
@@ -370,7 +372,7 @@ body {
 
 .button:hover, .button:active, .button:focus {
   background-color: rgba(0, 0, 0, 0.657);
-  outline: none;
+  border: 0.15rem solid #01ffff;
   color: white;
 }
 

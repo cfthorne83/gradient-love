@@ -1,4 +1,5 @@
 .button {
+    box-sizing: border-box;
     background-color: #1d1d1d8f;
     // background-color: #e6a162;
     // background-color: #24bae8c5;
@@ -19,7 +20,7 @@
 
 .button:hover, .button:active, .button:focus {
     background-color: rgba(0, 0, 0, 0.657);
-    outline: none;
+    border: .15rem solid rgb(1, 255, 255);
     color: white;
 }
 
