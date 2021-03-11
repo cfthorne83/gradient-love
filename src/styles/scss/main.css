@@ -328,10 +328,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .color-tiles label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   background-color: #0011FF;
   height: 100%;
@@ -344,8 +346,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: white;
-  font-family: var(--font);
+  background-color: var(--mid-grey);
+  font-family: var(--code-font);
+  color: var(--font-grey);
+  padding: .5em;
 }
 
 input[type="color"] {
