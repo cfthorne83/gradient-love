@@ -102,7 +102,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 90%;
-  background-color: #00000063;
+  background-color: #41414181;
   border-radius: .7em .7em 0 0;
   background-image: url(./img/splat5.png);
 }
@@ -351,12 +351,13 @@ body {
 }
 
 .button {
-  background-color: #ffffff3a;
-  color: #d6d6d6;
+  background-color: #1d1d1d8f;
+  color: #c2c2c2;
   font-family: var(--font);
   padding: 1em 1.2em;
   margin: .2em;
   border-radius: 9999px;
+  border: 0.15rem solid black;
   cursor: pointer;
   font-weight: 600;
   letter-spacing: .04rem;
@@ -368,7 +369,7 @@ body {
 }
 
 .button:hover, .button:active, .button:focus {
-  background-color: rgba(255, 255, 255, 0.507);
+  background-color: rgba(0, 0, 0, 0.657);
   outline: none;
   color: white;
 }

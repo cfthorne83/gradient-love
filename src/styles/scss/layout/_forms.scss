@@ -1,14 +1,14 @@
 .button {
-    background-color: #ffffff3a;
+    background-color: #1d1d1d8f;
     // background-color: #e6a162;
     // background-color: #24bae8c5;
-    color: #d6d6d6;
+    color: #c2c2c2;
     // color: #cc99e6;
     font-family: var(--font);
     padding: 1em 1.2em;
     margin: .2em;
     border-radius: 9999px;
-    // border: .15rem solid rgb(109, 109, 109);
+    border: .15rem solid rgb(0, 0, 0);
     cursor: pointer;
     font-weight: 600;
     letter-spacing: .04rem;
@@ -18,7 +18,7 @@
 }
 
 .button:hover, .button:active, .button:focus {
-    background-color: rgba(255, 255, 255, 0.507);
+    background-color: rgba(0, 0, 0, 0.657);
     outline: none;
     color: white;
 }
