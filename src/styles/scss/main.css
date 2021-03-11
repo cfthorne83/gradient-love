@@ -371,6 +371,12 @@ body {
   cursor: pointer;
 }
 
+.color-tiles h2 {
+  text-align: center;
+  margin-top: 1em;
+  font-size: .9rem;
+}
+
 input[type="color"] {
   width: 100%;
   cursor: pointer;
