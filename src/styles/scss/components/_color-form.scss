@@ -28,7 +28,7 @@
 
 .apply-clr-err {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 0, 255);
+    color: rgb(253, 253, 253);
     font-size: 1.2rem;
 }
 
@@ -68,23 +68,31 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    // margin: 0 3em;
 }
 
 input[type="color"] {
+    width: 100%;
+    // height: 100%;
     // max-width: 25%;
     // min-width: 8rem;
     // height: 2rem;
-    margin: 10px;
+    margin: 1rem;
+    min-height: 4rem;
 }
 
 input[type="color"]::-webkit-color-swatch-wrapper {
     // border: none;
-    // width: 100px;
+    // width: 100%;
+    // height: 100%;
 }
 
 input[type="color"]::-webkit-color-swatch {
+    // height: 100%;
+    border-radius: var(--border-radius);
+    width: 100%;
     // padding: 20px;
-    border: none;
+    border: .12em solid rgb(0, 0, 0);
     // margin: 1em;
     // heights: 100px;
 }

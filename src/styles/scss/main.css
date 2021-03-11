@@ -37,12 +37,6 @@ time, mark, audio, video, input {
   background: transparent;
 }
 
-input[type="color"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: var(--code-font);
-}
-
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,6 +95,8 @@ body {
   background-color: #5a5a5aa1;
   border-radius: .7em .7em 0 0;
   background-image: url(./img/splat5.png);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @-webkit-keyframes radial-gradient {
@@ -289,7 +285,7 @@ body {
 
 .apply-clr-err {
   font-family: Arial, Helvetica, sans-serif;
-  color: magenta;
+  color: #fdfdfd;
   font-size: 1.2rem;
 }
 
@@ -319,11 +315,15 @@ body {
 }
 
 input[type="color"] {
-  margin: 10px;
+  width: 100%;
+  margin: 1rem;
+  min-height: 4rem;
 }
 
 input[type="color"]::-webkit-color-swatch {
-  border: none;
+  border-radius: var(--border-radius);
+  width: 100%;
+  border: 0.12em solid black;
 }
 
 .angle-display-div {
