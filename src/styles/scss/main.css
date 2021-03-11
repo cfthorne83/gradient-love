@@ -102,7 +102,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 90%;
-  background-color: #41414181;
+  background-color: #5a5a5aa1;
   border-radius: .7em .7em 0 0;
   background-image: url(./img/splat5.png);
 }
