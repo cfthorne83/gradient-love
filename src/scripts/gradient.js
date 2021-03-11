@@ -6,14 +6,12 @@ let angleStatus = document.querySelector("#angleStatus")
 
 let animation = (document.styleSheets[2].cssRules[0]);
 let gradientVar = "linear-gradient";
-// body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
 gradient.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
 
 //color changes
 let colorNum = 5;
 let colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
 let colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
-// let colors = "#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF";
 
 let colorButton = document.querySelector(".color-button");
 let colorInput = document.querySelector(".color-input");
