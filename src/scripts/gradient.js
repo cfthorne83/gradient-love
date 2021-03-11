@@ -1,11 +1,13 @@
 let body = document.querySelector("body"); 
+let gradient = document.querySelector(".gradient-back"); 
 
 let speedStatus = document.querySelector("#speedStatus")
 let angleStatus = document.querySelector("#angleStatus")  
 
 let animation = (document.styleSheets[2].cssRules[0]);
 let gradientVar = "linear-gradient";
-body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
+// body.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
+gradient.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
 
 //color changes
 let colorNum = 5;
@@ -18,13 +20,6 @@ let colorInput = document.querySelector(".color-input");
 let colorForm = document.querySelector(".color-form");
 let first = true;
 
-// class ColorTile {
-//     constructor(){
-
-//     }
-
-
-// }
 let colorTile;
 let colorLabel;
 
@@ -134,32 +129,29 @@ function applyColors() {
     }
     
     if (gradientVar === "linear-gradient"){
-        body.style.background = 
+        gradient.style.background = 
         gradientVar + "(" 
         + angleStatus.innerText + "deg,"
         + colors + ")"; 
-        // angleDisplayDiv.style.background = 
-        // gradientVar + "(" 
-        // + angleStatus.innerText + "deg,"
-        // + colors + ")";
         scrollDisplay.style.background = 
         gradientVar + "(" 
         + angleStatus.innerText + "deg,"
         + colors + ")";
     } else {
-        body.style.background = 
+        gradient.style.background = 
         gradientVar + "(" 
         + colors + ")";
-        // angleDisplayDiv.style.background = 
-        // gradientVar + "(" 
-        // + colors + ")";
         scrollDisplay.style.background = 
         gradientVar + "(" 
         + colors + ")";
     }
 
-    body.style.backgroundSize = "400% 400%";
-    body.style.animation = gradientVar
+    // body.style.backgroundSize = "400% 400%";
+    // body.style.animation = gradientVar
+    //                         + " " + speedStatus.innerText
+    //                         + "s ease infinite";
+    gradient.style.backgroundSize = "400% 400%";
+    gradient.style.animation = gradientVar
                             + " " + speedStatus.innerText
                             + "s ease infinite";
 }
@@ -190,7 +182,8 @@ let speedStatusRadial = document.querySelector("#speedStatus2")
 function speedChange(val) {
     speedStatus.innerText = val;
     speedStatus2.innerText = val;
-    body.style.animation = gradientVar + " " + val + "s ease infinite";
+    // body.style.animation = gradientVar + " " + val + "s ease infinite";
+    gradient.style.animation = gradientVar + " " + val + "s ease infinite";
 }
 
 //------------------------------------------------------------------------------
@@ -295,8 +288,8 @@ let name = document.querySelector("#name-input");
 
 //------------------------------------------------------------------------------
 //Gradient handlers
-let gradientStatus = document.querySelector("#gradient-status");
-gradientStatus.innerText = gradientVar;
+// let gradientStatus = document.querySelector("#gradient-status");
+// gradientStatus.innerText = gradientVar;
 
 let gradientAngle = document.querySelector(".gradient-angle");
 let scrollAngle = document.querySelector(".scroll-angle");
@@ -310,7 +303,7 @@ let knobNeedle = document.querySelector(".child");
 function handleRadial() {
     gradientVar = "radial-gradient";
 
-    gradientStatus.innerText = gradientVar;
+    // gradientStatus.innerText = gradientVar;
     angleStatus.innerText = "";
     gradAngleText.innerText = "";
 
@@ -329,7 +322,7 @@ function handleRadial() {
 
 function handleLinear() {
     gradientVar = "linear-gradient";
-    gradientStatus.innerText = gradientVar;
+    // gradientStatus.innerText = gradientVar;
     angleStatus.innerText = angle;
 
     gradientAngle.type = "range";

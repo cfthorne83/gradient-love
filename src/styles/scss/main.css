@@ -58,11 +58,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   /* background-image: url(https://s.abcnews.com/images/Entertainment/GTY_golden_girls_kab_150903_16x9_1600.jpg); */
-  background: -webkit-gradient(linear, left top, left bottom, from(#0011FF), color-stop(#8100D6), color-stop(#FF00BB), color-stop(#E1FF00), to(#00EEFF));
-  background: linear-gradient(#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
   /* background: radial-gradient( #6800bd, #FF00BB, #E1FF00); */
   /* background-position: 100% 100%; */
-  background-size: 400% 400%;
+  background-color: #5a5a5a;
   /* animation: AnimationName 10s ease infinite;     */
   /* animation: radial-gradient 25s ease infinite;     */
 }
@@ -73,8 +71,6 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#0011FF), color-stop(#8100D6), color-stop(#FF00BB), color-stop(#E1FF00), to(#00EEFF));
   background: linear-gradient(#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
   background-size: 400% 400%;
-  -webkit-animation: linear-gradient 60s ease infinite;
-          animation: linear-gradient 60s ease infinite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,7 +219,7 @@ body {
   padding: 2em;
   font-family: var(--code-font);
   color: #cecece;
-  font-size: .9rem;
+  font-size: 1rem;
   list-style: none;
   border-radius: var(--border-radius);
 }
