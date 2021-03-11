@@ -120,7 +120,7 @@ function deleteColor() {
 
 // let angleDisplayDiv = document.querySelector(".angle-display-div");
 let scrollDisplay = document.querySelector(".grandparent");
-let boxAnim = document.querySelector(".outer box-anim");
+let boxAnim = document.querySelector(".box-anim");
 
 function applyColors() {
 
@@ -151,7 +151,6 @@ function applyColors() {
 
         boxAnim.style.background = 
         gradientVar + "(" 
-        + angleStatus.innerText + "deg,"
         + colors + ")"; 
 
         scrollDisplay.style.background = 

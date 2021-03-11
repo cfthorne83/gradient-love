@@ -6,33 +6,29 @@
     border: 3px solid white;
     margin: 1em 0;
 
-    .inner2 {
+    .inner {
         box-sizing: border-box;
         border: 3px solid rgb(0, 0, 0);
         width: 25%;
         height: 25%;
-        /* animation: box-animation 1s ease-in forwards; */
-        /* transform: translate(150%, 0%); */
-        /* transition: transform 1s ease-in; */
+        transform: translateX(0%) translateY(300%);
         animation: box-anim 10s ease infinite;
-        /* transform: translate(150% 0%); */
+        // animation: radial-box-anim 10s ease infinite;
     }
 }
 
-.outer:hover .inner2 {
-    /* transform: translate(100%); */
-    /* animation: box-animation 1s ease; */
-}
 @keyframes box-anim {
-    0% {
-        transform: translateX(150%) translateY(0%);
-    }
-    50% {
-        transform: translateX(150%) translateY(300%);
-    }
-    100% {
-        transform: translateX(150%) translateY(0%);
-    }
+    0% {transform: translateX(150%) translateY(0%);}
+    50% {transform: translateX(150%) translateY(300%);}
+    100% {transform: translateX(150%) translateY(0%);}
+}
+
+@keyframes radial-box-anim {
+    0%{transform: translateX(0%) translateY(0%);}
+    25%{transform: translateX(300%) translateY(0%);}
+    50%{transform: translateX(300%) translateY(300%);}
+    75%{transform: translateX(0%) translateY(300%);}
+    100%{transform: translateX(0%) translateY(0%);}
 }
 /* @keyframes box-animation {
     0%{transform: translate(150% 0%)}
