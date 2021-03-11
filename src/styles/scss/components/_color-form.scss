@@ -64,15 +64,36 @@
     background-color: red;
 }
 
+.container {
+    h1 {
+        color: rgb(255, 255, 255);
+        font-family: var(--font);
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+        padding: .7rem .7rem .3rem .7rem;
+    }
+
+    h2 {
+        color: rgb(200, 200, 200);
+        font-family: var(--code-font);
+        font-size: 1rem;
+        letter-spacing: 3px;
+        padding: 0 0 .9rem .9rem;
+    }
+}
+
 .color-tiles {
     display: flex;
     justify-content: center;
     width: 100%;
-    // margin: 0 3em;
+    font-size: 1.2rem;
 
     label {
         width: 100%;
         background-color: #0011FF;
+        // min-height: 8rem;
+        height: 100%;
+        // border-radius: 3em;
     }
 
     div {
@@ -80,11 +101,6 @@
         justify-content: space-between;
         background-color: white;
         font-family: var(--font);
-    }
-
-    button {
-        border: none;
-        background-color: transparent;
     }
 }
 

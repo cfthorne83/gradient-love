@@ -304,6 +304,22 @@ body {
   background-color: red;
 }
 
+.container h1 {
+  color: white;
+  font-family: var(--font);
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  padding: .7rem .7rem .3rem .7rem;
+}
+
+.container h2 {
+  color: #c8c8c8;
+  font-family: var(--code-font);
+  font-size: 1rem;
+  letter-spacing: 3px;
+  padding: 0 0 .9rem .9rem;
+}
+
 .color-tiles {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,11 +328,13 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  font-size: 1.2rem;
 }
 
 .color-tiles label {
   width: 100%;
   background-color: #0011FF;
+  height: 100%;
 }
 
 .color-tiles div {
@@ -328,11 +346,6 @@ body {
           justify-content: space-between;
   background-color: white;
   font-family: var(--font);
-}
-
-.color-tiles button {
-  border: none;
-  background-color: transparent;
 }
 
 input[type="color"] {
