@@ -315,13 +315,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1em 0;
+  width: 100%;
 }
 
 input[type="color"] {
-  max-width: 25%;
-  min-width: 8rem;
-  height: 2rem;
+  margin: 10px;
 }
 
 input[type="color"]::-webkit-color-swatch {
