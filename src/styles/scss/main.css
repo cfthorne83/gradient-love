@@ -156,10 +156,6 @@ body {
   border: 3px solid black;
   width: 25%;
   height: 25%;
-  -webkit-transform: translateX(0%) translateY(300%);
-          transform: translateX(0%) translateY(300%);
-  -webkit-animation: box-anim 10s ease infinite;
-          animation: box-anim 10s ease infinite;
 }
 
 @-webkit-keyframes box-anim {
@@ -194,47 +190,47 @@ body {
 
 @-webkit-keyframes radial-box-anim {
   0% {
-    -webkit-transform: translateX(0%) translateY(0%);
-            transform: translateX(0%) translateY(0%);
-  }
-  25% {
-    -webkit-transform: translateX(300%) translateY(0%);
-            transform: translateX(300%) translateY(0%);
-  }
-  50% {
     -webkit-transform: translateX(300%) translateY(300%);
             transform: translateX(300%) translateY(300%);
   }
-  75% {
+  25% {
     -webkit-transform: translateX(0%) translateY(300%);
             transform: translateX(0%) translateY(300%);
   }
-  100% {
+  50% {
     -webkit-transform: translateX(0%) translateY(0%);
             transform: translateX(0%) translateY(0%);
+  }
+  75% {
+    -webkit-transform: translateX(300%) translateY(0%);
+            transform: translateX(300%) translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateX(300%) translateY(300%);
+            transform: translateX(300%) translateY(300%);
   }
 }
 
 @keyframes radial-box-anim {
   0% {
-    -webkit-transform: translateX(0%) translateY(0%);
-            transform: translateX(0%) translateY(0%);
-  }
-  25% {
-    -webkit-transform: translateX(300%) translateY(0%);
-            transform: translateX(300%) translateY(0%);
-  }
-  50% {
     -webkit-transform: translateX(300%) translateY(300%);
             transform: translateX(300%) translateY(300%);
   }
-  75% {
+  25% {
     -webkit-transform: translateX(0%) translateY(300%);
             transform: translateX(0%) translateY(300%);
   }
-  100% {
+  50% {
     -webkit-transform: translateX(0%) translateY(0%);
             transform: translateX(0%) translateY(0%);
+  }
+  75% {
+    -webkit-transform: translateX(300%) translateY(0%);
+            transform: translateX(300%) translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateX(300%) translateY(300%);
+            transform: translateX(300%) translateY(300%);
   }
 }
 

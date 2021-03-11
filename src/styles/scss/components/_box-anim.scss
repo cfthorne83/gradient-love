@@ -11,8 +11,8 @@
         border: 3px solid rgb(0, 0, 0);
         width: 25%;
         height: 25%;
-        transform: translateX(0%) translateY(300%);
-        animation: box-anim 10s ease infinite;
+        // transform: translateX(0%) translateY(300%);
+        // animation: box-anim 10s ease infinite;
         // animation: radial-box-anim 10s ease infinite;
     }
 }
@@ -24,11 +24,11 @@
 }
 
 @keyframes radial-box-anim {
-    0%{transform: translateX(0%) translateY(0%);}
-    25%{transform: translateX(300%) translateY(0%);}
-    50%{transform: translateX(300%) translateY(300%);}
-    75%{transform: translateX(0%) translateY(300%);}
-    100%{transform: translateX(0%) translateY(0%);}
+    0%{transform: translateX(300%) translateY(300%);}
+    25%{transform: translateX(0%) translateY(300%);}
+    50%{transform: translateX(0%) translateY(0%);}
+    75%{transform: translateX(300%) translateY(0%);}
+    100%{transform: translateX(300%) translateY(300%);}
 }
 /* @keyframes box-animation {
     0%{transform: translate(150% 0%)}

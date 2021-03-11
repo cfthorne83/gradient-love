@@ -164,6 +164,10 @@ function applyColors() {
     gradient.style.animation = gradientVar
                             + " " + speedStatus.innerText
                             + "s ease infinite";
+
+    boxAnimInner.style.animation = boxAnimMode + " " 
+                            + speedStatus.innerText 
+                            + "s ease infinite";
 }
 
 let applyClrBtn = document.querySelector(".apply-clr-button");
@@ -314,6 +318,7 @@ let knobNeedle = document.querySelector(".child");
 
 function handleRadial() {
     gradientVar = "radial-gradient";
+    boxAnimMode = "radial-box-anim";
 
     // gradientStatus.innerText = gradientVar;
     angleStatus.innerText = "";
@@ -339,6 +344,7 @@ function handleRadial() {
 
 function handleLinear() {
     gradientVar = "linear-gradient";
+    boxAnimMode = "box-anim";
     // gradientStatus.innerText = gradientVar;
     angleStatus.innerText = angle;
 
