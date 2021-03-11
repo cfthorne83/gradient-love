@@ -61,3 +61,26 @@
 ._0 {
     background-color: red;
 }
+
+.color-tiles {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+input[type="color"] {
+    max-width: 25%;
+    min-width: 8rem;
+    height: 2rem;
+
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    // border: none;
+    // width: 100px;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    // heights: 100px;
+}

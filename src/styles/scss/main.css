@@ -308,6 +308,26 @@ body {
   background-color: red;
 }
 
+.color-tiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em 0;
+}
+
+input[type="color"] {
+  max-width: 25%;
+  min-width: 8rem;
+  height: 2rem;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
 .angle-display-div {
   width: 20%;
   min-height: 10em;
