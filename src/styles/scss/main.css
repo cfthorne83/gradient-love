@@ -314,16 +314,35 @@ body {
   width: 100%;
 }
 
+.color-tiles label {
+  width: 100%;
+  background-color: #0011FF;
+}
+
+.color-tiles div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  font-family: var(--font);
+}
+
+.color-tiles button {
+  border: none;
+  background-color: transparent;
+}
+
 input[type="color"] {
   width: 100%;
-  margin: 1rem;
-  min-height: 4rem;
 }
 
 input[type="color"]::-webkit-color-swatch {
-  border-radius: var(--border-radius);
-  width: 100%;
-  border: 0.12em solid black;
+  border: none;
+  padding: none;
+  margin: none;
 }
 
 .angle-display-div {

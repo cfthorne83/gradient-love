@@ -69,16 +69,35 @@
     justify-content: center;
     width: 100%;
     // margin: 0 3em;
+
+    label {
+        width: 100%;
+        background-color: #0011FF;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        font-family: var(--font);
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+    }
 }
 
 input[type="color"] {
     width: 100%;
+    // background-color: white;
+    // padding: none;
     // height: 100%;
     // max-width: 25%;
     // min-width: 8rem;
     // height: 2rem;
-    margin: 1rem;
-    min-height: 4rem;
+    // margin: 1rem;
+    // min-height: 4rem;
 }
 
 input[type="color"]::-webkit-color-swatch-wrapper {
@@ -88,11 +107,14 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 }
 
 input[type="color"]::-webkit-color-swatch {
+    border: none;
+    padding: none;
+    margin: none;
     // height: 100%;
-    border-radius: var(--border-radius);
-    width: 100%;
+    // border-radius: var(--border-radius);
+    // width: 100%;
     // padding: 20px;
-    border: .12em solid rgb(0, 0, 0);
+    // border: .12em solid rgb(0, 0, 0);
     // margin: 1em;
     // heights: 100px;
 }
