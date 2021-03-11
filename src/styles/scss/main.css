@@ -280,11 +280,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1em;
+  background-color: rgba(39, 39, 39, 0.794);
 }
 
 .apply-clr-err {
