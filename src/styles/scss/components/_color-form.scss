@@ -86,7 +86,8 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    font-size: 1rem;
+    font-size: .9rem;
+    height: 6rem;
 
     label {
         box-sizing: border-box;
@@ -94,22 +95,34 @@
         background-color: #0011FF;
         // min-height: 8rem;
         height: 100%;
-        // border-radius: 3em;
+        border-radius: .4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 1rem;
+        cursor: pointer;
     }
 
     div {
         display: flex;
         justify-content: space-between;
-        // background-color: #252525;
-        background-color: var(--mid-grey);
+        background-color: #252525;
+        // background-color: var(--mid-grey);
         font-family: var(--code-font);
         color: var(--font-grey);
         padding: .5em;
+        border-radius: 0 0 .4rem .4rem;
+    }
+    
+    input {
+        cursor: pointer;
+
     }
 }
 
 input[type="color"] {
     width: 100%;
+    cursor: pointer;
     // background-color: white;
     // padding: none;
     // height: 100%;

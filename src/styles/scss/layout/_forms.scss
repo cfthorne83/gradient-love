@@ -3,10 +3,10 @@
     background-color: #1d1d1d8f;
     // background-color: #e6a162;
     // background-color: #24bae8c5;
-    color: #c2c2c2;
+    color: var(--font-grey);
     // color: #c8c0ff;
     // color: #cc99e6;
-    font-family: var(--font);
+    font-family: var(--code-font);
     padding: 1em 1.2em;
     margin: .2em;
     border-radius: 9999px;

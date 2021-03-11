@@ -328,7 +328,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  font-size: 1rem;
+  font-size: .9rem;
+  height: 6rem;
 }
 
 .color-tiles label {
@@ -337,6 +338,19 @@ body {
   width: 100%;
   background-color: #0011FF;
   height: 100%;
+  border-radius: .4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 1rem;
+  cursor: pointer;
 }
 
 .color-tiles div {
@@ -346,14 +360,20 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: var(--mid-grey);
+  background-color: #252525;
   font-family: var(--code-font);
   color: var(--font-grey);
   padding: .5em;
+  border-radius: 0 0 .4rem .4rem;
+}
+
+.color-tiles input {
+  cursor: pointer;
 }
 
 input[type="color"] {
   width: 100%;
+  cursor: pointer;
 }
 
 input[type="color"]::-webkit-color-swatch {
@@ -439,8 +459,8 @@ input[type="color"]::-webkit-color-swatch {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #1d1d1d8f;
-  color: #c2c2c2;
-  font-family: var(--font);
+  color: var(--font-grey);
+  font-family: var(--code-font);
   padding: 1em 1.2em;
   margin: .2em;
   border-radius: 9999px;
