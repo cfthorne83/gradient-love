@@ -144,8 +144,8 @@ body {
           box-sizing: border-box;
   width: 35vw;
   height: 35vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(red), to(green));
-  background: linear-gradient(red, green);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0011FF), color-stop(#8100D6), color-stop(#FF00BB), color-stop(#E1FF00), to(#00EEFF));
+  background: linear-gradient(#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
   border: 3px solid white;
   margin: 1em 0;
 }

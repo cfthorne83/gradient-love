@@ -153,16 +153,12 @@ function applyColors() {
         gradientVar + "(" 
         + angleStatus.innerText + "deg,"
         + colors + ")"; 
-        
+
         scrollDisplay.style.background = 
         gradientVar + "(" 
         + colors + ")";
     }
 
-    // body.style.backgroundSize = "400% 400%";
-    // body.style.animation = gradientVar
-    //                         + " " + speedStatus.innerText
-    //                         + "s ease infinite";
     gradient.style.backgroundSize = "400% 400%";
     gradient.style.animation = gradientVar
                             + " " + speedStatus.innerText
