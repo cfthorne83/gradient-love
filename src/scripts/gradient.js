@@ -120,6 +120,7 @@ function deleteColor() {
 
 // let angleDisplayDiv = document.querySelector(".angle-display-div");
 let scrollDisplay = document.querySelector(".grandparent");
+let boxAnim = document.querySelector(".outer box-anim");
 
 function applyColors() {
 
@@ -133,6 +134,12 @@ function applyColors() {
         gradientVar + "(" 
         + angleStatus.innerText + "deg,"
         + colors + ")"; 
+
+        boxAnim.style.background = 
+        gradientVar + "(" 
+        + angleStatus.innerText + "deg,"
+        + colors + ")"; 
+
         scrollDisplay.style.background = 
         gradientVar + "(" 
         + angleStatus.innerText + "deg,"
@@ -141,6 +148,12 @@ function applyColors() {
         gradient.style.background = 
         gradientVar + "(" 
         + colors + ")";
+
+        boxAnim.style.background = 
+        gradientVar + "(" 
+        + angleStatus.innerText + "deg,"
+        + colors + ")"; 
+        
         scrollDisplay.style.background = 
         gradientVar + "(" 
         + colors + ")";
@@ -168,7 +181,9 @@ function resetColors() {
     colorsArr = [];
     
     let colorContainer = document.querySelector(".color-container");
-    colorContainer.remove();
+    if (colorContainer){
+        colorContainer.remove();
+    }
 }
 
 let resetClrBtn = document.querySelector(".reset-clr-btn");
@@ -317,6 +332,11 @@ function handleRadial() {
     knobBorder.style.display = "none";
 
 
+    if (colorsArr.length === 0){
+        colorNum = 5;
+        colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
+        colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"]; 
+    }
     applyColors();
 }
 
@@ -335,6 +355,11 @@ function handleLinear() {
     // knobBorder.style.display = "inline-block";
     knobBorder.style.display = "flex";
 
+    if (colorsArr.length === 0){
+        colorNum = 5;
+        colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
+        colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"]; 
+    }
     applyColors();
 }
 
