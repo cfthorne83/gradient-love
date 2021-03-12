@@ -10,7 +10,7 @@ let linearBtn = document.querySelector(".linear-button");
 
 linearBtn.focus();
 
-// let animation = (document.styleSheets[2].cssRules[0]);
+let animation = (document.styleSheets[2].cssRules[0]);
 let miniAnimation = (document.styleSheets[2].cssRules[1]);
 
 let gradientVar = "linear-gradient";
