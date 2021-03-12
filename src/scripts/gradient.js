@@ -31,12 +31,19 @@ function changeLabelBack(e) {
     swatch.style.backgroundColor = e.target.value;
 }
 
+function updateClrArr(e) {
+    let id = e.target.id;
+    let idDigit = id.slice(1);
+    colorsArr[idDigit] = e.target.value;
+}
+
 function createColorTile() {
     colorTile = document.createElement("input");
     colorTile.type = "color";
     colorTile.value = "#FFFFFF";
     colorTile.setAttribute("id", `a${colorsArr.length}`);
     colorTile.addEventListener("input", changeLabelBack);
+    colorTile.addEventListener("change", updateClrArr);
 }
 
 let deleteClrBtn;
