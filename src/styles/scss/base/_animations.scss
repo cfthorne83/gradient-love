@@ -1,3 +1,5 @@
+//background animation
+
 @keyframes linear-gradient {
     0%{background-position:50% 0%}
     50%{background-position:50% 100%}
@@ -12,17 +14,12 @@
     100%{background-position: 100% 100%;}
 }
 
+//box animation
 @keyframes box-anim {
     0% {transform: translateX(150%) translateY(0%);}
     50% {transform: translateX(150%) translateY(300%);}
     100% {transform: translateX(150%) translateY(0%);}
 }
-
-// @keyframes box-anim {
-//     0% {transform: translateX(150%) translateY(0%);}
-//     50% {transform: translateX(150%) translateY(300%);}
-//     100% {transform: translateX(150%) translateY(0%);}
-// }
 
 @keyframes radial-box-anim {
     0%{transform: translateX(300%) translateY(300%);}

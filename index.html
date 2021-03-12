@@ -11,6 +11,12 @@
             50%{background-position:50% 100%}
             100%{background-position:50% 0%}
         }
+
+        @keyframes box-anim {
+            0% {transform: translateX(150%) translateY(0%);}
+            50% {transform: translateX(150%) translateY(300%);}
+            100% {transform: translateX(150%) translateY(0%);}
+        }
     </style>
     <link rel="stylesheet" href="./src/styles/scss/main.css" />
 </head>
@@ -186,12 +192,24 @@
         </div>
     </section>
 
+
+    <div>
+        <span class="mini-start-left">1</span>&nbsp;&nbsp;&nbsp;<span class="mini-start-top">1</span>
+    </div>
+    <div>
+        <span class="mini-mid-left">1</span>&nbsp;&nbsp;&nbsp;<span class="mini-mid-left">1</span>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
     <span class='input'>Speed: </span><span id=speedStatus>15</span>
     <br>
     
+
+
     <span class='input grad-ang'>Gradient Angle: </span><span class='input' id=angleStatus>0</span>     
     <br>
-    
                 <section class="slider-con">
                     <input class='input' type="range" min="1" max="30" value="15" step="1" onInput="speedChange(this.value)">Speed
                     <input class='input gradient-angle' type="range" min="0" max="359" value="1" step="1" onInput="angleChange(this.value)">Angle

@@ -11,6 +11,8 @@ let linearBtn = document.querySelector(".linear-button");
 linearBtn.focus();
 
 let animation = (document.styleSheets[2].cssRules[0]);
+let miniAnimation = (document.styleSheets[2].cssRules[1]);
+
 let gradientVar = "linear-gradient";
 gradient.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
 
@@ -310,6 +312,11 @@ let startTop = 0;
 let midLeft = 50;
 let midTop = 100;
 
+let miniStartLeft = startLeft * 3;
+let miniStartTop = startTop * 3;
+let miniMidLeft = midLeft * 3;
+let miniMidTop = midTop * 3;
+
 let animationName = document.querySelector(".animation-name");
 let animationName2 = document.querySelector(".animation-name2");
 
@@ -358,14 +365,32 @@ function scrollChange(val) {
         midLeft = Math.abs(parseInt(val) - 450);
         midTop = 100;
     }
-    
+
+    miniStartLeft = startLeft * 3;
+    miniStartTop = startTop * 3;
+    miniMidLeft = midLeft * 3;
+    miniMidTop = midTop * 3;
+
     animation.deleteRule("0%");
     animation.deleteRule("50%");
     animation.deleteRule("100%");
+
+    miniAnimation.deleteRule("0%");
+    miniAnimation.deleteRule("50%");
+    miniAnimation.deleteRule("100%");
     
     animation.appendRule(`0%{background-position:${startLeft}% ${startTop}%}`);
     animation.appendRule(`50%{background-position:${midLeft}% ${midTop}%}`);
     animation.appendRule(`100%{background-position:${startLeft}% ${startTop}%}`);
+    
+    miniAnimation.appendRule(`0%{transform: translateX(${miniStartLeft}%) translateY${miniStartTop}%}`);
+    miniAnimation.appendRule(`50%{transform: translateX(${miniMidLeft}%) translateY${miniMidTop}%}`);
+    miniAnimation.appendRule(`100%{transform: translateX(${miniStartLeft}%) translateY${miniStartTop}%}`);
+//     @keyframes box-anim {
+//     0% {transform: translateX(150%) translateY(0%);}
+//     50% {transform: translateX(150%) translateY(300%);}
+//     100% {transform: translateX(150%) translateY(0%);}
+// }
 
     startLeftText.innerText = startLeft;
     startTopText.innerText = startTop;
