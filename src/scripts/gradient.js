@@ -14,7 +14,7 @@ boxAnimInner.style.animation = boxAnimMode + " " + speedStatus.innerText + "s ea
 
 //color changes
 let colorNum = 5;
-let colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
+// let colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
 let colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
 
 let colorButton = document.querySelector(".color-button");
@@ -167,12 +167,21 @@ function deleteColor() {
 let scrollDisplay = document.querySelector(".grandparent");
 let boxAnim = document.querySelector(".box-anim");
 
+let colors = "";
 function applyColors() {
 
-    // if (colorNum < 2){
-    //     let colorErr = document.querySelector(".apply-clr-err");
-    //     colorErr.innerText = "Please select at least two colors.";
-    // }
+    if (colorNum < 2){
+        let colorErr = document.querySelector(".apply-clr-err");
+        colorErr.innerText = "Please select at least two colors.";
+    }
+
+    colorsArr.forEach(color => {
+        if (colors.length === 0){
+            colors += color;
+        } else {
+            colors +=  ", " + color;
+        }
+    });
 
     
     if (gradientVar === "linear-gradient"){
