@@ -68,15 +68,17 @@ function deleteColor(e) {
     // let tile = document.querySelector("._0");
     // tile.remove();
     let id = e.target.id;
+    let idDigit = id.slice(1);
     // console.log(e.target.id);
     let swatch = document.querySelector(`.${id}`);
     swatch.remove();
-
-    let id = e.target.id;
-    let idDigit = id.slice(1);
     colorsArr[idDigit] = e.target.value;
 
-    // if 
+    colorsArr.splice(idDigit, 1);
+    if (colorsArr.length === 0){
+        let colorTiles = document.querySelector(".color-tiles");
+        colorTiles.remove();
+    }
 }
 
 
