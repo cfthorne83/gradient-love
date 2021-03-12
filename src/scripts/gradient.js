@@ -53,12 +53,13 @@ function createDltClrBtn() {
 
 
 let colorContainer;
+let palette = document.querySelector(".palette");
 
 function createClrContainer() {
     if (colors.length === 0) {
         colorContainer = document.createElement("ul");
-        colorContainer.setAttribute("class", "color-container");
-        colorForm.append(colorContainer);
+        colorContainer.setAttribute("class", "color-tiles");
+        palette.append(colorContainer);
     }
 }
 
@@ -80,8 +81,8 @@ let applyClrBtn = document.querySelector(".apply-clr-button");
 let resetClrBtn = document.querySelector(".reset-clr-btn");
 
 function addColorTile() {
-    applyClrBtn.style.display = "flex";
-    resetClrBtn.style.display = "flex";
+    applyClrBtn.style.display = "inline-block";
+    resetClrBtn.style.display = "inline-block";
 
     if (first) {
         first = false;
@@ -93,15 +94,14 @@ function addColorTile() {
     let colorErr = document.querySelector(".apply-clr-err");
     colorErr.innerText = "";
 
-    // createClrContainer();
+    createClrContainer();
     // createClrLabel();
     // createColorTile();
     // createDltClrBtn();
-
     
-    colorContainer.append(colorLabel);
-    colorLabel.append(colorTile);
-    colorLabel.append(deleteClrBtn);
+    // colorContainer.append(colorLabel);
+    // colorLabel.append(colorTile);
+    // colorLabel.append(deleteClrBtn);
 
     updateClrTile();
     colorNum++;
@@ -181,8 +181,7 @@ applyClrBtn.addEventListener("click", applyColors);
 
 //-----------------------------------------------------------
 //reset colors
-let colorTiles = document.querySelectorAll(".color-tile");
-let palette = document.querySelector(".palette");
+let colorTiles = document.querySelectorAll(".color-tiles");
 
 function resetColors() {
     colors = "";
@@ -191,7 +190,7 @@ function resetColors() {
     
     resetClrBtn.style.display = "none";
     applyClrBtn.style.display = "none";
-    palette.style.display = "none";
+    // palette.style.display = "none";
     
     colorTiles.remove();
 
