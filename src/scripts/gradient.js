@@ -28,12 +28,12 @@ let colorLabel;
 function createColorTile() {
     colorTile = document.createElement("input");
     colorTile.type = "color";
-    colorTile.style.width = "50px";
-    colorTile.style.height = "50px";
-    colorTile.style.display = "inline-block";
-    colorTile.style.position = "relative";
+    // colorTile.style.width = "50px";
+    // colorTile.style.height = "50px";
+    // colorTile.style.display = "inline-block";
+    // colorTile.style.position = "relative";
     colorTile.value = "#FFFFFF";
-    colorTile.setAttribute("class", "color-tile");
+    // colorTile.setAttribute("class", "color-tile");
 }
 
 let deleteClrBtn;
@@ -56,7 +56,7 @@ let colorContainer;
 let palette = document.querySelector(".palette");
 
 function createClrContainer() {
-    if (colors.length === 0) {
+    if (colorNum === 0) {
         colorContainer = document.createElement("ul");
         colorContainer.setAttribute("class", "color-tiles");
         palette.append(colorContainer);
@@ -64,25 +64,36 @@ function createClrContainer() {
 }
 
 function updateClrTile() {
-    if (colors.length === 0) {
-        colors += colorTile.value;
-    } else {
-        colors += ", " + colorTile.value;
-    }
+    // if (colors.length === 0) {
+    //     colors += colorTile.value;
+    // } else {
+    //     colors += ", " + colorTile.value;
+    // }
 }
 
 function createClrLabel() {
     colorLabel = document.createElement("label");
-    colorLabel.innerText = "Edit";
+    // colorLabel.innerText = "Edit";
     colorLabel.setAttribute("class", `_${colorsArr.length}`);
+}
+
+let clrHex;
+
+function createH2() {
+    clrHex = document.createElement("h2");
 }
 
 let applyClrBtn = document.querySelector(".apply-clr-button");
 let resetClrBtn = document.querySelector(".reset-clr-btn");
+let pltHead = document.querySelector(".plt-head");
+let pltHead2 = document.querySelector(".plt-head2");
 
 function addColorTile() {
     applyClrBtn.style.display = "inline-block";
     resetClrBtn.style.display = "inline-block";
+
+    pltHead2.style.display = "none";
+    pltHead.style.display = "inline-block";
 
     if (first) {
         first = false;
@@ -95,17 +106,19 @@ function addColorTile() {
     colorErr.innerText = "";
 
     createClrContainer();
-    // createClrLabel();
+    createClrLabel();
+    createH2();
     // createColorTile();
     // createDltClrBtn();
     
-    // colorContainer.append(colorLabel);
+    colorContainer.append(colorLabel);
+    colorLabel.append(clrHex);
     // colorLabel.append(colorTile);
     // colorLabel.append(deleteClrBtn);
 
     updateClrTile();
     colorNum++;
-    colorsArr.push(colorTile.value);
+    // colorsArr.push(colorTile.value);
 }
 
 colorButton.addEventListener("click", addColorTile);
@@ -133,10 +146,11 @@ let boxAnim = document.querySelector(".box-anim");
 
 function applyColors() {
 
-    if (colorNum < 2){
-        let colorErr = document.querySelector(".apply-clr-err");
-        colorErr.innerText = "Please select at least two colors.";
-    }
+    // if (colorNum < 2){
+    //     let colorErr = document.querySelector(".apply-clr-err");
+    //     colorErr.innerText = "Please select at least two colors.";
+    // }
+
     
     if (gradientVar === "linear-gradient"){
         gradient.style.background = 
@@ -181,7 +195,7 @@ applyClrBtn.addEventListener("click", applyColors);
 
 //-----------------------------------------------------------
 //reset colors
-let colorTiles = document.querySelectorAll(".color-tiles");
+let colorTiles = document.querySelector(".color-tiles");
 
 function resetColors() {
     colors = "";
@@ -190,10 +204,10 @@ function resetColors() {
     
     resetClrBtn.style.display = "none";
     applyClrBtn.style.display = "none";
-    // palette.style.display = "none";
-    
-    colorTiles.remove();
+    pltHead.style.display = "none";
+    pltHead2.style.display = "inline-block";
 
+    colorTiles.remove();
 }
 
 resetClrBtn.addEventListener("click", resetColors);

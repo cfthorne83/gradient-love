@@ -272,6 +272,10 @@ body {
           backdrop-filter: var(--blur);
 }
 
+.plt-head2 {
+  display: none;
+}
+
 .color-form {
   display: -webkit-box;
   display: -ms-flexbox;
