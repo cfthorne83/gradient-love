@@ -99,6 +99,30 @@ body {
           box-sizing: border-box;
 }
 
+@-webkit-keyframes linear-gradient {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+@keyframes linear-gradient {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
 @-webkit-keyframes radial-gradient {
   0% {
     background-position: 100% 100%;
@@ -133,25 +157,6 @@ body {
   100% {
     background-position: 100% 100%;
   }
-}
-
-.outer {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 35vw;
-  height: 35vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0011FF), color-stop(#8100D6), color-stop(#FF00BB), color-stop(#E1FF00), to(#00EEFF));
-  background: linear-gradient(#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
-  border: 3px solid white;
-  margin: 1em 0;
-}
-
-.outer .inner {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 3px solid black;
-  width: 25%;
-  height: 25%;
 }
 
 @-webkit-keyframes box-anim {
@@ -230,15 +235,25 @@ body {
   }
 }
 
-/* @keyframes box-animation {
-    0%{transform: translate(150% 0%)}
-    50%{transform: translate(150% 300%)}
-    100%{transform: translate(150% 0%)}
-} */
-/* .angle-disp-con {
-    width: 20%;
-    background-color: red;
-} */
+.outer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 35vw;
+  height: 35vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0011FF), color-stop(#8100D6), color-stop(#FF00BB), color-stop(#E1FF00), to(#00EEFF));
+  background: linear-gradient(#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
+  border: 3px solid white;
+  margin: 1em 0;
+}
+
+.outer .inner {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 3px solid black;
+  width: 25%;
+  height: 25%;
+}
+
 .keyframes-con {
   padding: 1em;
 }

@@ -1,7 +1,33 @@
+@keyframes linear-gradient {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+
 @keyframes radial-gradient {
     0%{background-position: 100% 100%;}
     25%{background-position: 0% 100%;}
     75%{background-position: 100% 0%;}
     50%{background-position: 0% 0%;}
     100%{background-position: 100% 100%;}
+}
+
+@keyframes box-anim {
+    0% {transform: translateX(150%) translateY(0%);}
+    50% {transform: translateX(150%) translateY(300%);}
+    100% {transform: translateX(150%) translateY(0%);}
+}
+
+// @keyframes box-anim {
+//     0% {transform: translateX(150%) translateY(0%);}
+//     50% {transform: translateX(150%) translateY(300%);}
+//     100% {transform: translateX(150%) translateY(0%);}
+// }
+
+@keyframes radial-box-anim {
+    0%{transform: translateX(300%) translateY(300%);}
+    25%{transform: translateX(0%) translateY(300%);}
+    50%{transform: translateX(0%) translateY(0%);}
+    75%{transform: translateX(300%) translateY(0%);}
+    100%{transform: translateX(300%) translateY(300%);}
 }

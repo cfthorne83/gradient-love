@@ -16,7 +16,10 @@ gradient.style.animation = gradientVar + " " + speedStatus.innerText + "s ease i
 
 let boxAnimInner = document.querySelector(".inner");
 let boxAnimMode = "box-anim";
-boxAnimInner.style.animation = boxAnimMode + " " + speedStatus.innerText + "s ease infinite";
+boxAnimInner.style.animation = boxAnimMode 
+                                + " " 
+                                + speedStatus.innerText 
+                                + "s ease infinite";
 
 //color changes
 let colorNum = 5;
