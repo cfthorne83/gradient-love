@@ -108,6 +108,8 @@ function addColorTile() {
     createClrContainer();
     createClrLabel();
     createH2();
+    clrDiv = document.createElement("div");
+
     // createColorTile();
     // createDltClrBtn();
     
@@ -207,6 +209,7 @@ function resetColors() {
     pltHead.style.display = "none";
     pltHead2.style.display = "inline-block";
 
+    let colorTiles = document.querySelector(".color-tiles");
     colorTiles.remove();
 }
 
