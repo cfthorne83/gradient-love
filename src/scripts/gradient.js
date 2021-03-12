@@ -3,6 +3,9 @@ let gradient = document.querySelector(".gradient-back");
 
 let speedStatus = document.querySelector("#speedStatus")
 let angleStatus = document.querySelector("#angleStatus")  
+let gradientAngle = document.querySelector(".gradient-angle");
+let boxAnim = document.querySelector(".box-anim");
+let scrollDisplay = document.querySelector(".grandparent");
 
 let animation = (document.styleSheets[2].cssRules[0]);
 let gradientVar = "linear-gradient";
@@ -16,6 +19,8 @@ boxAnimInner.style.animation = boxAnimMode + " " + speedStatus.innerText + "s ea
 let colorNum = 5;
 // let colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
 let colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
+
+// applyColors();
 
 let colorButton = document.querySelector(".color-button");
 let colorInput = document.querySelector(".color-input");
@@ -165,7 +170,9 @@ function addColorTile() {
 }
 
 colorButton.addEventListener("click", addColorTile);
-
+colorsArr.forEach( (color) => {
+    addColorTile();
+})
 
 // if (deleteBtn){
 //     deleteBtn.addEventListener("click", deleteColor);
@@ -173,8 +180,6 @@ colorButton.addEventListener("click", addColorTile);
 
 
 // let angleDisplayDiv = document.querySelector(".angle-display-div");
-let scrollDisplay = document.querySelector(".grandparent");
-let boxAnim = document.querySelector(".box-anim");
 
 function applyColors() {
     
@@ -371,7 +376,6 @@ let name = document.querySelector("#name-input");
 // let gradientStatus = document.querySelector("#gradient-status");
 // gradientStatus.innerText = gradientVar;
 
-let gradientAngle = document.querySelector(".gradient-angle");
 let scrollAngle = document.querySelector(".scroll-angle");
 let gradAngleText = document.querySelector(".grad-ang");
 let scrollAngleText = document.querySelector(".scroll-angle");
