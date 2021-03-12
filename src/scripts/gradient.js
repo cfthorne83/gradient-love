@@ -25,6 +25,12 @@ let first = true;
 let colorTile;
 let colorLabel;
 
+function changeLabelBack(id) {
+    swatch = document.querySelector(`._${id}`);
+    input = document.querySelector(`#a${id}`)
+    swatch.style.backgroundColor = input.value;
+}
+
 function createColorTile() {
     colorTile = document.createElement("input");
     colorTile.type = "color";
@@ -33,7 +39,8 @@ function createColorTile() {
     // colorTile.style.display = "inline-block";
     // colorTile.style.position = "relative";
     colorTile.value = "#FFFFFF";
-    // colorTile.setAttribute("class", "color-tile");
+    colorTile.setAttribute("id", `a${colorsArr.length}`);
+    colorTile.addEventListener("input", changeLabelBack(colorsArr.length));
 }
 
 let deleteClrBtn;
@@ -75,7 +82,6 @@ function createClrLabel() {
     colorLabel = document.createElement("label");
     // colorLabel.innerText = "Edit";
     colorLabel.setAttribute("class", `_${colorsArr.length}`);
-    document.addEventListener("input", )
 }
 
 let clrHex;
