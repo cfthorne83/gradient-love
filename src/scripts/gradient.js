@@ -10,7 +10,7 @@ let linearBtn = document.querySelector(".linear-button");
 
 linearBtn.focus();
 
-let animation = (document.styleSheets[2].cssRules[0]);
+// let animation = (document.styleSheets[2].cssRules[0]);
 let miniAnimation = (document.styleSheets[2].cssRules[1]);
 
 let gradientVar = "linear-gradient";
@@ -330,6 +330,13 @@ let endTopText = document.querySelector(".end-top");
 let midLeftText = document.querySelector(".mid-left");
 let midTopText = document.querySelector(".mid-top");
 
+let miniStartLeftText = document.querySelector(".mini-start-left");
+let miniStartTopText = document.querySelector(".mini-start-top");
+let miniMidLeftText = document.querySelector(".mini-mid-left");
+let miniMidTopText = document.querySelector(".mini-mid-top");
+let miniKeyframes = document.querySelector(".mini-keyframes");
+miniKeyframes.innerText = miniAnimation.cssText;
+
 let knobValue = document.querySelector(".knob-value");
 
 function scrollChange(val) {
@@ -382,10 +389,14 @@ function scrollChange(val) {
     animation.appendRule(`0%{background-position:${startLeft}% ${startTop}%}`);
     animation.appendRule(`50%{background-position:${midLeft}% ${midTop}%}`);
     animation.appendRule(`100%{background-position:${startLeft}% ${startTop}%}`);
+
+    miniAnimation.appendRule(`0%{transform: translateX(${miniStartLeft}%) translateY(${miniStartTop}%)}`);
+    miniAnimation.appendRule(`50%{transform: translateX(${miniMidLeft}%) translateY(${miniMidTop}%)}`);
+    miniAnimation.appendRule(`100%{transform: translateX(${miniStartLeft}%) translateY(${miniStartTop}%)}`);
     
-    miniAnimation.appendRule(`0%{transform: translateX(${miniStartLeft}%) translateY${miniStartTop}%}`);
-    miniAnimation.appendRule(`50%{transform: translateX(${miniMidLeft}%) translateY${miniMidTop}%}`);
-    miniAnimation.appendRule(`100%{transform: translateX(${miniStartLeft}%) translateY${miniStartTop}%}`);
+    // miniAnimation.appendRule(`0%{transform:translateX(${miniStartLeft}%) translateY${miniStartTop}%}`);
+    // miniAnimation.appendRule(`50%{transform:translateX(${miniMidLeft}%) translateY${miniMidTop}%}`);
+    // miniAnimation.appendRule(`100%{transform:translateX(${miniStartLeft}%) translateY${miniStartTop}%}`);
 //     @keyframes box-anim {
 //     0% {transform: translateX(150%) translateY(0%);}
 //     50% {transform: translateX(150%) translateY(300%);}
@@ -398,6 +409,13 @@ function scrollChange(val) {
     endTopText.innerText = startTop;
     midLeftText.innerText = midLeft;
     midTopText.innerText = midTop;
+
+    // miniStartLeftText.innerText = miniStartLeft;
+    // miniStartTopText.innerText = miniStartTop;
+    // miniMidLeftText.innerText = miniMidLeft;
+    // miniMidTopText.innerText = miniMidTop;
+    miniKeyframes.innerText = miniAnimation.cssText;
+
 
     knobValue.innerText = Math.round(val * .9) + "°";
     knobNeedle.style.transform = "rotate(" + (val * .9) + "deg)";
