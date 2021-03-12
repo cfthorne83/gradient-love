@@ -175,19 +175,22 @@ applyClrBtn.addEventListener("click", applyColors);
 
 //-----------------------------------------------------------
 let colorTiles = document.querySelectorAll(".color-tile");
+let resetClrBtn = document.querySelector(".reset-clr-btn");
 
 function resetColors() {
     colors = "";
     colorNum = 0;
     colorsArr = [];
     
-    let colorContainer = document.querySelector(".color-container");
-    if (colorContainer){
-        colorContainer.remove();
+    let palette = document.querySelector(".palette");
+    if (palette){
+        palette.remove();
     }
+
+    resetClrBtn.style.display = "none";
+    applyClrBtn.style.display = "none";
 }
 
-let resetClrBtn = document.querySelector(".reset-clr-btn");
 resetClrBtn.addEventListener("click", resetColors);
 
 
