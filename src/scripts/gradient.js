@@ -394,6 +394,15 @@ function scrollChange(val) {
     miniAnimation.appendRule(`50%{transform: translateX(${miniMidLeft}%) translateY(${miniMidTop}%)}`);
     miniAnimation.appendRule(`100%{transform: translateX(${miniStartLeft}%) translateY(${miniStartTop}%)}`);
     
+    gradient.style.backgroundSize = "400% 400%";
+    gradient.style.animation = gradientVar
+                            + " " + speedStatus.innerText
+                            + "s ease infinite";
+
+    boxAnimInner.style.animation = boxAnimMode + " " 
+                            + speedStatus.innerText 
+                            + "s ease infinite";
+
     // miniAnimation.appendRule(`0%{transform:translateX(${miniStartLeft}%) translateY${miniStartTop}%}`);
     // miniAnimation.appendRule(`50%{transform:translateX(${miniMidLeft}%) translateY${miniMidTop}%}`);
     // miniAnimation.appendRule(`100%{transform:translateX(${miniStartLeft}%) translateY${miniStartTop}%}`);
