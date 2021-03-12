@@ -41,14 +41,14 @@ let deleteClrBtn;
 function createDltClrBtn() {
     deleteClrBtn = document.createElement("input");
     deleteClrBtn.setAttribute("type", "submit");
-    deleteClrBtn.setAttribute("value", "Delete");
+    deleteClrBtn.setAttribute("value", "delete");
     // deleteClrBtn.setAttribute("id", `_${colorsArr.length}`);
-    deleteClrBtn.setAttribute("id", "_0");
-    deleteClrBtn.setAttribute("class", "delete-clr-btn");
-    deleteClrBtn.style.backgroundColor = "red";
+    // deleteClrBtn.setAttribute("id", "_0");
+    // deleteClrBtn.setAttribute("class", "delete-clr-btn");
+    // deleteClrBtn.style.backgroundColor = "red";
 
     // deleteBtn = document.querySelector(".delete-clr-btn");
-    deleteClrBtn.addEventListener("click", deleteColor);
+    // deleteClrBtn.addEventListener("click", deleteColor);
 }
 
 
@@ -75,12 +75,22 @@ function createClrLabel() {
     colorLabel = document.createElement("label");
     // colorLabel.innerText = "Edit";
     colorLabel.setAttribute("class", `_${colorsArr.length}`);
+    document.addEventListener("input", )
 }
 
 let clrHex;
 
 function createH2() {
     clrHex = document.createElement("h2");
+    // clrHex.innerText = colorTile.value;
+}
+
+let editBtn;
+
+function createEditBtn() {
+    editBtn = document.createElement("span");
+    editBtn.innerText = "edit";
+    editBtn.setAttribute("class", "edit-clr-tile");
 }
 
 let applyClrBtn = document.querySelector(".apply-clr-button");
@@ -108,19 +118,22 @@ function addColorTile() {
     createClrContainer();
     createClrLabel();
     createH2();
-    clrDiv = document.createElement("div");
-
-    // createColorTile();
-    // createDltClrBtn();
+    // clrHex.innerText = colorTile.value;
+    createColorTile();
+    let clrDiv = document.createElement("div");
+    createEditBtn();
+    createDltClrBtn();
     
     colorContainer.append(colorLabel);
     colorLabel.append(clrHex);
-    // colorLabel.append(colorTile);
-    // colorLabel.append(deleteClrBtn);
+    colorLabel.append(colorTile);
+    colorLabel.append(clrDiv);
+    clrDiv.append(editBtn);
+    clrDiv.append(deleteClrBtn);
 
     updateClrTile();
     colorNum++;
-    // colorsArr.push(colorTile.value);
+    colorsArr.push(colorTile.value);
 }
 
 colorButton.addEventListener("click", addColorTile);
