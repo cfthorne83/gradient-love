@@ -42,7 +42,7 @@ function updateClrArr(e) {
     colorsArr[idDigit] = e.target.value;
 }
 
-function createColorTile() {
+function createColorTile(color) {
     colorTile = document.createElement("input");
     colorTile.type = "color";
     colorTile.value = "#FFFFFF";
@@ -132,6 +132,9 @@ let pltHead = document.querySelector(".plt-head");
 let pltHead2 = document.querySelector(".plt-head2");
 
 function addColorTile() {
+    // if (!color){
+    //     color = "#FFFFFF";
+    // }
     applyClrBtn.style.display = "inline-block";
     resetClrBtn.style.display = "inline-block";
 
@@ -170,9 +173,16 @@ function addColorTile() {
 }
 
 colorButton.addEventListener("click", addColorTile);
-colorsArr.forEach( (color) => {
+
+colorsArr.forEach( (color, i) => {
     addColorTile();
-})
+
+    let label = document.querySelector(`.a${i}`)
+    let input = document.querySelector(`#a${i}`)
+
+    input.value = color;
+    label.style.background = color;
+});
 
 // if (deleteBtn){
 //     deleteBtn.addEventListener("click", deleteColor);
