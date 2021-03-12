@@ -52,13 +52,31 @@ function createDltClrBtn() {
     deleteClrBtn = document.createElement("input");
     deleteClrBtn.setAttribute("type", "submit");
     deleteClrBtn.setAttribute("value", "delete");
+    deleteClrBtn.setAttribute("id", `a${colorsArr.length}`);
+
     // deleteClrBtn.setAttribute("id", `_${colorsArr.length}`);
     // deleteClrBtn.setAttribute("id", "_0");
     // deleteClrBtn.setAttribute("class", "delete-clr-btn");
     // deleteClrBtn.style.backgroundColor = "red";
 
     // deleteBtn = document.querySelector(".delete-clr-btn");
-    // deleteClrBtn.addEventListener("click", deleteColor);
+    deleteClrBtn.addEventListener("click", deleteColor);
+
+}
+
+function deleteColor(e) {
+    // let tile = document.querySelector("._0");
+    // tile.remove();
+    let id = e.target.id;
+    // console.log(e.target.id);
+    let swatch = document.querySelector(`.${id}`);
+    swatch.remove();
+
+    let id = e.target.id;
+    let idDigit = id.slice(1);
+    colorsArr[idDigit] = e.target.value;
+
+    // if 
 }
 
 
@@ -146,17 +164,6 @@ function addColorTile() {
 
 colorButton.addEventListener("click", addColorTile);
 
-
-
-function deleteColor() {
-    // let tile = document.querySelector(`.${id}`);
-    let tile = document.querySelector("._0");
-    // let deletedTile = document.querySelector("." + id);
-    // console.log('sdfa');
-    // let buttonId = deleteBtn.id;
-    // let deletedTile = document.querySelector(`.${id}`);
-    tile.remove();
-}
 
 // if (deleteBtn){
 //     deleteBtn.addEventListener("click", deleteColor);
