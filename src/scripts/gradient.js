@@ -76,7 +76,13 @@ function createClrLabel() {
     colorLabel.setAttribute("class", `_${colorsArr.length}`);
 }
 
+let applyClrBtn = document.querySelector(".apply-clr-button");
+let resetClrBtn = document.querySelector(".reset-clr-btn");
+
 function addColorTile() {
+    applyClrBtn.style.display = "flex";
+    resetClrBtn.style.display = "flex";
+
     if (first) {
         first = false;
         colors = "";
@@ -87,10 +93,11 @@ function addColorTile() {
     let colorErr = document.querySelector(".apply-clr-err");
     colorErr.innerText = "";
 
-    createClrContainer();
-    createClrLabel();
-    createColorTile();
-    createDltClrBtn();
+    // createClrContainer();
+    // createClrLabel();
+    // createColorTile();
+    // createDltClrBtn();
+
     
     colorContainer.append(colorLabel);
     colorLabel.append(colorTile);
@@ -170,25 +177,24 @@ function applyColors() {
                             + "s ease infinite";
 }
 
-let applyClrBtn = document.querySelector(".apply-clr-button");
 applyClrBtn.addEventListener("click", applyColors);
 
 //-----------------------------------------------------------
+//reset colors
 let colorTiles = document.querySelectorAll(".color-tile");
-let resetClrBtn = document.querySelector(".reset-clr-btn");
+let palette = document.querySelector(".palette");
 
 function resetColors() {
     colors = "";
     colorNum = 0;
     colorsArr = [];
     
-    let palette = document.querySelector(".palette");
-    if (palette){
-        palette.remove();
-    }
-
     resetClrBtn.style.display = "none";
     applyClrBtn.style.display = "none";
+    palette.style.display = "none";
+    
+    colorTiles.remove();
+
 }
 
 resetClrBtn.addEventListener("click", resetColors);
