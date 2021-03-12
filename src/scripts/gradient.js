@@ -395,11 +395,11 @@ function scrollChange(val) {
     miniAnimation.appendRule(`100%{transform: translateX(${miniStartLeft}%) translateY(${miniStartTop}%)}`);
     
     gradient.style.backgroundSize = "400% 400%";
-    gradient.style.animation = gradientVar
+    gradient.style.animation = "linear-gradient"
                             + " " + speedStatus.innerText
                             + "s ease infinite";
 
-    boxAnimInner.style.animation = boxAnimMode + " " 
+    boxAnimInner.style.animation = "box-anim" + " " 
                             + speedStatus.innerText 
                             + "s ease infinite";
 
