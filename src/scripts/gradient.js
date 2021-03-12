@@ -6,6 +6,9 @@ let angleStatus = document.querySelector("#angleStatus")
 let gradientAngle = document.querySelector(".gradient-angle");
 let boxAnim = document.querySelector(".box-anim");
 let scrollDisplay = document.querySelector(".grandparent");
+let linearBtn = document.querySelector(".linear-button");
+
+linearBtn.focus();
 
 let animation = (document.styleSheets[2].cssRules[0]);
 let gradientVar = "linear-gradient";
@@ -174,22 +177,23 @@ function addColorTile() {
 
 colorButton.addEventListener("click", addColorTile);
 
-colorsArr.forEach( (color, i) => {
-    addColorTile();
+function defaultColorTiles() {
+    
+    colorsArr.forEach( (color, i) => {
+        addColorTile();
+    
+        let label = document.querySelector(`.a${i}`)
+        let input = document.querySelector(`#a${i}`)
+    
+        input.value = color;
+        label.style.background = color;
+    });
+    
+    colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
+}
 
-    let label = document.querySelector(`.a${i}`)
-    let input = document.querySelector(`#a${i}`)
+defaultColorTiles();
 
-    input.value = color;
-    label.style.background = color;
-});
-
-// if (deleteBtn){
-//     deleteBtn.addEventListener("click", deleteColor);
-// }
-
-
-// let angleDisplayDiv = document.querySelector(".angle-display-div");
 
 function applyColors() {
     
@@ -279,7 +283,9 @@ function speedChange(val) {
     speedStatus2.innerText = val;
     // body.style.animation = gradientVar + " " + val + "s ease infinite";
     gradient.style.animation = gradientVar + " " + val + "s ease infinite";
-}
+    boxAnimInner.style.animation = boxAnimMode + " " 
+                            + speedStatus.innerText 
+                            + "s ease infinite";}
 
 //------------------------------------------------------------------------------
 let angleDisplay = document.querySelector(".angle-display");
