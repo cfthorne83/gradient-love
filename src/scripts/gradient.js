@@ -167,14 +167,14 @@ function deleteColor() {
 let scrollDisplay = document.querySelector(".grandparent");
 let boxAnim = document.querySelector(".box-anim");
 
-let colors = "";
 function applyColors() {
-
+    
     if (colorNum < 2){
         let colorErr = document.querySelector(".apply-clr-err");
         colorErr.innerText = "Please select at least two colors.";
     }
-
+    
+    let colors = "";
     colorsArr.forEach(color => {
         if (colors.length === 0){
             colors += color;
@@ -187,17 +187,17 @@ function applyColors() {
     if (gradientVar === "linear-gradient"){
         gradient.style.background = 
         gradientVar + "(" 
-        + angleStatus.innerText + "deg,"
+        + gradientAngle.value + "deg,"
         + colors + ")"; 
 
         boxAnim.style.background = 
         gradientVar + "(" 
-        + angleStatus.innerText + "deg,"
+        + gradientAngle.value + "deg,"
         + colors + ")"; 
 
         scrollDisplay.style.background = 
         gradientVar + "(" 
-        + angleStatus.innerText + "deg,"
+        + gradientAngle.value + "deg,"
         + colors + ")";
     } else {
         gradient.style.background = 
