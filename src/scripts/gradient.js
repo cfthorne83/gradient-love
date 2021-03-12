@@ -25,22 +25,18 @@ let first = true;
 let colorTile;
 let colorLabel;
 
-function changeLabelBack(id) {
-    swatch = document.querySelector(`._${id}`);
-    input = document.querySelector(`#a${id}`)
-    swatch.style.backgroundColor = input.value;
+function changeLabelBack(e) {
+    let id = e.target.id;
+    let swatch = document.querySelector(`.${id}`);
+    swatch.style.backgroundColor = e.target.value;
 }
 
 function createColorTile() {
     colorTile = document.createElement("input");
     colorTile.type = "color";
-    // colorTile.style.width = "50px";
-    // colorTile.style.height = "50px";
-    // colorTile.style.display = "inline-block";
-    // colorTile.style.position = "relative";
     colorTile.value = "#FFFFFF";
     colorTile.setAttribute("id", `a${colorsArr.length}`);
-    colorTile.addEventListener("input", changeLabelBack(colorsArr.length));
+    colorTile.addEventListener("input", changeLabelBack);
 }
 
 let deleteClrBtn;
@@ -80,8 +76,7 @@ function updateClrTile() {
 
 function createClrLabel() {
     colorLabel = document.createElement("label");
-    // colorLabel.innerText = "Edit";
-    colorLabel.setAttribute("class", `_${colorsArr.length}`);
+    colorLabel.setAttribute("class", `a${colorsArr.length}`);
 }
 
 let clrHex;
