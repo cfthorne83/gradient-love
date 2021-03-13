@@ -330,12 +330,15 @@ let endTopText = document.querySelector(".end-top");
 let midLeftText = document.querySelector(".mid-left");
 let midTopText = document.querySelector(".mid-top");
 
-let miniStartLeftText = document.querySelector(".mini-start-left");
-let miniStartTopText = document.querySelector(".mini-start-top");
-let miniMidLeftText = document.querySelector(".mini-mid-left");
-let miniMidTopText = document.querySelector(".mini-mid-top");
+// let miniStartLeftText = document.querySelector(".mini-start-left");
+// let miniStartTopText = document.querySelector(".mini-start-top");
+// let miniMidLeftText = document.querySelector(".mini-mid-left");
+// let miniMidTopText = document.querySelector(".mini-mid-top");
 let miniKeyframes = document.querySelector(".mini-keyframes");
 miniKeyframes.innerText = miniAnimation.cssText;
+
+let bigKeyframes = document.querySelector(".big-keyframes");
+bigKeyframes.innerText = animation.cssText;
 
 let knobValue = document.querySelector(".knob-value");
 
@@ -394,14 +397,16 @@ function scrollChange(val) {
     miniAnimation.appendRule(`50%{transform: translateX(${miniMidLeft}%) translateY(${miniMidTop}%)}`);
     miniAnimation.appendRule(`100%{transform: translateX(${miniStartLeft}%) translateY(${miniStartTop}%)}`);
     
-    gradient.style.backgroundSize = "400% 400%";
-    gradient.style.animation = "linear-gradient"
-                            + " " + speedStatus.innerText
-                            + "s ease infinite";
+    // gradient.style.backgroundSize = "400% 400%";
+    // gradient.style.animation = "linear-gradient"
+    //                         + gradientAngle.value + "deg,"
+    //                         + " " + speedStatus.innerText
+    //                         + "s ease infinite";
+                            
 
-    boxAnimInner.style.animation = "box-anim" + " " 
-                            + speedStatus.innerText 
-                            + "s ease infinite";
+    // boxAnimInner.style.animation = "box-anim" + " " 
+    //                         + speedStatus.innerText 
+    //                         + "s ease infinite";
 
     // miniAnimation.appendRule(`0%{transform:translateX(${miniStartLeft}%) translateY${miniStartTop}%}`);
     // miniAnimation.appendRule(`50%{transform:translateX(${miniMidLeft}%) translateY${miniMidTop}%}`);
@@ -424,6 +429,7 @@ function scrollChange(val) {
     // miniMidLeftText.innerText = miniMidLeft;
     // miniMidTopText.innerText = miniMidTop;
     miniKeyframes.innerText = miniAnimation.cssText;
+    bigKeyframes.innerText = animation.cssText;
 
 
     knobValue.innerText = Math.round(val * .9) + "°";
