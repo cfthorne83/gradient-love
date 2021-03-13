@@ -90,8 +90,7 @@ function createDltClrBtn() {
 }
 
 function deleteColor(e) {
-    // let tile = document.querySelector("._0");
-    // tile.remove();
+    // debugger
     let id = e.target.id;
     let idDigit = id.slice(1);
     // console.log(e.target.id);
