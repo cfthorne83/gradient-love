@@ -27,8 +27,13 @@ boxAnimInner.style.animation = boxAnimMode
 
 //color changes
 let colorNum = 5;
-// let colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
+let colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
 let colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
+
+clrCode.innerText = 
+        gradientVar + "( " 
+        + gradientAngle.value + "deg, "
+        + colors + " );";
 
 // applyColors();
 
