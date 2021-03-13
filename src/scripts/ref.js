@@ -109,13 +109,13 @@ function createClrContainer() {
     }
 }
 
-function updateClrTile() {
-    // if (colors.length === 0) {
-    //     colors += colorTile.value;
-    // } else {
-    //     colors += ", " + colorTile.value;
-    // }
-}
+// function updateClrTile() {
+//     // if (colors.length === 0) {
+//     //     colors += colorTile.value;
+//     // } else {
+//     //     colors += ", " + colorTile.value;
+//     // }
+// }
 
 function createClrLabel() {
     colorLabel = document.createElement("label");
@@ -126,8 +126,8 @@ let clrHex;
 
 function createH2() {
     clrHex = document.createElement("h2");
-    clrHex.setAttribute("class", `h2-a${colorsArr.length}`);
     clrHex.innerText = "gobble";
+    clrHex.setAttribute("class", `h2-a${colorsArr.length}`);
 }
 
 let editBtn;
@@ -175,11 +175,12 @@ function addColorTile() {
     colorContainer.append(colorLabel);
     colorLabel.append(clrHex);
     colorLabel.append(colorTile);
+    clrHex.innerText = colorTile.value;
     colorLabel.append(clrDiv);
     clrDiv.append(editBtn);
     clrDiv.append(deleteClrBtn);
 
-    updateClrTile();
+    // updateClrTile();
     colorNum++;
     colorsArr.push(colorTile.value);
 }
