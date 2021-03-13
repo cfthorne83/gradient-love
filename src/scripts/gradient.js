@@ -8,7 +8,9 @@ let boxAnim = document.querySelector(".box-anim");
 let scrollDisplay = document.querySelector(".grandparent");
 let linearBtn = document.querySelector(".linear-button");
 let clrCode = document.querySelector(".color-code");
+let radClrCode = document.querySelector(".radial-color-code");
 clrCode.innerText = gradient.style.background;
+radClrCode.innerText = gradient.style.background;
 
 linearBtn.focus();
 
@@ -264,7 +266,7 @@ function applyColors() {
         gradientVar + "(" 
         + colors + ")";
 
-        clrCode.innerText = 
+        radClrCode.innerText = 
         gradientVar + "( " 
         + colors + " );";
     }
