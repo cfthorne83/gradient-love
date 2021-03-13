@@ -127,7 +127,7 @@ let clrHex;
 function createH2() {
     clrHex = document.createElement("h2");
     clrHex.setAttribute("class", `h2-a${colorsArr.length}`);
-    clrHex.innerText = "gobble";
+    // clrHex.innerText = "gobble";
 }
 
 let editBtn;
@@ -168,6 +168,7 @@ function addColorTile() {
     createH2();
     // clrHex.innerText = colorTile.value;
     createColorTile();
+    clrHex.innerText = colorTile.value;
     let clrDiv = document.createElement("div");
     createEditBtn();
     createDltClrBtn();
