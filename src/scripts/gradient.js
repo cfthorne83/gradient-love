@@ -7,6 +7,8 @@ let gradientAngle = document.querySelector(".gradient-angle");
 let boxAnim = document.querySelector(".box-anim");
 let scrollDisplay = document.querySelector(".grandparent");
 let linearBtn = document.querySelector(".linear-button");
+let clrCode = document.querySelector(".color-code");
+clrCode.innerText = gradient.style.background;
 
 linearBtn.focus();
 
@@ -239,6 +241,11 @@ function applyColors() {
         gradientVar + "(" 
         + gradientAngle.value + "deg,"
         + colors + ")";
+
+        clrCode.innerText = 
+        gradientVar + "( " 
+        + gradientAngle.value + "deg, "
+        + colors + " );";
     } else {
         gradient.style.background = 
         gradientVar + "(" 
@@ -251,6 +258,10 @@ function applyColors() {
         scrollDisplay.style.background = 
         gradientVar + "(" 
         + colors + ")";
+
+        clrCode.innerText = 
+        gradientVar + "( " 
+        + colors + " );";
     }
 
     gradient.style.backgroundSize = "400% 400%";
@@ -261,6 +272,8 @@ function applyColors() {
     boxAnimInner.style.animation = boxAnimMode + " " 
                             + speedStatus.innerText 
                             + "s ease infinite";
+                
+    // clrCode.innerText = gradient.style.background;
 }
 
 applyClrBtn.addEventListener("click", applyColors);
