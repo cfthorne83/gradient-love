@@ -467,12 +467,13 @@ function scrollChange(val) {
 let animationName3 = document.querySelector(".animation-name3");
 
 function nameChange(val){
+    // animationName = document.querySelector(".animation-name");
     animationName.innerText = val;
     animationName2.innerText = val;  
     animationName3.innerText = val;  
 }
 
-let name = document.querySelector("#name-input");
+// let name = document.querySelector(".name-input");
 
 //------------------------------------------------------------------------------
 //Gradient handlers
