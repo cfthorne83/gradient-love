@@ -55,7 +55,7 @@ body {
     .sect3 {
         display: flex;
         width: 100%;
-        background-color: red;
+        // background-color: red;
 
         .box-anim-con {
             background-color: aqua;
@@ -71,6 +71,15 @@ body {
             display: flex;
             background-color: yellow;
             width: 50%;
+            // height: 100%;
+
+            .sliders {
+                display: flex;
+                width: 50%;
+                background-color: black;
+                justify-content: center;
+                // width: 100px;
+            }
         }
     }
 }

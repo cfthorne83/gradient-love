@@ -111,7 +111,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  background-color: red;
 }
 
 .container .sect3 .box-anim-con {
@@ -138,6 +137,17 @@ body {
   display: flex;
   background-color: yellow;
   width: 50%;
+}
+
+.container .sect3 .slider-con .sliders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  background-color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @-webkit-keyframes radial-gradient {
@@ -532,6 +542,8 @@ input[type="color"]::-webkit-color-swatch {
 
 input[type="range"] {
   -webkit-appearance: slider-vertical;
+  width: 10%;
+  margin: 1em;
 }
 
 input[type="range"]:focus {
