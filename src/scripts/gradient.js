@@ -323,7 +323,7 @@ let angleDisplay = document.querySelector(".angle-display");
 let angle = 0;
 
 function angleChange(val) {
-    // angleStatus.innerText = val;
+    angleStatus.innerText = val;
     // angleDisplay.innerText = val;
     angle = val;
 
