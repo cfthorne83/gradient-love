@@ -32,7 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 83%;
+    width: 88%;
     // background-color: rgba(82, 82, 82, 0.801);
     background-color: #5a5a5aa1;
     border-radius: .7rem .7rem 0 0;
@@ -58,7 +58,7 @@ body {
         // background-color: red;
 
         .box-anim-con {
-            background-color: aqua;
+            // background-color: aqua;
             width: 50%;
 
             display: flex;
@@ -69,22 +69,30 @@ body {
 
         .slider-con {
             display: flex;
-            background-color: yellow;
+            // background-color: yellow;
             width: 50%;
             // height: 100%;
 
             .sliders {
                 display: flex;
                 width: 50%;
-                background-color: black;
+                // background-color: black;
                 justify-content: center;
                 // width: 100px;
             }
 
             .stat-display {
-                background-color: green;
+                // background-color: green;
                 width: 50%;
-                // display: flex;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h1 {
+                    // background-color: red;
+                    // text-align: center;
+                }
             }
         }
     }
