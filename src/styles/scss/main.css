@@ -112,12 +112,6 @@ body {
   display: flex;
 }
 
-.container .sect3 .inner {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
 @-webkit-keyframes radial-gradient {
   0% {
     background-position: 100% 100%;
@@ -469,6 +463,12 @@ input[type="color"]::-webkit-color-swatch {
       -ms-flex-align: center;
           align-items: center;
   /* width: 50%; */
+}
+
+.slider-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .button {
