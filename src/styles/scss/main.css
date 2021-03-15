@@ -498,13 +498,13 @@ input[type="color"]::-webkit-color-swatch {
 
 .purp-hov:hover, .purp-hov:active {
   background-color: rgba(0, 0, 0, 0.657);
-  border: 0.15rem solid #d0ff00;
+  border: 0.15rem solid #0044ff;
   color: white;
 }
 
 .mid-hov:hover, .mid-hov:active {
   background-color: rgba(0, 0, 0, 0.657);
-  border: 0.15rem solid #ff2600;
+  border: 0.15rem solid #d0ff00;
   color: white;
 }
 
