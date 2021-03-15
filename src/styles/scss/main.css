@@ -453,8 +453,8 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .grandparent {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background: -webkit-gradient(linear, left top, left bottom, from(#0011FF), color-stop(#8100D6), color-stop(#FF00BB), color-stop(#E1FF00), to(#00EEFF));
   background: linear-gradient(#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
   display: -webkit-box;
