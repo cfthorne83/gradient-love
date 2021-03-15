@@ -180,6 +180,8 @@ body {
 .container .sect3 .slider-con-con .slider-con .sliders p {
   color: var(--font-grey);
   font-family: var(--code-font);
+  font-size: 1rem;
+  letter-spacing: 3px;
 }
 
 @-webkit-keyframes radial-gradient {
@@ -558,6 +560,7 @@ input[type="color"]::-webkit-color-swatch {
 input[type="range"] {
   -webkit-appearance: none;
   margin: 0 1.5em;
+  cursor: pointer;
 }
 
 input[type="range"]:focus {
@@ -582,6 +585,7 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: -5px;
   border-radius: 50%;
   border: 1px solid #b8b8b8;
+  cursor: pointer;
 }
 
 input[type="range"]::-moz-range-thumb {
