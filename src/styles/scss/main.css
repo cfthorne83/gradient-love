@@ -150,6 +150,11 @@ body {
           justify-content: center;
 }
 
+.container .sect3 .slider-con .stat-display {
+  background-color: green;
+  width: 50%;
+}
+
 @-webkit-keyframes radial-gradient {
   0% {
     background-position: 100% 100%;
@@ -448,8 +453,8 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .grandparent {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background: -webkit-gradient(linear, left top, left bottom, from(#0011FF), color-stop(#8100D6), color-stop(#FF00BB), color-stop(#E1FF00), to(#00EEFF));
   background: linear-gradient(#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
   display: -webkit-box;
@@ -464,7 +469,6 @@ input[type="color"]::-webkit-color-swatch {
   border: 0.2rem solid white;
   padding: 1em;
   margin: .5em 2em 2em 2em;
-  border-radius: var(--border-radius);
 }
 
 .parent {
@@ -487,20 +491,6 @@ input[type="color"]::-webkit-color-swatch {
   width: .2rem;
   height: 101%;
   background-color: #242424;
-}
-
-.knob-con {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* width: 50%; */
 }
 
 .button {
