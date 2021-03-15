@@ -51,4 +51,12 @@ body {
         // background-color: #707070a1;
 
     }
+
+    .sect3 {
+        display: flex;
+
+        .inner {
+            align-self:center;
+        }
+    }
 }

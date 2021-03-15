@@ -106,6 +106,18 @@ body {
   padding: 1em 1em 1.5em 1em;
 }
 
+.container .sect3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .sect3 .inner {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 @-webkit-keyframes radial-gradient {
   0% {
     background-position: 100% 100%;
