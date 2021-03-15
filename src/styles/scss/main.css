@@ -114,11 +114,13 @@ body {
   display: flex;
   width: 100%;
   padding: 1em;
+  background-color: red;
 }
 
 .container .sect3 .box-anim-con {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: aqua;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,13 +150,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 50%;
+  background-color: black;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .container .sect3 .slider-con .stat-display {
+  background-color: green;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -565,8 +573,7 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 input[type="range"] {
-  -webkit-appearance: slider-vertical;
-  width: 10%;
+  -webkit-appearance: none;
   margin: 1em;
 }
 
