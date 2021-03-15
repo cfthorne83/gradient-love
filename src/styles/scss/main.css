@@ -496,13 +496,13 @@ input[type="color"]::-webkit-color-swatch {
   color: white;
 }
 
-.purp-hov:hover, .purp-hov:active, .purp-hov:focus {
+.purp-hov:hover, .purp-hov:active {
   background-color: rgba(0, 0, 0, 0.657);
   border: 0.15rem solid #d0ff00;
   color: white;
 }
 
-.mid-hov:hover, .mid-hov:active, .mid-hov:focus {
+.mid-hov:hover, .mid-hov:active {
   background-color: rgba(0, 0, 0, 0.657);
   border: 0.15rem solid #ff2600;
   color: white;
