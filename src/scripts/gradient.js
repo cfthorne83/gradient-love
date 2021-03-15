@@ -168,8 +168,8 @@ function addColorTile() {
         colorsArr = [];
     }
 
-    let colorErr = document.querySelector(".apply-clr-err");
-    colorErr.innerText = "";
+    // let colorErr = document.querySelector(".apply-clr-err");
+    // colorErr.innerText = "";
 
     createClrContainer();
     createClrLabel();

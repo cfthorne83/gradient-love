@@ -9,9 +9,14 @@
     // align-self: flex-start;
     // margin: 1em;
     justify-content: space-between;
-    padding: 1em;
+    padding: 1.2em 0;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    background-color: rgba(175, 175, 175, 0.418);
+    border-radius: .7rem .7rem 0 0;
+    // backdrop-filter: blur(5px);
+
     // background-color: var(--drk-grey);
-    background-color: rgba(39, 39, 39, 0.794);
+    // background-color: rgba(39, 39, 39, 0.794);
 }
 
 // .color-form div {

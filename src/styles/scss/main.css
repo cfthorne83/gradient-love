@@ -93,7 +93,7 @@ body {
           justify-content: flex-start;
   width: 83%;
   background-color: #5a5a5aa1;
-  border-radius: .7em .7em 0 0;
+  border-radius: .7rem .7rem 0 0;
   background-image: url(./img/splat5.png);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -244,8 +244,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1em;
-  background-color: rgba(39, 39, 39, 0.794);
+  padding: 1.2em 0;
+  border-bottom: 1px solid #bebebe;
+  background-color: rgba(175, 175, 175, 0.418);
+  border-radius: .7rem .7rem 0 0;
 }
 
 .apply-clr-err {
