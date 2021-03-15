@@ -121,7 +121,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: aqua;
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +142,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 100%;
+  background-color: #002fff;
 }
 
 .container .sect3 .slider-con .sliders {
@@ -154,7 +154,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 100%;
   background-color: black;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -163,7 +163,6 @@ body {
 
 .container .sect3 .slider-con .stat-display {
   background-color: green;
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
