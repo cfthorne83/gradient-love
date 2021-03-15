@@ -85,6 +85,7 @@ body {
                 align-items: center;
                 // background-color: yellow;
                 padding: 2em;
+                border: 
             
                 .sliders {
                     box-sizing: border-box;
@@ -94,8 +95,13 @@ body {
                     background-color: black;
                     justify-content: center;
                     height: 150px;
-                    // align-items: center;
-                    // width: 100px;
+
+                    p {
+                        color: var(--font-grey);
+                        font-family: var(--code-font);
+                        font-size: 1rem;
+                        letter-spacing: 3px;
+                    }
 
                 }
             }

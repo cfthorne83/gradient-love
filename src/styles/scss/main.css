@@ -177,6 +177,11 @@ body {
   height: 150px;
 }
 
+.container .sect3 .slider-con-con .slider-con .sliders p {
+  color: var(--font-grey);
+  font-family: var(--code-font);
+}
+
 @-webkit-keyframes radial-gradient {
   0% {
     background-position: 100% 100%;
@@ -362,7 +367,7 @@ body {
   font-family: var(--code-font);
   font-size: 1rem;
   letter-spacing: 3px;
-  /* padding: 0 0 .9rem .9rem; */
+  padding: 0 0 .9rem .9rem;
 }
 
 .color-tiles {
