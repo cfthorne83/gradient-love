@@ -54,9 +54,23 @@ body {
 
     .sect3 {
         display: flex;
+        width: 100%;
+        background-color: red;
 
-        // .inner {
-        //     align-self:center;
-        // }
+        .box-anim-con {
+            background-color: aqua;
+            width: 50%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider-con {
+            display: flex;
+            background-color: yellow;
+            width: 50%;
+        }
     }
 }
