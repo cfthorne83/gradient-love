@@ -87,25 +87,24 @@
                     <div>
                         <input class='input' type="range" 
                                 min="1" max="30" value="15" 
-                                step="1" onInput="speedChange(this.value)">
-                        <h2>Speed:<span id=speedStatus>15</span>s</h2>
-                    </div>
-                    <div>
+                                step="1" onInput="speedChange(this.value)">    
                         <input class='input gradient-angle' type="range" 
                                 min="0" max="359" value="1" step="1"
-                                onInput="angleChange(this.value)">
-                        <h2>Angle:</h2>
-                    </div>
-                    <div>
+                                onInput="angleChange(this.value)">       
                         <input class='input scroll-angle' type="range" 
                                 min="0" max="400" value="1" step="1"
                                 onInput="scrollChange(this.value)">
-                        <h2>Scroll:</h2>
                     </div>
+                    <div>
+                        <h2>Speed:<span id=speedStatus>15</span>s</h2>
+                        <h2>Angle:</h2>
+                        <h2>Scroll:<span class="knob-value">0°</span></h2>
+                    </div>
+                    
                 </div>
             
                 <div class="knob-con">
-                    <div class="knob-value">0°</div>
+                    
                     <div class="grandparent">
                         <div class="parent">
                             <div class="child"></div>
