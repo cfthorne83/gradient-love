@@ -7,22 +7,28 @@
     // color: #c8c0ff;
     // color: #cc99e6;
     font-family: var(--code-font);
-    padding: 1em 1.2em;
+    padding: .8em 1em;
     margin: .2em;
     border-radius: 9999px;
     border: .15rem solid rgb(0, 0, 0);
     // border: .15rem solid rgb(0, 189, 189);
     cursor: pointer;
-    font-weight: 600;
+    // font-weight: 600;
     letter-spacing: .04rem;
     backdrop-filter: blur(8px);
     transition: .5s;
     margin: 0 .8em;
 }
 
-.button:hover, .button:active, .button:focus {
+.teal-hov:hover, .teal-hov:active, .teal-hov:focus {
     background-color: rgba(0, 0, 0, 0.657);
     border: .15rem solid rgb(1, 255, 255);
+    color: white;
+}
+
+.purp-hov:hover, .purp-hov:active, .purp-hov:focus {
+    background-color: rgba(0, 0, 0, 0.657);
+    border: .15rem solid rgb(217, 255, 0);
     color: white;
 }
 

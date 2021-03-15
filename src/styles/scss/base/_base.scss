@@ -40,4 +40,15 @@ body {
     // background-size: 140%;
     // background-position: 80% 60%;
     box-sizing: border-box;
+
+    .palette {
+        box-sizing: border-box;
+        border-bottom: 1px solid rgb(202, 202, 202);
+        padding: 1em 1em 1.5em 1em;
+        // margin: 1.5em 1em;
+        // border-radius: 1.5rem ;
+        // backdrop-filter: blur(5px);
+        // background-color: #707070a1;
+
+    }
 }
