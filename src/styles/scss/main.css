@@ -509,7 +509,7 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 input[type="range"] {
-  -webkit-appearance: none;
+  -webkit-appearance: slider-vertical;
 }
 
 input[type="range"]:focus {

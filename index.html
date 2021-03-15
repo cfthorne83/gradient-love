@@ -82,6 +82,38 @@
                 </div>
             </section>
 
+            <section>
+                <div class="slider-con">
+                    <div>
+                        <input class='input' type="range" 
+                                min="1" max="30" value="15" 
+                                step="1" onInput="speedChange(this.value)">
+                        <h2>Speed:<span id=speedStatus>15</span>s</h2>
+                    </div>
+                    <div>
+                        <input class='input gradient-angle' type="range" 
+                                min="0" max="359" value="1" step="1"
+                                onInput="angleChange(this.value)">
+                        <h2>Angle:</h2>
+                    </div>
+                    <div>
+                        <input class='input scroll-angle' type="range" 
+                                min="0" max="400" value="1" step="1"
+                                onInput="scrollChange(this.value)">
+                        <h2>Scroll:</h2>
+                    </div>
+                </div>
+            
+                <div class="knob-con">
+                    <div class="knob-value">0°</div>
+                    <div class="grandparent">
+                        <div class="parent">
+                            <div class="child"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 
             <div class="keyframes-con">
                 <ul id="keyframes">
@@ -210,31 +242,14 @@
     <br>
     <br>
     <br>
-    <span class='input'>Speed: </span><span id=speedStatus>15</span>
+    <span class='input'>Speed: </span>
     <br>
     
 
 
     <span class='input grad-ang'>Gradient Angle: </span><span class='input' id=angleStatus>0</span>     
     <br>
-                <section class="slider-con">
-                    <input class='input' type="range" min="1" max="30" value="15" step="1" onInput="speedChange(this.value)">Speed
-                    <input class='input gradient-angle' type="range" min="0" max="359" value="1" step="1" onInput="angleChange(this.value)">Angle
-                    <input class='input scroll-angle'
-                            type="range" 
-                            min="0" max="400" 
-                            value="1" step="1" 
-                            onInput="scrollChange(this.value)">Scroll
-                </section>
-
-                    <div class="knob-con">
-                        <div class="knob-value">0°</div>
-                        <div class="grandparent">
-                            <div class="parent">
-                                <div class="child"></div>
-                            </div>
-                        </div>
-                    </div>
+    
 
                 
                 
