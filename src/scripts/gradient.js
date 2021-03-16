@@ -548,26 +548,3 @@ function handleLinear() {
     }
     applyColors();
 }
-
-// function getfocus() {
-//   document.getElementById("myAnchor").focus();
-// }
-
-// function losefocus() {
-//   document.getElementById("myAnchor").blur();
-// }
-
-
-
-
-
-// var colors = ["red", "orange", "white", "yellow", "green", "blue", "purple", "black"];
-//             var currentIndex = 0;
-
-//             setInterval(function () {
-//                 document.body.style.cssText = "background-color: " + colors[currentIndex];
-//                 currentIndex++;
-//                 if (currentIndex == undefined || currentIndex >= colors.length) {
-//                     currentIndex = 0;
-//                 }
-//             }, 1000);
