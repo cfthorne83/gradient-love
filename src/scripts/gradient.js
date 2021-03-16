@@ -495,8 +495,8 @@ function handleRadial() {
     boxAnimMode = "radial-box-anim";
 
     // gradientStatus.innerText = gradientVar;
-    angleStatus.innerText = "";
-    gradAngleText.innerText = "";
+    // angleStatus.innerText = "";
+    // gradAngleText.innerText = "";
 
     gradientAngle.type = "hidden";
     scrollAngle.type = "hidden";
