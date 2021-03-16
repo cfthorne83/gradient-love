@@ -552,8 +552,8 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .grandparent {
-  width: 140px;
-  height: 140px;
+  width: 135px;
+  height: 135px;
   background: -webkit-gradient(linear, left top, left bottom, from(#0011FF), color-stop(#8100D6), color-stop(#FF00BB), color-stop(#E1FF00), to(#00EEFF));
   background: linear-gradient(#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
   display: -webkit-box;
@@ -618,13 +618,13 @@ input[type="color"]::-webkit-color-swatch {
 
 .purp-hov:hover, .purp-hov:active {
   background-color: rgba(0, 0, 0, 0.657);
-  border: 0.15rem solid #006eff;
+  border: 0.15rem solid #02ff39;
   color: white;
 }
 
 .mid-hov:hover, .mid-hov:active {
   background-color: rgba(0, 0, 0, 0.657);
-  border: 0.15rem solid #d0ff00;
+  border: 0.15rem solid #fbff00;
   color: white;
 }
 
