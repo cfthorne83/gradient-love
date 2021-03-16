@@ -492,8 +492,6 @@ body {
           justify-content: space-between;
   margin: 0 1rem;
   cursor: pointer;
-  -webkit-transition: .5s;
-  transition: .5s;
 }
 
 .color-tiles label:hover {
