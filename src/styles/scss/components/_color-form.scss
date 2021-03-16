@@ -13,7 +13,7 @@
     // border: 1px solid rgb(202, 202, 202);
     // margin: 1em;
     // border-radius: 1.5rem;
-    border-bottom: 1px solid rgb(190, 190, 190);
+    border-bottom: 1px solid var(--seperator);
     background-color: rgba(175, 175, 175, 0.418);
     border-radius: .7rem .7rem 0 0;
     // backdrop-filter: blur(5px);
@@ -91,7 +91,7 @@
     width: 100%;
     font-size: .9rem;
     height: 6rem;
-
+    
     label {
         box-sizing: border-box;
         width: 100%;
@@ -104,6 +104,11 @@
         justify-content: space-between;
         margin: 0 1rem;
         cursor: pointer;
+        transition: .5s;
+    }
+
+    label:hover {
+        box-shadow: 2px 7px 15px rgb(49, 49, 49);
     }
 
     div {

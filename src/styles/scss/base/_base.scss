@@ -43,7 +43,7 @@ body {
 
     .palette {
         box-sizing: border-box;
-        border-bottom: 1px solid rgb(202, 202, 202);
+        border-bottom: 1px solid var(--seperator);
         padding: 1em 1em 1.5em 1em;
         // margin: 1.5em 1em;
         // border-radius: 1.5rem ;
@@ -53,7 +53,7 @@ body {
     }
 
     .sect3 {
-        box-sizing: border-box;
+        box-sizing: -box;
         display: flex;
         width: 100%;
         padding: 1em 0;
@@ -78,7 +78,7 @@ body {
             justify-content: center;
             align-items: center;
             // text-align: center;
-            border-left: 1px solid white;
+            border-left: 1px solid var(--seperator);
         
 
             .slider-con {
@@ -90,7 +90,7 @@ body {
                 width: 37vw;
                 height: 37vh;
                 display: flex;
-                border: 3px solid #949494;
+                border: 3px solid var(--border-grey);
                 backdrop-filter: var(--blur);
                 // padding: 1em; 
 
@@ -164,7 +164,7 @@ body {
                     width: 100%;
                     height: 100%;
                     background-color: rgba(0, 0, 0, 0.562);
-                    border-top: .5px solid white;
+                    border-top: .5px solid var(--border-grey);
                     // justify-content: space-around;
                     // height: 180px;
 

@@ -7,6 +7,8 @@
   --font-grey:#c7c9db;
   --drk-grey: rgba(37, 37, 37, 0.74);
   --mid-grey: rgb(59, 59, 59);
+  --border-grey: #979797;
+  --seperator: #bdbdbd;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -102,13 +104,13 @@ body {
 .container .palette {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: 1px solid #cacaca;
+  border-bottom: 1px solid var(--seperator);
   padding: 1em 1em 1.5em 1em;
 }
 
 .container .sect3 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: -box;
+          box-sizing: -box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +152,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-left: 1px solid white;
+  border-left: 1px solid var(--seperator);
 }
 
 .container .sect3 .slider-con-con .slider-con {
@@ -169,7 +171,7 @@ body {
   width: 37vw;
   height: 37vh;
   display: flex;
-  border: 3px solid #949494;
+  border: 3px solid var(--border-grey);
   -webkit-backdrop-filter: var(--blur);
           backdrop-filter: var(--blur);
 }
@@ -265,7 +267,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.562);
-  border-top: .5px solid white;
+  border-top: 0.5px solid var(--border-grey);
 }
 
 @-webkit-keyframes radial-gradient {
@@ -357,7 +359,7 @@ body {
   height: 37vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#0011FF), color-stop(#8100D6), color-stop(#FF00BB), color-stop(#E1FF00), to(#00EEFF));
   background: linear-gradient(#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
-  border: 3px solid white;
+  border: 3px solid var(--border-grey);
   margin: 1em 0;
 }
 
@@ -414,7 +416,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.2em 0;
-  border-bottom: 1px solid #bebebe;
+  border-bottom: 1px solid var(--seperator);
   background-color: rgba(175, 175, 175, 0.418);
   border-radius: .7rem .7rem 0 0;
 }
@@ -487,6 +489,13 @@ body {
           justify-content: space-between;
   margin: 0 1rem;
   cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.color-tiles label:hover {
+  -webkit-box-shadow: 2px 7px 15px #313131;
+          box-shadow: 2px 7px 15px #313131;
 }
 
 .color-tiles div {
@@ -554,7 +563,7 @@ input[type="color"]::-webkit-color-swatch {
   background: -webkit-gradient(linear, left top, left bottom, from(#0011FF), color-stop(#8100D6), color-stop(#FF00BB), color-stop(#E1FF00), to(#00EEFF));
   background: linear-gradient(#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
   /* border-radius: var(--border-radius); */
-  border: 0.1em solid white;
+  border: 0.1em solid var(--border-grey);
 }
 
 .scroll-knob {
@@ -580,7 +589,7 @@ input[type="color"]::-webkit-color-swatch {
       -ms-flex-align: center;
           align-items: center;
   padding: .4em;
-  border-left: 1px solid white;
+  border-left: 1px solid var(--border-grey);
 }
 
 .parent {

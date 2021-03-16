@@ -3,7 +3,7 @@
     min-height: 10em;
     background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
     /* border-radius: var(--border-radius); */
-    border: .1em solid rgb(255, 255, 255);
+    border: .1em solid var(--border-grey);
 }
 
 .scroll-knob {
@@ -23,7 +23,7 @@
     align-items: center;
     // border: .2rem solid rgb(255, 255, 255);
     padding: .4em;
-    border-left: 1px solid white;
+    border-left: 1px solid var(--border-grey);
     // margin: .5em 2em 2em 2em;
     // border-radius: var(--border-radius);
 }
