@@ -36,11 +36,30 @@
     height: 100%;
     border: .2rem solid rgb(36, 36, 36);
     border-radius: 50%;
+
+    .child-con {
+        // background-color: red;
+        width: 20px;
+        height: 100%;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    img.up {
+        width: 20px;
+        transform: rotate(90deg);
+    }
+    img.down {
+        width: 20px;
+        transform: rotate(270deg);
+    }
 }
 
 .child {
     width: .2rem;
-    height: 101%;
+    height: 100%;
     background-color: rgb(36, 36, 36);
 }
 

@@ -611,9 +611,36 @@ input[type="color"]::-webkit-color-swatch {
   border-radius: 50%;
 }
 
+.parent .child-con {
+  width: 20px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.parent img.up {
+  width: 20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.parent img.down {
+  width: 20px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
 .child {
   width: .2rem;
-  height: 101%;
+  height: 100%;
   background-color: #242424;
 }
 
