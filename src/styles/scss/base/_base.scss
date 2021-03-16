@@ -106,12 +106,17 @@ body {
                         // background-color: aqua;
                         flex-direction: column;
                         justify-content: space-around;
-
                         align-items: center;
+
                         .slider-line {
                             width: 100%;
                             display: flex;
                             justify-content: space-between;
+
+                            span {
+                                color: var(--font-grey);
+                                font-family: var(--code-font);
+                            }
 
                             .bullet-con {
                                 display: flex;
@@ -120,8 +125,8 @@ body {
 
                             .bullet {
                                 border-radius: 50%;
-                                height: 15px;
-                                width: 15px;
+                                height: 14px;
+                                width: 14px;
                                 background-color: aqua;
                                 margin-left: 1em;
                             }

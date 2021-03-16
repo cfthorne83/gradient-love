@@ -209,6 +209,11 @@ body {
           justify-content: space-between;
 }
 
+.container .sect3 .slider-con-con .slider-con .slider-top .slider-txt .slider-line span {
+  color: var(--font-grey);
+  font-family: var(--code-font);
+}
+
 .container .sect3 .slider-con-con .slider-con .slider-top .slider-txt .slider-line .bullet-con {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,8 +225,8 @@ body {
 
 .container .sect3 .slider-con-con .slider-con .slider-top .slider-txt .slider-line .bullet {
   border-radius: 50%;
-  height: 15px;
-  width: 15px;
+  height: 14px;
+  width: 14px;
   background-color: aqua;
   margin-left: 1em;
 }
