@@ -227,8 +227,19 @@ body {
   border-radius: 50%;
   height: 14px;
   width: 14px;
-  background-color: aqua;
   margin-left: 1em;
+}
+
+.container .sect3 .slider-con-con .slider-con .slider-top .slider-txt .slider-line .one {
+  background-color: #00ff2a;
+}
+
+.container .sect3 .slider-con-con .slider-con .slider-top .slider-txt .slider-line .two {
+  background-color: #ff9e02;
+}
+
+.container .sect3 .slider-con-con .slider-con .slider-top .slider-txt .slider-line .three {
+  background-color: #e101ff;
 }
 
 .container .sect3 .slider-con-con .slider-con .slider-top p {
@@ -618,13 +629,13 @@ input[type="color"]::-webkit-color-swatch {
 
 .purp-hov:hover, .purp-hov:active {
   background-color: rgba(0, 0, 0, 0.657);
-  border: 0.15rem solid #02ff39;
+  border: 0.15rem solid #bcff02;
   color: white;
 }
 
 .mid-hov:hover, .mid-hov:active {
   background-color: rgba(0, 0, 0, 0.657);
-  border: 0.15rem solid #fbff00;
+  border: 0.15rem solid #ffbb00;
   color: white;
 }
 
