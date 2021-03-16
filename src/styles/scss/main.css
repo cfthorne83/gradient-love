@@ -61,6 +61,12 @@ body {
   /* animation: radial-gradient 25s ease infinite;     */
 }
 
+body .footer {
+  height: 200px;
+  width: 100%;
+  background-color: #2c2c2c;
+}
+
 .gradient-back {
   min-height: 100vh;
   width: 100vw;
@@ -95,10 +101,11 @@ body {
           justify-content: flex-start;
   width: 88%;
   background-color: #5a5a5aa1;
-  border-radius: .7rem .7rem 0 0;
+  border-radius: .7rem;
   background-image: url(./img/splat5.png);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-bottom: 4em;
 }
 
 .container .palette {
@@ -384,6 +391,7 @@ body {
 
 .keyframes-con {
   padding: 1em;
+  border-top: 1px solid var(--seperator);
 }
 
 #keyframes, .keyframes-radial {
@@ -426,7 +434,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1.2em 0;
+  padding: 1.2em 1em;
   border-bottom: 1px solid var(--seperator);
   background-color: rgba(175, 175, 175, 0.418);
   border-radius: .7rem .7rem 0 0;

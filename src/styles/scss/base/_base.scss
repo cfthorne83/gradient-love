@@ -15,9 +15,9 @@ body {
     /* animation: radial-gradient 25s ease infinite;     */
 
     .footer {
-        // height: 100px;
-        // width: 100%;
-
+        height: 200px;
+        width: 100%;
+        background-color: rgb(44, 44, 44);
     }
 }
 
@@ -41,11 +41,14 @@ body {
     width: 88%;
     // background-color: rgba(82, 82, 82, 0.801);
     background-color: #5a5a5aa1;
-    border-radius: .7rem .7rem 0 0;
+    border-radius: .7rem;
     background-image: url(./img/splat5.png);
     // background-size: 140%;
     // background-position: 80% 60%;
     box-sizing: border-box;
+    margin-bottom: 4em;
+    // padding: 1em;
+
 
     .palette {
         box-sizing: border-box;
