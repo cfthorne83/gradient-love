@@ -90,7 +90,7 @@ body {
                 width: 37vw;
                 // height: 37vh;
                 display: flex;
-                border: 1px solid white;
+                border: 3px solid white;
                 // padding: 1em; 
 
                 .slider-top {
@@ -98,6 +98,12 @@ body {
                     background-color: rgb(61, 61, 61);
                     width: 100%;
                     justify-content: space-between;
+
+                    .slider-txt {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                    }
 
                     p {
                         color: var(--font-grey);
