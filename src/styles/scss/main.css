@@ -168,8 +168,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 37vw;
-  height: 37vh;
+  width: 38vw;
+  height: 38vh;
   display: flex;
   border: 3px solid var(--border-grey);
   -webkit-backdrop-filter: var(--blur);
@@ -260,6 +260,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -355,8 +358,8 @@ body {
 .outer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 37vw;
-  height: 37vh;
+  width: 38vw;
+  height: 38vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#0011FF), color-stop(#8100D6), color-stop(#FF00BB), color-stop(#E1FF00), to(#00EEFF));
   background: linear-gradient(#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
   border: 3px solid var(--border-grey);
@@ -575,8 +578,8 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .grandparent {
-  width: 135px;
-  height: 135px;
+  width: 130px;
+  height: 130px;
   background: -webkit-gradient(linear, left top, left bottom, from(#0011FF), color-stop(#8100D6), color-stop(#FF00BB), color-stop(#E1FF00), to(#00EEFF));
   background: linear-gradient(#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
   display: -webkit-box;
@@ -654,7 +657,7 @@ input[type="color"]::-webkit-color-swatch {
 input[type="range"] {
   -webkit-appearance: none;
   cursor: pointer;
-  padding: 1em;
+  padding: .8em;
   border-radius: 5rem;
 }
 
