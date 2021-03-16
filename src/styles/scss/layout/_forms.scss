@@ -26,6 +26,12 @@
     color: white;
 }
 
+.active {
+    background-color: rgba(0, 0, 0, 0.883);
+    border: .15rem solid rgb(1, 255, 255);
+    color: white;
+}
+
 .purp-hov:hover, .purp-hov:active {
     background-color: rgba(0, 0, 0, 0.883);
     // border: .15rem solid rgb(208, 255, 0);

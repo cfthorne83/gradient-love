@@ -191,7 +191,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 65%;
+  width: 70%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -649,6 +649,12 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .teal-hov:hover, .teal-hov:active, .teal-hov:focus {
+  background-color: rgba(0, 0, 0, 0.883);
+  border: 0.15rem solid #01ffff;
+  color: white;
+}
+
+.active {
   background-color: rgba(0, 0, 0, 0.883);
   border: 0.15rem solid #01ffff;
   color: white;

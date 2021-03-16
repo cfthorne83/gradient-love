@@ -467,6 +467,7 @@ let linearKeyframes = document.querySelector("#keyframes");
 let radialKeyframes = document.querySelector(".keyframes-radial");
 let knobBorder = document.querySelector(".parent");
 let knobNeedle = document.querySelector(".child");
+let radialBtn = document.querySelector(".radial-button");
 
 function handleRadial() {
     gradientVar = "radial-gradient";
@@ -485,6 +486,7 @@ function handleRadial() {
     knobNeedle.style.display = "none";
     knobBorder.style.display = "none";
 
+    
 
     if (colorsArr.length === 0){
         colorNum = 5;

@@ -12,7 +12,7 @@ let radClrCode = document.querySelector(".radial-color-code");
 clrCode.innerText = gradient.style.background;
 radClrCode.innerText = gradient.style.background;
 
-linearBtn.focus();
+// linearBtn.focus();
 
 let animation = (document.styleSheets[2].cssRules[0]);
 let miniAnimation = (document.styleSheets[2].cssRules[1]);
@@ -487,6 +487,8 @@ let linearKeyframes = document.querySelector("#keyframes");
 let radialKeyframes = document.querySelector(".keyframes-radial");
 let knobBorder = document.querySelector(".parent");
 let knobNeedle = document.querySelector(".child");
+let hide = document.querySelectorAll(".hide");
+let radialBtn = document.querySelector(".radial-button")
 
 function handleRadial() {
     gradientVar = "radial-gradient";
@@ -505,6 +507,12 @@ function handleRadial() {
     knobNeedle.style.display = "none";
     knobBorder.style.display = "none";
 
+    hide.forEach(div => {
+        div.style.display = "none";
+    });
+
+    linearBtn.classList.remove("active");
+    radialBtn.classList.add("active");
 
     if (colorsArr.length === 0){
         colorNum = 5;
@@ -529,6 +537,9 @@ function handleLinear() {
     knobNeedle.style.display = "flex";
     // knobBorder.style.display = "inline-block";
     knobBorder.style.display = "flex";
+
+    radialBtn.classList.remove("active");
+    linearBtn.classList.add("active");
 
     if (colorsArr.length === 0){
         colorNum = 5;
