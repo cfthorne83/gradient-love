@@ -79,6 +79,7 @@ body {
             align-items: center;
             // text-align: center;
             border-left: 1px solid var(--seperator);
+
         
 
             .slider-con {
@@ -86,19 +87,19 @@ body {
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-                // background-color: yellow;
                 width: 38vw;
                 height: 38vh;
                 display: flex;
                 border: 3px solid var(--border-grey);
                 backdrop-filter: var(--blur);
-                // padding: 1em; 
+                border-radius: var(--border-radius);
 
                 .slider-top {
                     display: flex;
                     background-color: rgba(61, 61, 61, 0.589);
                     width: 100%;
                     justify-content: space-between;
+                    border-radius: var(--border-radius) var(--border-radius) 0 0;
 
                     .slider-txt {
                         display: flex;
@@ -161,6 +162,7 @@ body {
                     height: 100%;
                     background-color: rgba(0, 0, 0, 0.562);
                     border-top: .5px solid var(--border-grey);
+                    border-radius: 0 0 var(--border-radius) var(--border-radius);
                 }
             }
         }

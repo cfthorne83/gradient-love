@@ -174,6 +174,7 @@ body {
   border: 3px solid var(--border-grey);
   -webkit-backdrop-filter: var(--blur);
           backdrop-filter: var(--blur);
+  border-radius: var(--border-radius);
 }
 
 .container .sect3 .slider-con-con .slider-con .slider-top {
@@ -185,6 +186,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .container .sect3 .slider-con-con .slider-con .slider-top .slider-txt {
@@ -271,6 +273,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.562);
   border-top: 0.5px solid var(--border-grey);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 @-webkit-keyframes radial-gradient {
@@ -364,6 +367,7 @@ body {
   background: linear-gradient(#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
   border: 3px solid var(--border-grey);
   margin: 1em 0;
+  border-radius: var(--border-radius);
 }
 
 .outer .inner {
@@ -372,6 +376,7 @@ body {
   border: 3px solid black;
   width: 25%;
   height: 25%;
+  border-radius: var(--border-radius);
 }
 
 .keyframes-con {
@@ -591,6 +596,7 @@ input[type="color"]::-webkit-color-swatch {
           align-items: center;
   padding: .4em;
   border-left: 1px solid var(--border-grey);
+  border-radius: 0 var(--border-radius) 0 0;
 }
 
 .parent {
