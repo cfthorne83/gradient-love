@@ -459,7 +459,7 @@ function scrollChange(val) {
 
 
     knobValue.innerText = Math.round(val * .9) + "°";
-    knobNeedle.style.transform = "rotate(" + (val * .9) + "deg)";
+    knobNeedle.style.transform = "rotate(" + ((val * .9) + 135) + "deg)";
 }
 
 //------------------------------------------------------------------------------

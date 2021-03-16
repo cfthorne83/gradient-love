@@ -34,7 +34,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    border: .2rem solid rgb(36, 36, 36);
+    // border: .2rem solid rgb(36, 36, 36);
     border-radius: 50%;
 
     .child-con {
@@ -48,9 +48,10 @@
     }
 
     img.up {
-        width: 90%;
-        transform: rotate(90deg);
-        filter: invert(100%);
+        width: 70%;
+        // height: 50%;
+        transform: rotate(135deg);
+        // filter: invert(100%);
     }
 }
 
