@@ -15,14 +15,15 @@
 }
 
 .grandparent {
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
     background: linear-gradient( #0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
     display: flex;
     justify-content: center;
     align-items: center;
     // border: .2rem solid rgb(255, 255, 255);
-    padding: 1em;
+    padding: .4em;
+    border-left: 1px solid white;
     // margin: .5em 2em 2em 2em;
     // border-radius: var(--border-radius);
 }
@@ -31,8 +32,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     border: .2rem solid rgb(36, 36, 36);
     border-radius: 50%;
 }

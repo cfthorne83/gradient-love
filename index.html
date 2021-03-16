@@ -83,9 +83,16 @@
                     <div class="slider-con">
                         <div class="slider-top">
                             <div class="slider-txt">
-                                <p>speed: <span id=speedStatus>20</span>s</p>
-                                <p>gradient angle: <span class='input' id=angleStatus>180</span>°</p>
-                                <p>scroll angle: <span class="knob-value">180°</span></p>
+                                <div class="slider-line">
+                                    <div class="bullet-con"><div class="bullet"></div><p>speed: </p></div>
+                                    <span id=speedStatus>20</span>
+                                </div>
+                                <div class="slider-line">
+                                    <div class="bullet"></div><p>gradient angle: <span class='input' id=angleStatus>180</span>°</p>
+                                </div>
+                                <div class="slider-line">
+                                    <div class="bullet"></div><p>scroll angle: <span class="knob-value">180°</span></p>
+                                </div>
                             </div>
                             <div class="grandparent">
                                 <div class="parent">
@@ -95,7 +102,7 @@
                         </div>
 
                         <div class="sliders">
-                            <input class='input' type="range" min="1" max="61" value="31" step="1" onInput="speedChange(this.value)">
+                            <input class='input speed-input' type="range" min="1" max="61" value="31" step="1" onInput="speedChange(this.value)">
                             <input class='input gradient-angle' type="range" min="0" max="360" value="180" step="1"
                             onInput="angleChange(this.value)">
                             <input class='input scroll-angle' type="range" min="0" max="400" value="200" step="1"

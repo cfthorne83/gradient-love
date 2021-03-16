@@ -88,7 +88,7 @@ body {
                 flex-direction: column;
                 // background-color: yellow;
                 width: 37vw;
-                // height: 37vh;
+                height: 37vh;
                 display: flex;
                 border: 3px solid white;
                 // padding: 1em; 
@@ -101,8 +101,30 @@ body {
 
                     .slider-txt {
                         display: flex;
+                        width: 65%;
+
+                        // background-color: aqua;
                         flex-direction: column;
                         justify-content: space-around;
+
+                        align-items: center;
+                        .slider-line {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .bullet-con {
+                                display: flex;
+                                align-items: center;
+                            }
+
+                            .bullet {
+                                border-radius: 50%;
+                                height: 15px;
+                                width: 15px;
+                                background-color: aqua;
+                            }
+                        }
                     }
 
                     p {
@@ -120,6 +142,7 @@ body {
                     flex-direction: column;
                     width: 100%;
                     background-color: black;
+                    border-top: .5px solid white;
                     // justify-content: space-around;
                     // height: 180px;
 
