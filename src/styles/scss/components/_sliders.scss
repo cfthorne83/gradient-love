@@ -48,20 +48,17 @@
     }
 
     img.up {
-        width: 20px;
+        width: 90%;
         transform: rotate(90deg);
-    }
-    img.down {
-        width: 20px;
-        transform: rotate(270deg);
+        filter: invert(100%);
     }
 }
 
-.child {
-    width: .2rem;
-    height: 100%;
-    background-color: rgb(36, 36, 36);
-}
+// .child {
+//     // width: .2rem;
+//     // height: 100%;
+//     // background-color: rgb(36, 36, 36);
+// }
 
 // .knob-con {
 //     display: flex;

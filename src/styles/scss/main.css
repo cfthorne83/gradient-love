@@ -235,15 +235,15 @@ body {
 }
 
 .container .sect3 .slider-con-con .slider-con .slider-top .slider-txt .slider-line .one {
-  background-color: #ff01f2;
+  background-color: #ff3b3b;
 }
 
 .container .sect3 .slider-con-con .slider-con .slider-top .slider-txt .slider-line .two {
-  background-color: #ffbc02;
+  background-color: #ffdd1f;
 }
 
 .container .sect3 .slider-con-con .slider-con .slider-top .slider-txt .slider-line .three {
-  background-color: #00ff2a;
+  background-color: #00d861;
 }
 
 .container .sect3 .slider-con-con .slider-con .slider-top p {
@@ -627,21 +627,11 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .parent img.up {
-  width: 20px;
+  width: 90%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-}
-
-.parent img.down {
-  width: 20px;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-}
-
-.child {
-  width: .2rem;
-  height: 100%;
-  background-color: #242424;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 .button {
@@ -720,15 +710,15 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .speed-input::-webkit-slider-thumb {
-  background-color: #ff01f2;
+  background-color: #ff3b3b;
 }
 
 .gradient-angle::-webkit-slider-thumb {
-  background-color: #ffbc02;
+  background-color: #ffdd1f;
 }
 
 .scroll-angle::-webkit-slider-thumb {
-  background-color: #00ff2a;
+  background-color: #00d861;
 }
 
 .header {
