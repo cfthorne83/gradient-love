@@ -85,28 +85,29 @@ body {
                 box-sizing: border-box;
                 display: flex;
                 align-items: center;
-                background-color: yellow;
-                width: 38vw;
-                height: 38vh;
+                flex-direction: column;
+                // background-color: yellow;
+                width: 37vw;
+                height: 37vh;
                 display: flex;
                 border: 1px solid white;
                 // padding: 1em; 
-            
+
                 .sliders {
                     box-sizing: border-box;
                     display: flex;
                     flex-direction: column;
                     width: 100%;
                     background-color: black;
-                    justify-content: space-around;
-                    height: 180px;
+                    // justify-content: space-around;
+                    // height: 180px;
 
                     p {
                         color: var(--font-grey);
                         font-family: var(--code-font);
                         font-size: 1rem;
                         letter-spacing: 3px;
-                        // padding: .5em;
+                        padding: 0 .8em;
                     }
 
                 }
