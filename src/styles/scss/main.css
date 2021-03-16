@@ -634,19 +634,19 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .teal-hov:hover, .teal-hov:active, .teal-hov:focus {
-  background-color: rgba(0, 0, 0, 0.657);
+  background-color: rgba(0, 0, 0, 0.883);
   border: 0.15rem solid #01ffff;
   color: white;
 }
 
 .purp-hov:hover, .purp-hov:active {
-  background-color: rgba(0, 0, 0, 0.657);
+  background-color: rgba(0, 0, 0, 0.883);
   border: 0.15rem solid #bcff02;
   color: white;
 }
 
 .mid-hov:hover, .mid-hov:active {
-  background-color: rgba(0, 0, 0, 0.657);
+  background-color: rgba(0, 0, 0, 0.883);
   border: 0.15rem solid #ffbb00;
   color: white;
 }
