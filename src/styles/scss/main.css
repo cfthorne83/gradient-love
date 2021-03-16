@@ -223,6 +223,7 @@ body {
   height: 15px;
   width: 15px;
   background-color: aqua;
+  margin-left: 1em;
 }
 
 .container .sect3 .slider-con-con .slider-con .slider-top p {
