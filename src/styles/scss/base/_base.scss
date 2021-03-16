@@ -90,12 +90,13 @@ body {
                 width: 37vw;
                 height: 37vh;
                 display: flex;
-                border: 3px solid white;
+                border: 3px solid #949494;
+                backdrop-filter: var(--blur);
                 // padding: 1em; 
 
                 .slider-top {
                     display: flex;
-                    background-color: rgb(61, 61, 61);
+                    background-color: rgba(61, 61, 61, 0.589);
                     width: 100%;
                     justify-content: space-between;
 
@@ -132,17 +133,17 @@ body {
 
                             .one {
                                 // background-color: rgb(255, 187, 0);
-                                background-color: rgb(255, 188, 2);
+                                background-color: #ffbc02;
 
                             }
                             .two {
                                 // background-color: rgb(74, 255, 2);
-                                background-color: rgb(0, 255, 42);
+                                background-color: #00ff2a;
 
                             }
                             .three {
                                 // background-color: rgb(1, 255, 213);
-                                background-color: rgb(255, 1, 242);
+                                background-color: #ff01f2;
                             }
                         }
                     }
@@ -161,7 +162,8 @@ body {
                     display: flex;
                     flex-direction: column;
                     width: 100%;
-                    background-color: black;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.562);
                     border-top: .5px solid white;
                     // justify-content: space-around;
                     // height: 180px;

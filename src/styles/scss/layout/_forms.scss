@@ -43,15 +43,9 @@
 
 input[type="range"] {
     -webkit-appearance: none;
-    // width: 10%;
-    // margin:  0 .8em;
     cursor: pointer;
     padding:  1em;
     border-radius: 5rem;
-
-    // background-color: green;
-    // height: 20rem;
-    // width: 10rem;
 }
 
 input[type="range"]:focus {
@@ -69,23 +63,28 @@ input[type="range"]::-moz-range-track {
 }
 
 input[type="range"]::-webkit-slider-thumb {
- -webkit-appearance: none;
- height: 15px;
- width: 15px;
-//  background: rgb(255, 0, 0);
- background: rgb(1, 255, 255);
- margin-top: -5px;
- border-radius: 50%;
- border: 1px solid rgb(184, 184, 184);
- cursor: pointer;
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    margin-top: -5px;
+    border-radius: 50%;
+    border: 1px solid rgb(102, 102, 102);
 }
 
 input[type="range"]::-moz-range-thumb {
- height: 15px;
- width: 15px;
- background: rgb(1, 255, 255);
- margin-top: -5px;
- border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    margin-top: -5px;
+    border-radius: 50%;
+    border: 1px solid rgb(102, 102, 102);
 }
 
-// -webkit-appearance: slider-vertical.
+.speed-input::-webkit-slider-thumb {
+    background-color: #ffbc02;
+}
+.gradient-angle::-webkit-slider-thumb {
+    background-color: #00ff2a;
+}
+.scroll-angle::-webkit-slider-thumb {
+    background-color: #ff01f2;
+}
