@@ -360,11 +360,11 @@ let midTopText = document.querySelector(".mid-top");
 // let miniStartTopText = document.querySelector(".mini-start-top");
 // let miniMidLeftText = document.querySelector(".mini-mid-left");
 // let miniMidTopText = document.querySelector(".mini-mid-top");
-let miniKeyframes = document.querySelector(".mini-keyframes");
-miniKeyframes.innerText = miniAnimation.cssText;
+// let miniKeyframes = document.querySelector(".mini-keyframes");
+// miniKeyframes.innerText = miniAnimation.cssText;
 
-let bigKeyframes = document.querySelector(".big-keyframes");
-bigKeyframes.innerText = animation.cssText;
+// let bigKeyframes = document.querySelector(".big-keyframes");
+// bigKeyframes.innerText = animation.cssText;
 
 let knobValue = document.querySelector(".knob-value");
 
@@ -454,8 +454,8 @@ function scrollChange(val) {
     // miniStartTopText.innerText = miniStartTop;
     // miniMidLeftText.innerText = miniMidLeft;
     // miniMidTopText.innerText = miniMidTop;
-    miniKeyframes.innerText = miniAnimation.cssText;
-    bigKeyframes.innerText = animation.cssText;
+    // miniKeyframes.innerText = miniAnimation.cssText;
+    // bigKeyframes.innerText = animation.cssText;
 
 
     knobValue.innerText = Math.round(val * .9) + "°";
