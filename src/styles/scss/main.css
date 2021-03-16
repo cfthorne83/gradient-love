@@ -697,6 +697,10 @@ input[type="range"]::-webkit-slider-runnable-track {
   height: 5px;
 }
 
+input[type="range"]::-webkit-slider-runnable-track:hover {
+  background: #9b9b9b;
+}
+
 input[type="range"]::-moz-range-track {
   background: #d6d6d6;
   height: 5px;
@@ -729,6 +733,21 @@ input[type="range"]::-moz-range-thumb {
 
 .scroll-angle::-webkit-slider-thumb {
   background-color: #00d861;
+}
+
+.speed-input::-webkit-slider-thumb:hover {
+  background-color: #c00202;
+  cursor: pointer;
+}
+
+.gradient-angle::-webkit-slider-thumb:hover {
+  background-color: #b39800;
+  cursor: pointer;
+}
+
+.scroll-angle::-webkit-slider-thumb:hover {
+  background-color: #039746;
+  cursor: pointer;
 }
 
 .header {

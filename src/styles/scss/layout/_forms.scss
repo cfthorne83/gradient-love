@@ -62,6 +62,10 @@ input[type="range"]::-webkit-slider-runnable-track {
  background: rgb(214, 214, 214);
  height: 5px;
 }
+input[type="range"]::-webkit-slider-runnable-track:hover {
+ background: rgb(155, 155, 155);
+//  height: 5px;
+}
 
 input[type="range"]::-moz-range-track {
  background: rgb(214, 214, 214);
@@ -93,4 +97,18 @@ input[type="range"]::-moz-range-thumb {
 }
 .scroll-angle::-webkit-slider-thumb {
     background-color: #00d861;
+}
+
+.speed-input::-webkit-slider-thumb:hover {
+    background-color: #c00202;
+    cursor: pointer;
+}
+.gradient-angle::-webkit-slider-thumb:hover {
+    background-color: #b39800;
+    cursor: pointer;
+    
+}
+.scroll-angle::-webkit-slider-thumb:hover {
+    background-color: #039746;
+    cursor: pointer;
 }
