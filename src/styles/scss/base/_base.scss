@@ -88,10 +88,25 @@ body {
                 flex-direction: column;
                 // background-color: yellow;
                 width: 37vw;
-                height: 37vh;
+                // height: 37vh;
                 display: flex;
                 border: 1px solid white;
                 // padding: 1em; 
+
+                .slider-top {
+                    display: flex;
+                    background-color: rgb(61, 61, 61);
+                    width: 100%;
+                    justify-content: space-between;
+
+                    p {
+                        color: var(--font-grey);
+                        font-family: var(--code-font);
+                        font-size: 1rem;
+                        letter-spacing: 3px;
+                        padding: 0 .8em;
+                    }
+                }
 
                 .sliders {
                     box-sizing: border-box;
@@ -102,13 +117,7 @@ body {
                     // justify-content: space-around;
                     // height: 180px;
 
-                    p {
-                        color: var(--font-grey);
-                        font-family: var(--code-font);
-                        font-size: 1rem;
-                        letter-spacing: 3px;
-                        padding: 0 .8em;
-                    }
+                    
 
                 }
             }
