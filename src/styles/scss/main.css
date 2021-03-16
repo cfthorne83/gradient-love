@@ -235,15 +235,15 @@ body {
 }
 
 .container .sect3 .slider-con-con .slider-con .slider-top .slider-txt .slider-line .one {
-  background-color: #ffbc02;
+  background-color: #ff01f2;
 }
 
 .container .sect3 .slider-con-con .slider-con .slider-top .slider-txt .slider-line .two {
-  background-color: #00ff2a;
+  background-color: #ffbc02;
 }
 
 .container .sect3 .slider-con-con .slider-con .slider-top .slider-txt .slider-line .three {
-  background-color: #ff01f2;
+  background-color: #00ff2a;
 }
 
 .container .sect3 .slider-con-con .slider-con .slider-top p {
@@ -690,15 +690,15 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .speed-input::-webkit-slider-thumb {
-  background-color: #ffbc02;
+  background-color: #ff01f2;
 }
 
 .gradient-angle::-webkit-slider-thumb {
-  background-color: #00ff2a;
+  background-color: #ffbc02;
 }
 
 .scroll-angle::-webkit-slider-thumb {
-  background-color: #ff01f2;
+  background-color: #00ff2a;
 }
 
 .header {
