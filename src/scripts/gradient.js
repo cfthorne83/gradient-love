@@ -32,6 +32,7 @@ let colorNum = 5;
 let clrId = 4;
 let colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
 // let colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
+let swatchHash = {};
 let clrHash = { 
     "a0": "#00EEFF",
     "a1": "#E1FF00",
@@ -39,6 +40,7 @@ let clrHash = {
     "a3": "#8100D6",
     "a4": "#0011FF",
 };
+
 
 clrCode.innerText = 
         gradientVar + "( " 
@@ -67,8 +69,9 @@ function changeLabelBack(e) {
 function updateClrArr(e) {
     let id = e.target.id;
     let idDigit = id.slice(1);
-    // colorsArr[idDigit] = e.target.value;
-    clrHash[id] = e.target.value;
+
+    // clrHash[id] = e.target.value;
+    swatchHash[id] = e.target.value;
 }
 
 function createColorTile(color) {
@@ -114,16 +117,9 @@ function deleteColor(e) {
 
     swatch.remove();
 
-    // colorsArr[idDigit] = e.target.value;
     clrHash[id] = e.target.value;
 
-    // colorsArr.splice(idDigit, 1);
     delete clrHash[id];
-
-    // if (colorsArr.length === 0){
-    //     let colorTiles = document.querySelector(".color-tiles");
-    //     colorTiles.remove();
-    // }
 
     if ( Object.values(clrHash).length === 0 ){
         let colorTiles = document.querySelector(".color-tiles");
@@ -226,7 +222,8 @@ function addColorTile() {
     colorNum++;
     clrId++;
     // colorsArr.push(colorTile.value);
-    clrHash[colorTile.id] = colorTile.value;
+    // clrHash[colorTile.id] = colorTile.value;
+    swatchHash[colorTile.id] = colorTile.value;
 }
 
 colorButton.addEventListener("click", addColorTile);
@@ -248,12 +245,13 @@ function defaultColorTiles() {
     
     // colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
     clrHash = { 
-    "a0": "#00EEFF",
-    "a1": "#E1FF00",
-    "a2": "#FF00BB",
-    "a3": "#8100D6",
-    "a4": "#0011FF",
-};
+                "a0": "#00EEFF",
+                "a1": "#E1FF00",
+                "a2": "#FF00BB",
+                "a3": "#8100D6",
+                "a4": "#0011FF",
+            };
+    swatchHash = {};
 }
 
 defaultColorTiles();
@@ -266,6 +264,8 @@ function applyColors() {
         colorErr.innerText = "Please select at least two colors.";
     }
     
+    clrHash = Object.assign(clrHash, swatchHash);
+    swatchHash = {};
     let colors = "";
     // colorsArr.forEach(color => {
     Object.values(clrHash).forEach(color => {
@@ -561,10 +561,22 @@ function handleRadial() {
     radialBtn.classList.add("active");
 
     // if (colorsArr.length === 0){
+    // if (Object.values(clrHash).length === 0){
+    //     colorNum = 5;
+    //     colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
+    //     colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"]; 
+    // }
     if (Object.values(clrHash).length === 0){
         colorNum = 5;
         colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
-        colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"]; 
+        // colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
+        clrHash = { 
+                    "a0": "#00EEFF",
+                    "a1": "#E1FF00",
+                    "a2": "#FF00BB",
+                    "a3": "#8100D6",
+                    "a4": "#0011FF",
+                }; 
     }
     applyColors();
 }
@@ -592,7 +604,7 @@ function handleLinear() {
         div.style.display = "flex";
     });
 
-    if (colorsArr.length === 0){
+    if (Object.values(clrHash).length === 0){
         colorNum = 5;
         colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
         // colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
