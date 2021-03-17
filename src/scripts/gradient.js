@@ -278,7 +278,7 @@ defaultColorTiles();
 
 function applyColors() {
     
-    if (Object.values(swatchHash).length < 2){
+    if ( Object.values(swatchHash).length < 2 ) {
         pltHead2.style.display =  "inline-block";
         pltHead.style.display = "none";
         applyErr++;
@@ -467,14 +467,76 @@ function speedChange(val) {
 
 //------------------------------------------------------------------------------
 let angleDisplay = document.querySelector(".angle-display");
-let angle = 0;
+let angle = false;
 
 function angleChange(val) {
     angleStatus.innerText = val;
-    // angleDisplay.innerText = val;
-    angle = val;
 
-    applyColors();
+    angle = true;
+
+    // applyColors();
+    applyErr = 0;
+    // debugger
+    // clrHash = {};
+    // clrHash = Object.assign(clrHash, swatchHash);
+    // clrHash = Object.assign( {}, swatchHash );
+    let colors = "";
+    // colorsArr.forEach(color => {
+    Object.values(clrHash).forEach(color => {
+        if (colors.length === 0){
+            colors += color;
+        } else {
+            colors +=  ", " + color;
+        }
+    });
+
+    
+    if (gradientVar === "linear-gradient"){
+        gradient.style.background = 
+        gradientVar + "(" 
+        + gradientAngle.value + "deg,"
+        + colors + ")"; 
+
+        boxAnim.style.background = 
+        gradientVar + "(" 
+        + gradientAngle.value + "deg,"
+        + colors + ")"; 
+
+        scrollDisplay.style.background = 
+        gradientVar + "(" 
+        + gradientAngle.value + "deg,"
+        + colors + ")";
+
+        clrCode.innerText = 
+        gradientVar + "( " 
+        + gradientAngle.value + "deg, "
+        + colors + " );";
+    } else {
+        gradient.style.background = 
+        gradientVar + "(" 
+        + colors + ")";
+
+        boxAnim.style.background = 
+        gradientVar + "(" 
+        + colors + ")"; 
+
+        scrollDisplay.style.background = 
+        gradientVar + "(" 
+        + colors + ")";
+
+        radClrCode.innerText = 
+        gradientVar + "( " 
+        + colors + " );";
+    }
+
+    gradient.style.backgroundSize = "400% 400%";
+    gradient.style.animation = gradientVar
+                            + " " + speedStatus.innerText
+                            + "s ease infinite";
+
+    boxAnimInner.style.animation = boxAnimMode + " " 
+                            + speedStatus.innerText 
+                            + "s ease infinite";
 }
 
 
