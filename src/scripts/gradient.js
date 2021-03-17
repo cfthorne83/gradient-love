@@ -337,10 +337,10 @@ function applyColors() {
 
 function applyClrHash() {
     
-    if (colorNum < 2){
-        let colorErr = document.querySelector(".apply-clr-err");
-        colorErr.innerText = "Please select at least two colors.";
-    }
+    // if (colorNum < 2){
+    //     let colorErr = document.querySelector(".apply-clr-err");
+    //     colorErr.innerText = "Please select at least two colors.";
+    // }
     // debugger
     // clrHash = Object.assign(clrHash, swatchHash);
     // swatchHash = {};
@@ -415,8 +415,8 @@ let colorTiles = document.querySelector(".color-tiles");
 function resetColors() {
     colors = "";
     colorNum = 0;
-    // colorsArr = [];
-    clrHash = {};
+    // clrHash = {};
+    swatchHash = {};
     
     resetClrBtn.style.display = "none";
     applyClrBtn.style.display = "none";
