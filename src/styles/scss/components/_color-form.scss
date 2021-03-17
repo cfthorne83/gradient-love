@@ -90,21 +90,25 @@
     justify-content: center;
     width: 100%;
     font-size: .9rem;
-    height: 6rem;
+    // height: 6rem;
+    flex-wrap: wrap;
     
     label {
         box-sizing: border-box;
-        width: 100%;
+        // width: 100%;
         background-color: #ffffff;
         // min-height: 8rem;
-        height: 100%;
+        // height: 100%;
         border-radius: .4rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin: 0 1rem;
+        margin: .5rem .7rem;
         cursor: pointer;
         // transition: .5s;
+        // min-width: 10%;
+        // max-width: 20%;
+        min-width: 18%;
     }
 
     label:hover {

@@ -506,15 +506,14 @@ body .footer p {
           justify-content: center;
   width: 100%;
   font-size: .9rem;
-  height: 6rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .color-tiles label {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100%;
   background-color: #ffffff;
-  height: 100%;
   border-radius: .4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,8 +525,9 @@ body .footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 1rem;
+  margin: .5rem .7rem;
   cursor: pointer;
+  min-width: 18%;
 }
 
 .color-tiles label:hover {
