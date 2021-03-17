@@ -115,13 +115,8 @@ function createDltClrBtn() {
 
 }
 
-function deleteColor(e) {
-
-    if (Object.values(swatchHash).length < 2){
-        pltHead2.style.display =  "inline-block";
-        pltHead.style.display = "none";
-        applyErr++;
-    }
+    function deleteColor(e) {
+    // debugger
 
     let id = e.target.id;
     // let idDigit = id.slice(1);
@@ -133,6 +128,12 @@ function deleteColor(e) {
 
     // delete clrHash[id];
     delete swatchHash[id];
+
+    if (Object.values(swatchHash).length < 2){
+        pltHead2.style.display =  "inline-block";
+        pltHead.style.display = "none";
+        // applyErr++;
+    }
 
     // if ( Object.values(clrHash).length === 0 ){
     if ( Object.values(swatchHash).length === 0 ){
@@ -189,9 +190,12 @@ let applyClrBtn = document.querySelector(".apply-clr-button");
 let resetClrBtn = document.querySelector(".reset-clr-btn");
 let pltHead = document.querySelector(".plt-head");
 let pltHead2 = document.querySelector(".plt-head2");
+let applyErr = 0;
 
 function addColorTile() {
     
+    applyErr = 0;
+
     applyClrBtn.style.display = "inline-block";
     resetClrBtn.style.display = "inline-block";
 
@@ -270,7 +274,7 @@ function defaultColorTiles() {
 
 defaultColorTiles();
 
-let applyErr = 0;
+
 
 function applyColors() {
     
@@ -279,7 +283,7 @@ function applyColors() {
         pltHead.style.display = "none";
         applyErr++;
         
-        if (applyErr > 1) {
+        if (applyErr > 0) {
             pltHead2.style.color =  "#ffe905";
             pltHead2.style.fontWeight =  "bolder";
             pltHead2.style.fontSize =  "1.2rem";
