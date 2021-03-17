@@ -29,8 +29,9 @@ boxAnimInner.style.animation = boxAnimMode
 
 //color changes
 let colorNum = 5;
+let clrId = 4;
 let colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
-let colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
+// let colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
 let clrHash = { 
     "a0": "#00EEFF",
     "a1": "#E1FF00",
@@ -71,15 +72,19 @@ function updateClrArr(e) {
 }
 
 function createColorTile(color) {
+
+    
     colorTile = document.createElement("input");
     colorTile.type = "color";
     colorTile.value = "#FFFFFF";
-
+    
     // colorTile.setAttribute("id", `a${colorsArr.length}`);
-    colorTile.setAttribute("id", `a${Object.values(clrHash).length}`);
-
+    colorTile.setAttribute("id", `a${clrId}`);
+    
     colorTile.addEventListener("input", changeLabelBack);
     colorTile.addEventListener("change", updateClrArr);
+
+    
 }
 
 let deleteClrBtn;
@@ -89,7 +94,7 @@ function createDltClrBtn() {
     deleteClrBtn.setAttribute("type", "submit");
     deleteClrBtn.setAttribute("value", "delete");
     // deleteClrBtn.setAttribute("id", `a${colorsArr.length}`);
-    deleteClrBtn.setAttribute("id", `a${Object.values(clrHash).length}`);
+    deleteClrBtn.setAttribute("id", `a${clrId}`);
 
     // deleteClrBtn.setAttribute("id", `_${colorsArr.length}`);
     // deleteClrBtn.setAttribute("id", "_0");
@@ -123,6 +128,8 @@ function deleteColor(e) {
     if ( Object.values(clrHash).length === 0 ){
         let colorTiles = document.querySelector(".color-tiles");
         colorTiles.remove();
+        // clrId = 0;
+        first = true;
     }
 }
 
@@ -149,7 +156,7 @@ function updateClrTile() {
 function createClrLabel() {
     colorLabel = document.createElement("label");
     // colorLabel.setAttribute("class", `a${colorsArr.length}`);
-    colorLabel.setAttribute("class", `a${Object.values(clrHash).length}`);
+    colorLabel.setAttribute("class", `a${clrId}`);
 }
 
 let clrHex;
@@ -157,7 +164,7 @@ let clrHex;
 function createH2() {
     clrHex = document.createElement("h2");
     // clrHex.setAttribute("class", `h2-a${colorsArr.length}`);
-    clrHex.setAttribute("class", `h2-a${Object.values(clrHash).length}`);
+    clrHex.setAttribute("class", `h2-a${clrId}`);
 }
 
 let editBtn;
@@ -192,6 +199,7 @@ function addColorTile() {
         colors = "";
         colorNum = 0;
         clrHash = {};
+        clrId = 0;
     }
 
     // let colorErr = document.querySelector(".apply-clr-err");
@@ -216,6 +224,7 @@ function addColorTile() {
 
     updateClrTile();
     colorNum++;
+    clrId++;
     // colorsArr.push(colorTile.value);
     clrHash[colorTile.id] = colorTile.value;
 }
