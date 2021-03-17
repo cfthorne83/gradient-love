@@ -17,7 +17,15 @@ body {
     .footer {
         height: 200px;
         width: 100%;
-        background-color: rgb(44, 44, 44);
+        background-color: rgb(119, 119, 119);
+
+        background-image: url(./img/splat5.png);
+        color: white;
+
+        h1 {
+            font-family: var(--font);
+            font-size: 3em;
+        }
     }
 }
 
@@ -40,7 +48,7 @@ body {
     justify-content: flex-start;
     width: 88%;
     // background-color: rgba(82, 82, 82, 0.801);
-    background-color: #5a5a5aa1;
+    background-color: #5a5a5ad0;
     border-radius: .7rem;
     background-image: url(./img/splat5.png);
     // background-size: 140%;

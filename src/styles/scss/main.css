@@ -64,7 +64,14 @@ body {
 body .footer {
   height: 200px;
   width: 100%;
-  background-color: #2c2c2c;
+  background-color: #777777;
+  background-image: url(./img/splat5.png);
+  color: white;
+}
+
+body .footer h1 {
+  font-family: var(--font);
+  font-size: 3em;
 }
 
 .gradient-back {
@@ -100,7 +107,7 @@ body .footer {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 88%;
-  background-color: #5a5a5aa1;
+  background-color: #5a5a5ad0;
   border-radius: .7rem;
   background-image: url(./img/splat5.png);
   -webkit-box-sizing: border-box;
