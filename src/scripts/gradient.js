@@ -119,7 +119,7 @@ function deleteColor(e) {
     let id = e.target.id;
     // let idDigit = id.slice(1);
     let swatch = document.querySelector(`.${id}`);
-    debugger
+    // debugger
     swatch.remove();
     // clrHash[id] = e.target.value;
     // swatchHash[id] = e.target.value;
@@ -263,13 +263,24 @@ function defaultColorTiles() {
 
 defaultColorTiles();
 
+let applyErr = 0;
 
 function applyColors() {
     
-    if (colorNum < 2){
-        let colorErr = document.querySelector(".apply-clr-err");
-        colorErr.innerText = "Please select at least two colors.";
-    }
+    if (Object.values(swatchHash).length < 2){
+        pltHead2.style.display =  "inline-block";
+        pltHead.style.display = "none";
+        applyErr++;
+        
+        if (applyErr > 1) {
+            pltHead2.style.color =  "#ffe905";
+            pltHead2.style.fontWeight =  "bolder";
+            pltHead2.style.fontSize =  "1.2rem";
+        }
+        return null;
+    } 
+
+    applyErr = 0;
     // debugger
     // clrHash = {};
     // clrHash = Object.assign(clrHash, swatchHash);
@@ -666,7 +677,6 @@ function handleLinear() {
     radialKeyframes.style.display = "none";
 
     knobNeedle.style.display = "flex";
-    // knobBorder.style.display = "inline-block";
     knobBorder.style.display = "flex";
 
     radialBtn.classList.remove("active");
@@ -676,17 +686,17 @@ function handleLinear() {
         div.style.display = "flex";
     });
 
-    if (Object.values(clrHash).length === 0){
-        colorNum = 5;
-        colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
-        // colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
-        clrHash = { 
-                    "a0": "#00EEFF",
-                    "a1": "#E1FF00",
-                    "a2": "#FF00BB",
-                    "a3": "#8100D6",
-                    "a4": "#0011FF",
-                }; 
-    }
+    // if (Object.values(clrHash).length === 0){
+    //     colorNum = 5;
+    //     colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
+    //     // colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
+    //     clrHash = { 
+    //                 "a0": "#00EEFF",
+    //                 "a1": "#E1FF00",
+    //                 "a2": "#FF00BB",
+    //                 "a3": "#8100D6",
+    //                 "a4": "#0011FF",
+    //             }; 
+    // }
     applyClrHash();
 }
