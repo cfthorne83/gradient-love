@@ -119,10 +119,8 @@ function deleteColor(e) {
     let id = e.target.id;
     // let idDigit = id.slice(1);
     let swatch = document.querySelector(`.${id}`);
-    // debugger
-
+    debugger
     swatch.remove();
-// debugger
     // clrHash[id] = e.target.value;
     // swatchHash[id] = e.target.value;
 
@@ -272,9 +270,10 @@ function applyColors() {
         let colorErr = document.querySelector(".apply-clr-err");
         colorErr.innerText = "Please select at least two colors.";
     }
-    debugger
-    clrHash = Object.assign(clrHash, swatchHash);
-    swatchHash = {};
+    // debugger
+    // clrHash = {};
+    // clrHash = Object.assign(clrHash, swatchHash);
+    clrHash = Object.assign( {}, swatchHash );
     let colors = "";
     // colorsArr.forEach(color => {
     Object.values(clrHash).forEach(color => {
@@ -342,12 +341,12 @@ function applyClrHash() {
         let colorErr = document.querySelector(".apply-clr-err");
         colorErr.innerText = "Please select at least two colors.";
     }
-    debugger
+    // debugger
     // clrHash = Object.assign(clrHash, swatchHash);
     // swatchHash = {};
     let colors = "";
     // colorsArr.forEach(color => {
-        debugger
+        // debugger
     Object.values(clrHash).forEach(color => {
         if (colors.length === 0){
             colors += color;
@@ -356,7 +355,7 @@ function applyClrHash() {
         }
     });
 
-    debugger
+    // debugger
     if (gradientVar === "linear-gradient"){
         gradient.style.background = 
         gradientVar + "(" 
