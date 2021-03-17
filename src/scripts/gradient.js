@@ -67,7 +67,7 @@ function updateClrArr(e) {
     let id = e.target.id;
     let idDigit = id.slice(1);
     // colorsArr[idDigit] = e.target.value;
-    clrHash[idDigit] = e.target.value;
+    clrHash[id] = e.target.value;
 }
 
 function createColorTile(color) {
@@ -578,6 +578,10 @@ function handleLinear() {
 
     radialBtn.classList.remove("active");
     linearBtn.classList.add("active");
+
+    hide.forEach(div => {
+        div.style.display = "flex";
+    });
 
     if (colorsArr.length === 0){
         colorNum = 5;
