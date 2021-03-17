@@ -116,6 +116,13 @@ function createDltClrBtn() {
 }
 
 function deleteColor(e) {
+
+    if (Object.values(swatchHash).length < 2){
+        pltHead2.style.display =  "inline-block";
+        pltHead.style.display = "none";
+        applyErr++;
+    }
+
     let id = e.target.id;
     // let idDigit = id.slice(1);
     let swatch = document.querySelector(`.${id}`);
