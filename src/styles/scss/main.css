@@ -693,13 +693,13 @@ input[type="color"]::-webkit-color-swatch {
 
 .purp-hov:hover, .purp-hov:active {
   background-color: rgba(0, 0, 0, 0.883);
-  border: 0.15rem solid #bcff02;
+  border: .15rem solid #e1ff00;
   color: white;
 }
 
 .mid-hov:hover, .mid-hov:active {
   background-color: rgba(0, 0, 0, 0.883);
-  border: 0.15rem solid #ffbb00;
+  border: .15rem solid #FF00BB;
   color: white;
 }
 
