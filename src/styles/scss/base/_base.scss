@@ -32,6 +32,12 @@ body {
             font-family: var(--code-font);
             font-size: 1.5rem;
             padding: 0 1.3rem;
+            color: rgb(238, 255, 2);
+            // font-weight: 600;
+        }
+        p {
+            padding: 0 1.3rem;
+            font-family: var(--code-font);
         }
     }
 }
@@ -161,13 +167,13 @@ body {
                             }
 
                             .one {
-                                background-color: #ff3b3b;   
+                                background-color: #ee3ebf;   
                             }
                             .two {
-                                background-color: #ffdd1f;               
+                                background-color: #ffee00;               
                             }
                             .three {
-                                background-color: #00d861;
+                                background-color: #2eebf1;
                             }
                         }
                     }

@@ -35,7 +35,7 @@
 .purp-hov:hover, .purp-hov:active {
     background-color: rgba(0, 0, 0, 0.883);
     // border: .15rem solid rgb(208, 255, 0);
-    border: .15rem solid #e1ff00;
+    border: .15rem solid #fbff00;
     color: white;
 }
 
@@ -90,17 +90,17 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .speed-input::-webkit-slider-thumb {
-    background-color: #ff3b3b;
+    background-color: #ee3ebf;
 }
 .gradient-angle::-webkit-slider-thumb {
-    background-color: #ffdd1f;
+    background-color: #ffee00;
 }
 .scroll-angle::-webkit-slider-thumb {
-    background-color: #00d861;
+    background-color: #2eebf1;
 }
 
 .speed-input::-webkit-slider-thumb:hover {
-    background-color: #c00202;
+    background-color: #c50091;
     cursor: pointer;
 }
 .gradient-angle::-webkit-slider-thumb:hover {
@@ -109,6 +109,6 @@ input[type="range"]::-moz-range-thumb {
     
 }
 .scroll-angle::-webkit-slider-thumb:hover {
-    background-color: #039746;
+    background-color: rgb(0, 189, 189);
     cursor: pointer;
 }
