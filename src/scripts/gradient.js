@@ -32,7 +32,13 @@ let colorNum = 5;
 let clrId = 4;
 let colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
 // let colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
-let swatchHash = {};
+let swatchHash = {
+    "a0": "#00EEFF",
+    "a1": "#E1FF00",
+    "a2": "#FF00BB",
+    "a3": "#8100D6",
+    "a4": "#0011FF",
+};
 let clrHash = { 
     "a0": "#00EEFF",
     "a1": "#E1FF00",
@@ -110,18 +116,21 @@ function createDltClrBtn() {
 }
 
 function deleteColor(e) {
-
     let id = e.target.id;
-    let idDigit = id.slice(1);
+    // let idDigit = id.slice(1);
     let swatch = document.querySelector(`.${id}`);
+    // debugger
 
     swatch.remove();
+// debugger
+    // clrHash[id] = e.target.value;
+    // swatchHash[id] = e.target.value;
 
-    clrHash[id] = e.target.value;
+    // delete clrHash[id];
+    delete swatchHash[id];
 
-    delete clrHash[id];
-
-    if ( Object.values(clrHash).length === 0 ){
+    // if ( Object.values(clrHash).length === 0 ){
+    if ( Object.values(swatchHash).length === 0 ){
         let colorTiles = document.querySelector(".color-tiles");
         colorTiles.remove();
         // clrId = 0;
@@ -184,12 +193,6 @@ function addColorTile() {
     pltHead2.style.display = "none";
     pltHead.style.display = "inline-block";
 
-    // if (first) {
-    //     first = false;
-    //     colors = "";
-    //     colorNum = 0;
-    //     colorsArr = [];
-    // }
     if (first) {
         first = false;
         colors = "";
@@ -251,7 +254,13 @@ function defaultColorTiles() {
                 "a3": "#8100D6",
                 "a4": "#0011FF",
             };
-    swatchHash = {};
+    swatchHash = {
+                "a0": "#00EEFF",
+                "a1": "#E1FF00",
+                "a2": "#FF00BB",
+                "a3": "#8100D6",
+                "a4": "#0011FF",
+            };
 }
 
 defaultColorTiles();
@@ -560,16 +569,9 @@ function handleRadial() {
     linearBtn.classList.remove("active");
     radialBtn.classList.add("active");
 
-    // if (colorsArr.length === 0){
-    // if (Object.values(clrHash).length === 0){
-    //     colorNum = 5;
-    //     colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
-    //     colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"]; 
-    // }
     if (Object.values(clrHash).length === 0){
         colorNum = 5;
         colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
-        // colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
         clrHash = { 
                     "a0": "#00EEFF",
                     "a1": "#E1FF00",
