@@ -272,7 +272,7 @@ function applyColors() {
         let colorErr = document.querySelector(".apply-clr-err");
         colorErr.innerText = "Please select at least two colors.";
     }
-    
+    debugger
     clrHash = Object.assign(clrHash, swatchHash);
     swatchHash = {};
     let colors = "";
@@ -286,6 +286,77 @@ function applyColors() {
     });
 
     
+    if (gradientVar === "linear-gradient"){
+        gradient.style.background = 
+        gradientVar + "(" 
+        + gradientAngle.value + "deg,"
+        + colors + ")"; 
+
+        boxAnim.style.background = 
+        gradientVar + "(" 
+        + gradientAngle.value + "deg,"
+        + colors + ")"; 
+
+        scrollDisplay.style.background = 
+        gradientVar + "(" 
+        + gradientAngle.value + "deg,"
+        + colors + ")";
+
+        clrCode.innerText = 
+        gradientVar + "( " 
+        + gradientAngle.value + "deg, "
+        + colors + " );";
+    } else {
+        gradient.style.background = 
+        gradientVar + "(" 
+        + colors + ")";
+
+        boxAnim.style.background = 
+        gradientVar + "(" 
+        + colors + ")"; 
+
+        scrollDisplay.style.background = 
+        gradientVar + "(" 
+        + colors + ")";
+
+        radClrCode.innerText = 
+        gradientVar + "( " 
+        + colors + " );";
+    }
+
+    gradient.style.backgroundSize = "400% 400%";
+    gradient.style.animation = gradientVar
+                            + " " + speedStatus.innerText
+                            + "s ease infinite";
+
+    boxAnimInner.style.animation = boxAnimMode + " " 
+                            + speedStatus.innerText 
+                            + "s ease infinite";
+                
+    // clrCode.innerText = gradient.style.background;
+}
+
+function applyClrHash() {
+    
+    if (colorNum < 2){
+        let colorErr = document.querySelector(".apply-clr-err");
+        colorErr.innerText = "Please select at least two colors.";
+    }
+    debugger
+    // clrHash = Object.assign(clrHash, swatchHash);
+    // swatchHash = {};
+    let colors = "";
+    // colorsArr.forEach(color => {
+        debugger
+    Object.values(clrHash).forEach(color => {
+        if (colors.length === 0){
+            colors += color;
+        } else {
+            colors +=  ", " + color;
+        }
+    });
+
+    debugger
     if (gradientVar === "linear-gradient"){
         gradient.style.background = 
         gradientVar + "(" 
@@ -580,7 +651,7 @@ function handleRadial() {
                     "a4": "#0011FF",
                 }; 
     }
-    applyColors();
+    applyClrHash();
 }
 
 function handleLinear() {
@@ -618,5 +689,5 @@ function handleLinear() {
                     "a4": "#0011FF",
                 }; 
     }
-    applyColors();
+    applyClrHash();
 }
