@@ -24,7 +24,14 @@ body {
 
         h1 {
             font-family: var(--font);
-            font-size: 3em;
+            font-size: 3rem;
+            padding: 1.3rem;
+        }
+
+        h2 {
+            font-family: var(--code-font);
+            font-size: 1.5rem;
+            padding: 0 1.3rem;
         }
     }
 }
@@ -48,7 +55,7 @@ body {
     justify-content: flex-start;
     width: 88%;
     // background-color: rgba(82, 82, 82, 0.801);
-    background-color: #5a5a5ad0;
+    background-color: #686868d0;
     border-radius: .7rem;
     background-image: url(./img/splat5.png);
     // background-size: 140%;

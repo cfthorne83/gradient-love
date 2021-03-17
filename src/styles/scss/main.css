@@ -71,7 +71,14 @@ body .footer {
 
 body .footer h1 {
   font-family: var(--font);
-  font-size: 3em;
+  font-size: 3rem;
+  padding: 1.3rem;
+}
+
+body .footer h2 {
+  font-family: var(--code-font);
+  font-size: 1.5rem;
+  padding: 0 1.3rem;
 }
 
 .gradient-back {
@@ -107,7 +114,7 @@ body .footer h1 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 88%;
-  background-color: #5a5a5ad0;
+  background-color: #686868d0;
   border-radius: .7rem;
   background-image: url(./img/splat5.png);
   -webkit-box-sizing: border-box;
