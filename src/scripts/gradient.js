@@ -31,6 +31,13 @@ boxAnimInner.style.animation = boxAnimMode
 let colorNum = 5;
 let colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
 let colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
+let clrHash = { 
+    "a0": "#00EEFF",
+    "a1": "#E1FF00",
+    "a2": "#FF00BB",
+    "a3": "#8100D6",
+    "a4": "#0011FF",
+};
 
 clrCode.innerText = 
         gradientVar + "( " 
@@ -59,14 +66,18 @@ function changeLabelBack(e) {
 function updateClrArr(e) {
     let id = e.target.id;
     let idDigit = id.slice(1);
-    colorsArr[idDigit] = e.target.value;
+    // colorsArr[idDigit] = e.target.value;
+    clrHash[idDigit] = e.target.value;
 }
 
 function createColorTile(color) {
     colorTile = document.createElement("input");
     colorTile.type = "color";
     colorTile.value = "#FFFFFF";
-    colorTile.setAttribute("id", `a${colorsArr.length}`);
+
+    // colorTile.setAttribute("id", `a${colorsArr.length}`);
+    colorTile.setAttribute("id", `a${Object.values(clrHash).length}`);
+
     colorTile.addEventListener("input", changeLabelBack);
     colorTile.addEventListener("change", updateClrArr);
 }
@@ -77,7 +88,8 @@ function createDltClrBtn() {
     deleteClrBtn = document.createElement("input");
     deleteClrBtn.setAttribute("type", "submit");
     deleteClrBtn.setAttribute("value", "delete");
-    deleteClrBtn.setAttribute("id", `a${colorsArr.length}`);
+    // deleteClrBtn.setAttribute("id", `a${colorsArr.length}`);
+    deleteClrBtn.setAttribute("id", `a${Object.values(clrHash).length}`);
 
     // deleteClrBtn.setAttribute("id", `_${colorsArr.length}`);
     // deleteClrBtn.setAttribute("id", "_0");
@@ -90,16 +102,25 @@ function createDltClrBtn() {
 }
 
 function deleteColor(e) {
-    // debugger
+
     let id = e.target.id;
     let idDigit = id.slice(1);
-    // console.log(e.target.id);
     let swatch = document.querySelector(`.${id}`);
-    swatch.remove();
-    colorsArr[idDigit] = e.target.value;
 
-    colorsArr.splice(idDigit, 1);
-    if (colorsArr.length === 0){
+    swatch.remove();
+
+    // colorsArr[idDigit] = e.target.value;
+    clrHash[id] = e.target.value;
+
+    // colorsArr.splice(idDigit, 1);
+    delete clrHash[id];
+
+    // if (colorsArr.length === 0){
+    //     let colorTiles = document.querySelector(".color-tiles");
+    //     colorTiles.remove();
+    // }
+
+    if ( Object.values(clrHash).length === 0 ){
         let colorTiles = document.querySelector(".color-tiles");
         colorTiles.remove();
     }
@@ -127,15 +148,16 @@ function updateClrTile() {
 
 function createClrLabel() {
     colorLabel = document.createElement("label");
-    colorLabel.setAttribute("class", `a${colorsArr.length}`);
+    // colorLabel.setAttribute("class", `a${colorsArr.length}`);
+    colorLabel.setAttribute("class", `a${Object.values(clrHash).length}`);
 }
 
 let clrHex;
 
 function createH2() {
     clrHex = document.createElement("h2");
-    clrHex.setAttribute("class", `h2-a${colorsArr.length}`);
-    // clrHex.innerText = "gobble";
+    // clrHex.setAttribute("class", `h2-a${colorsArr.length}`);
+    clrHex.setAttribute("class", `h2-a${Object.values(clrHash).length}`);
 }
 
 let editBtn;
@@ -152,20 +174,24 @@ let pltHead = document.querySelector(".plt-head");
 let pltHead2 = document.querySelector(".plt-head2");
 
 function addColorTile() {
-    // if (!color){
-    //     color = "#FFFFFF";
-    // }
+    
     applyClrBtn.style.display = "inline-block";
     resetClrBtn.style.display = "inline-block";
 
     pltHead2.style.display = "none";
     pltHead.style.display = "inline-block";
 
+    // if (first) {
+    //     first = false;
+    //     colors = "";
+    //     colorNum = 0;
+    //     colorsArr = [];
+    // }
     if (first) {
         first = false;
         colors = "";
         colorNum = 0;
-        colorsArr = [];
+        clrHash = {};
     }
 
     // let colorErr = document.querySelector(".apply-clr-err");
@@ -190,14 +216,16 @@ function addColorTile() {
 
     updateClrTile();
     colorNum++;
-    colorsArr.push(colorTile.value);
+    // colorsArr.push(colorTile.value);
+    clrHash[colorTile.id] = colorTile.value;
 }
 
 colorButton.addEventListener("click", addColorTile);
 
 function defaultColorTiles() {
     
-    colorsArr.forEach( (color, i) => {
+    // colorsArr.forEach( (color, i) => {
+    Object.values(clrHash).forEach( (color, i) => {
         addColorTile();
     
         let label = document.querySelector(`.a${i}`)
@@ -209,7 +237,14 @@ function defaultColorTiles() {
         h2.innerText = color;
     });
     
-    colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
+    // colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
+    clrHash = { 
+    "a0": "#00EEFF",
+    "a1": "#E1FF00",
+    "a2": "#FF00BB",
+    "a3": "#8100D6",
+    "a4": "#0011FF",
+};
 }
 
 defaultColorTiles();
@@ -223,7 +258,8 @@ function applyColors() {
     }
     
     let colors = "";
-    colorsArr.forEach(color => {
+    // colorsArr.forEach(color => {
+    Object.values(clrHash).forEach(color => {
         if (colors.length === 0){
             colors += color;
         } else {
@@ -291,7 +327,8 @@ let colorTiles = document.querySelector(".color-tiles");
 function resetColors() {
     colors = "";
     colorNum = 0;
-    colorsArr = [];
+    // colorsArr = [];
+    clrHash = {};
     
     resetClrBtn.style.display = "none";
     applyClrBtn.style.display = "none";
@@ -514,7 +551,8 @@ function handleRadial() {
     linearBtn.classList.remove("active");
     radialBtn.classList.add("active");
 
-    if (colorsArr.length === 0){
+    // if (colorsArr.length === 0){
+    if (Object.values(clrHash).length === 0){
         colorNum = 5;
         colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
         colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"]; 
@@ -544,7 +582,14 @@ function handleLinear() {
     if (colorsArr.length === 0){
         colorNum = 5;
         colors = "#00EEFF, #E1FF00, #FF00BB, #8100D6, #0011FF";
-        colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"]; 
+        // colorsArr = ["#00EEFF", "#E1FF00", "#FF00BB", "#8100D6", "#0011FF"];
+        clrHash = { 
+                    "a0": "#00EEFF",
+                    "a1": "#E1FF00",
+                    "a2": "#FF00BB",
+                    "a3": "#8100D6",
+                    "a4": "#0011FF",
+                }; 
     }
     applyColors();
 }

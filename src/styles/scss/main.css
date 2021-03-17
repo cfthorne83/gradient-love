@@ -712,7 +712,7 @@ input[type="color"]::-webkit-color-swatch {
 input[type="range"] {
   -webkit-appearance: none;
   cursor: pointer;
-  padding: .8em;
+  padding: .8em 1em;
   border-radius: 5rem;
 }
 
