@@ -284,7 +284,7 @@ function applyColors() {
         applyErr++;
         
         if (applyErr > 0) {
-            pltHead2.style.color =  "#ffe905";
+            pltHead2.style.color =  "white";
             pltHead2.style.fontWeight =  "bolder";
             pltHead2.style.fontSize =  "1.2rem";
         }
