@@ -710,6 +710,9 @@ let knobNeedle = document.querySelector(".child");
 let hide = document.querySelectorAll(".hide");
 let radialBtn = document.querySelector(".radial-button")
 
+radialBtn.onclick = handleRadial;
+linearBtn.onclick = handleLinear;
+
 function handleRadial() {
     gradientVar = "radial-gradient";
     boxAnimMode = "radial-box-anim";
