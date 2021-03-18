@@ -182,6 +182,12 @@ body .footer p {
       -ms-flex-align: center;
           align-items: center;
   border-left: 1px solid var(--seperator);
+  padding: 0 2rem;
+}
+
+.container .sect3 .slider-con-con .anim-control {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .container .sect3 .slider-con-con .slider-con {

@@ -110,8 +110,14 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            // text-align: center;
             border-left: 1px solid var(--seperator);
+            padding: 0 2rem;
+
+            .anim-control {
+                // background-color: red;  
+                align-self: flex-start;  
+                // margin-left: 2rem;        
+            }
 
         
 
