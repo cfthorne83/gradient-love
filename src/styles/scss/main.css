@@ -421,17 +421,21 @@ body .footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #363636;
+  background-color: #3f3f3f;
   -webkit-backdrop-filter: var(--blur);
           backdrop-filter: var(--blur);
 }
 
 .keyframes-con .code-header button {
-  background-color: #8d8d8d;
+  background-color: var(--font-grey);
   border: none;
   font-family: var(--code-font);
   font-size: 1rem;
-  padding: 0 1em;
+  width: 5%;
+}
+
+.keyframes-con .code-header button img {
+  width: 35px;
 }
 
 .keyframes-con .code-header button:hover {
@@ -439,14 +443,14 @@ body .footer p {
   color: black;
 }
 
-.keyframes-con .code-header button:active {
+.keyframes-con .code-header button:active, .keyframes-con .code-header button:focus {
   border: none;
 }
 
 .keyframes-con .code-header .name-input {
   background-color: transparent;
   font-family: var(--code-font);
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--font-grey);
   padding: .8em;
   border: none;

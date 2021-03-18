@@ -7,15 +7,20 @@
     .code-header {
         display: flex;
         justify-content: space-between;
-        background-color: rgb(54, 54, 54);
+        background-color: rgb(63, 63, 63);
         backdrop-filter: var(--blur);
 
         button {
-            background-color: rgb(141, 141, 141);
+            background-color: var(--font-grey);
             border: none;
             font-family: var(--code-font);
             font-size: 1rem;
-            padding: 0 1em;
+            width: 5%;
+            // padding: 0 1em;
+
+            img {
+                width: 35px;
+            }
         }
 
         button:hover {
@@ -23,14 +28,14 @@
             color: black;
         }
 
-        button:active {
+        button:active, button:focus {
             border: none;
         }
 
         .name-input {
             background-color: transparent;
             font-family: var(--code-font);
-            font-size: 1rem;
+            font-size: 1.2rem;
             color: var(--font-grey);
             padding: .8em;
             // border-radius: var(--border-radius);
