@@ -410,8 +410,17 @@ body .footer p {
 }
 
 .keyframes-con {
-  padding: 1em;
+  padding: 1.5rem 2.5rem 3rem 2.5rem;
   border-top: 1px solid var(--seperator);
+}
+
+.keyframes-con .code-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .keyframes-con .code-header {
@@ -465,7 +474,7 @@ body .footer p {
   background-color: rgba(19, 19, 19, 0.801);
   -webkit-backdrop-filter: var(--blur);
           backdrop-filter: var(--blur);
-  padding: 2em;
+  padding: 3rem 2.5rem;
   font-family: var(--code-font);
   color: #cecece;
   font-size: 1rem;

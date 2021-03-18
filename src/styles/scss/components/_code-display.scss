@@ -1,8 +1,13 @@
 .keyframes-con {
     // background-color: rgb(255, 230, 0);
     // width: 50%;
-    padding: 1em;
+    padding: 1.5rem 2.5rem 3rem 2.5rem;
     border-top: 1px solid var(--seperator);
+
+    .code-title {
+        display: flex;
+        justify-content: space-between;
+    }
 
     .code-header {
         display: flex;
@@ -54,7 +59,7 @@
 #keyframes, .keyframes-radial  {
     background-color: rgba(19, 19, 19, 0.801);
     backdrop-filter: var(--blur);
-    padding: 2em;
+    padding: 3rem 2.5rem;
     font-family: var(--code-font);
     color: #cecece;
     font-size: 1rem;
