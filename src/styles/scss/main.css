@@ -132,7 +132,7 @@ body .footer p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-bottom: 1px solid var(--seperator);
-  padding: 1em 2em 2em 2em;
+  padding: 2rem;
 }
 
 .container .sect3 {
@@ -162,7 +162,7 @@ body .footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
 
 .container .sect3 .box-anim-con .anim-sim {
@@ -188,7 +188,7 @@ body .footer p {
       -ms-flex-align: center;
           align-items: center;
   border-left: 1px solid var(--seperator);
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
 
 .container .sect3 .slider-con-con .anim-control {
@@ -422,7 +422,7 @@ body .footer p {
 }
 
 .keyframes-con {
-  padding: 1.5rem 2.5rem 3rem 2.5rem;
+  padding: 2rem 2.5rem 3rem 2.5rem;
   border-top: 1px solid var(--seperator);
 }
 
@@ -547,9 +547,8 @@ body .footer p {
 .container h1 {
   color: white;
   font-family: var(--font);
-  font-size: 1.8rem;
+  font-size: 2rem;
   letter-spacing: 3px;
-  padding: .7rem .7rem .3rem .7rem;
 }
 
 .container h2 {
@@ -557,7 +556,6 @@ body .footer p {
   font-family: var(--code-font);
   font-size: 1rem;
   letter-spacing: 3px;
-  padding: 0 0 .9rem .9rem;
 }
 
 .color-tiles {

@@ -74,7 +74,7 @@ body {
     .palette {
         box-sizing: border-box;
         border-bottom: 1px solid var(--seperator);
-        padding: 1em 2em 2em 2em;
+        padding: 2rem;
         // margin: 1.5em 1em;
         // border-radius: 1.5rem ;
         // backdrop-filter: blur(5px);
@@ -96,7 +96,7 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 0 2rem;
+            padding: 1rem 2rem;
             
             .anim-sim {
                 // background-color: red;
@@ -113,7 +113,7 @@ body {
             justify-content: center;
             align-items: center;
             border-left: 1px solid var(--seperator);
-            padding: 0 2rem;
+            padding: 1rem 2rem;
 
             .anim-control {
                 // background-color: red;  
