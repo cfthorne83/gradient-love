@@ -424,6 +424,7 @@ body .footer p {
   background-color: #3f3f3f;
   -webkit-backdrop-filter: var(--blur);
           backdrop-filter: var(--blur);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .keyframes-con .code-header .copy-btn {
@@ -433,6 +434,7 @@ body .footer p {
   font-size: 1rem;
   width: 5%;
   padding: .5em;
+  border-radius: 0 var(--border-radius) 0 0;
 }
 
 .keyframes-con .code-header .copy-btn:hover {
@@ -467,6 +469,7 @@ body .footer p {
   color: #cecece;
   font-size: 1rem;
   list-style: none;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 .keyframes-radial {
