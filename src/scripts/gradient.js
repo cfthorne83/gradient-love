@@ -139,8 +139,10 @@ function createDltClrBtn() {
     if ( Object.values(swatchHash).length === 0 ){
         let colorTiles = document.querySelector(".color-tiles");
         colorTiles.remove();
-        // clrId = 0;
         first = true;
+
+        resetClrBtn.style.display = "none";
+        applyClrBtn.style.display = "none";        
     }
 }
 

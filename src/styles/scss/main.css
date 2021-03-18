@@ -132,7 +132,7 @@ body .footer p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-bottom: 1px solid var(--seperator);
-  padding: 1em 1em 1.5em 1em;
+  padding: 1em 2em 2em 2em;
 }
 
 .container .sect3 {
@@ -508,7 +508,6 @@ body .footer p {
   font-size: .9rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 1em;
 }
 
 .color-tiles label {
