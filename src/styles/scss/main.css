@@ -1,5 +1,5 @@
 :root {
-  --back-g: rgb(32 32 32 / 75%);
+  --back-g: rgb(32, 32, 32, 0.75);
   --border-radius: .7rem;
   --blur: blur(20px);
   --code-font: Menlo, Monaco, 'Courier New', monospace;
@@ -421,7 +421,34 @@ body .footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: var(--border-grey);
+  background-color: #363636;
+}
+
+.keyframes-con .code-header button {
+  background-color: #9c9c9c;
+  border: none;
+  font-family: var(--code-font);
+  font-size: 1rem;
+  padding: 0 1em;
+}
+
+.keyframes-con .code-header button:hover {
+  background-color: #7e7e7e;
+  color: black;
+}
+
+.keyframes-con .code-header button:active {
+  border: none;
+}
+
+.keyframes-con .code-header .name-input {
+  font-family: var(--code-font);
+  font-size: 1rem;
+  color: var(--font-grey);
+  padding: .8em;
+  border: none;
+  -webkit-backdrop-filter: var(--blur);
+          backdrop-filter: var(--blur);
 }
 
 .keyframes-con .copy-alert {
@@ -431,15 +458,8 @@ body .footer p {
   font-family: var(--code-font);
 }
 
-.keyframes-con button {
-  background-color: white;
-  border: none;
-}
-
 #keyframes, .keyframes-radial {
-  background-color: var(--back-g);
-  -webkit-backdrop-filter: var(--blur);
-          backdrop-filter: var(--blur);
+  background-color: #1f1f1f;
   padding: 1em;
   font-family: var(--code-font);
   color: #cecece;
@@ -449,17 +469,6 @@ body .footer p {
 
 .keyframes-radial {
   display: none;
-}
-
-.name-input {
-  background-color: white;
-  font-family: var(--code-font);
-  font-size: 1rem;
-  color: #ffffff;
-  padding: .6em;
-  border: none;
-  -webkit-backdrop-filter: var(--blur);
-          backdrop-filter: var(--blur);
 }
 
 .plt-head2 {
