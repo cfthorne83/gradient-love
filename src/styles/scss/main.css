@@ -414,6 +414,13 @@ body .footer p {
   border-top: 1px solid var(--seperator);
 }
 
+.keyframes-con .copy-alert {
+  color: var(--font-grey);
+  font-size: 1rem;
+  display: none;
+  font-family: var(--code-font);
+}
+
 #keyframes, .keyframes-radial {
   background-color: var(--back-g);
   -webkit-backdrop-filter: var(--blur);
