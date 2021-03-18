@@ -426,25 +426,18 @@ body .footer p {
           backdrop-filter: var(--blur);
 }
 
-.keyframes-con .code-header button {
+.keyframes-con .code-header .copy-btn {
   background-color: var(--font-grey);
   border: none;
   font-family: var(--code-font);
   font-size: 1rem;
   width: 5%;
+  padding: .5em;
 }
 
-.keyframes-con .code-header button img {
-  width: 35px;
-}
-
-.keyframes-con .code-header button:hover {
+.keyframes-con .code-header .copy-btn:hover {
   background-color: #7e7e7e;
   color: black;
-}
-
-.keyframes-con .code-header button:active, .keyframes-con .code-header button:focus {
-  border: none;
 }
 
 .keyframes-con .code-header .name-input {
