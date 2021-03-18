@@ -777,20 +777,33 @@ function handleLinear() {
 }
 
 let copyBtn = document.querySelector(".clip-copy");
-copyBtn.addEventListener("click", myFunction);
+copyBtn.addEventListener("click", async (e) => {
+    let copyCode;
 
-function myFunction() {
+    if (gradientVar === "linear-gradient") {
+        copyCode = linearKeyframes.innerText;
+    } else {
+        copyCode = radialKeyframes.innerText;
+    }
 
-    let copyCode = linearKeyframes.innerText;
-    // let inputElement = document.createElement("input");
-    // inputElement.setAttribute("value", copyCode);
-    // document.body.append(inputElement);
-    // inputElement.select();
-    // document.execCommand("copy");
-    // inputElement.remove();
+        await navigator.clipboard.writeText(copyCode);
+        // let copied = await navigator.clipboard.readText();
+        // console.log(copied);
+});
 
-    // window.navigator.clipboard.writeText(copyCode);
+// function myFunction() {
 
+//     let copyCode = linearKeyframes.innerText;
+//     // let inputElement = document.createElement("input");
+//     // inputElement.setAttribute("value", copyCode);
+//     // document.body.append(inputElement);
+//     // inputElement.select();
+//     // document.execCommand("copy");
+//     // inputElement.remove();
 
-    alert("CSS code copied to clipboard.");
-}
+//     // window.navigator.clipboard.writeText(copyCode);
+   
+//     // await navigator.clipboard.writeText(copyCode);
+
+//     // alert("CSS code copied to clipboard.");
+// }
