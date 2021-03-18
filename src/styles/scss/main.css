@@ -422,10 +422,12 @@ body .footer p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #363636;
+  -webkit-backdrop-filter: var(--blur);
+          backdrop-filter: var(--blur);
 }
 
 .keyframes-con .code-header button {
-  background-color: #9c9c9c;
+  background-color: #8d8d8d;
   border: none;
   font-family: var(--code-font);
   font-size: 1rem;
@@ -442,6 +444,7 @@ body .footer p {
 }
 
 .keyframes-con .code-header .name-input {
+  background-color: transparent;
   font-family: var(--code-font);
   font-size: 1rem;
   color: var(--font-grey);
@@ -459,7 +462,9 @@ body .footer p {
 }
 
 #keyframes, .keyframes-radial {
-  background-color: #1f1f1f;
+  background-color: rgba(19, 19, 19, 0.801);
+  -webkit-backdrop-filter: var(--blur);
+          backdrop-filter: var(--blur);
   padding: 1em;
   font-family: var(--code-font);
   color: #cecece;

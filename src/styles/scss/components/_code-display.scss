@@ -8,9 +8,10 @@
         display: flex;
         justify-content: space-between;
         background-color: rgb(54, 54, 54);
+        backdrop-filter: var(--blur);
 
         button {
-            background-color: rgb(156, 156, 156);
+            background-color: rgb(141, 141, 141);
             border: none;
             font-family: var(--code-font);
             font-size: 1rem;
@@ -27,7 +28,7 @@
         }
 
         .name-input {
-            // background-color: rgb(70, 70, 70);
+            background-color: transparent;
             font-family: var(--code-font);
             font-size: 1rem;
             color: var(--font-grey);
@@ -52,8 +53,8 @@
 }
 
 #keyframes, .keyframes-radial  {
-    background-color: rgb(31, 31, 31);
-    // backdrop-filter: var(--blur);
+    background-color: rgba(19, 19, 19, 0.801);
+    backdrop-filter: var(--blur);
     padding: 1em;
     font-family: var(--code-font);
     color: #cecece;
