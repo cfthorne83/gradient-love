@@ -776,21 +776,21 @@ function handleLinear() {
     applyClrHash();
 }
 
-let copyElementText = document.querySelector(".clip-copy");
-copyElementText.addEventListener("click", myFunction)
+let copyBtn = document.querySelector(".clip-copy");
+copyBtn.addEventListener("click", myFunction);
+
 function myFunction() {
-  /* Get the text field */
-//   var copyText = document.getElementById("myInput");
-//   linearKeyframes
 
-  /* Select the text field */
-//   linearKeyframes.select();
-//   copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    let copyCode = linearKeyframes.innerText;
+    // let inputElement = document.createElement("input");
+    // inputElement.setAttribute("value", copyCode);
+    // document.body.append(inputElement);
+    // inputElement.select();
+    // document.execCommand("copy");
+    // inputElement.remove();
 
-  /* Copy the text inside the text field */
-//   document.execCommand("copy");
+    // window.navigator.clipboard.writeText(copyCode);
 
-  /* Alert the copied text */
+
     alert("CSS code copied to clipboard.");
-    window.navigator.clipboard.writeText(linearKeyframes.innerText);
 }
