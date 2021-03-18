@@ -414,6 +414,16 @@ body .footer p {
   border-top: 1px solid var(--seperator);
 }
 
+.keyframes-con .code-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: antiquewhite;
+}
+
 .keyframes-con .copy-alert {
   color: var(--font-grey);
   font-size: 1rem;
@@ -421,16 +431,20 @@ body .footer p {
   font-family: var(--code-font);
 }
 
+.keyframes-con button {
+  background-color: red;
+  border: none;
+}
+
 #keyframes, .keyframes-radial {
   background-color: var(--back-g);
   -webkit-backdrop-filter: var(--blur);
           backdrop-filter: var(--blur);
-  padding: 2em;
+  padding: 1em;
   font-family: var(--code-font);
   color: #cecece;
   font-size: 1rem;
   list-style: none;
-  border-radius: var(--border-radius);
 }
 
 .keyframes-radial {
@@ -443,9 +457,7 @@ body .footer p {
   font-size: 1rem;
   color: #ffffff;
   padding: .8em;
-  border-radius: var(--border-radius);
   border: none;
-  margin-bottom: 2em;
   -webkit-backdrop-filter: var(--blur);
           backdrop-filter: var(--blur);
 }
