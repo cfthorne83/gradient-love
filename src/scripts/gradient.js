@@ -1,3 +1,7 @@
+window.onload = main;
+
+function main() {
+
 let body = document.querySelector("body"); 
 let gradient = document.querySelector(".gradient-back"); 
 
@@ -804,19 +808,4 @@ copyBtn.addEventListener("click", async (e) => {
         // console.log(copied);
 });
 
-// function myFunction() {
-
-//     let copyCode = linearKeyframes.innerText;
-//     // let inputElement = document.createElement("input");
-//     // inputElement.setAttribute("value", copyCode);
-//     // document.body.append(inputElement);
-//     // inputElement.select();
-//     // document.execCommand("copy");
-//     // inputElement.remove();
-
-//     // window.navigator.clipboard.writeText(copyCode);
-   
-//     // await navigator.clipboard.writeText(copyCode);
-
-//     // alert("CSS code copied to clipboard.");
-// }
+}
