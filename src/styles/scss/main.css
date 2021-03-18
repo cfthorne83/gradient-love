@@ -135,6 +135,11 @@ body .footer p {
   padding: 2rem;
 }
 
+.container .palette .palette-header {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
 .container .sect3 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -168,6 +173,8 @@ body .footer p {
 .container .sect3 .box-anim-con .anim-sim {
   -ms-flex-item-align: start;
       align-self: flex-start;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
 }
 
 .container .sect3 .slider-con-con {
@@ -194,10 +201,11 @@ body .footer p {
 .container .sect3 .slider-con-con .anim-control {
   -ms-flex-item-align: start;
       align-self: flex-start;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
 }
 
 .container .sect3 .slider-con-con .slider-con {
-  margin: 1em 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -408,7 +416,6 @@ body .footer p {
   background: -webkit-gradient(linear, left top, left bottom, from(#0011FF), color-stop(#8100D6), color-stop(#FF00BB), color-stop(#E1FF00), to(#00EEFF));
   background: linear-gradient(#0011FF, #8100D6, #FF00BB, #E1FF00, #00EEFF);
   border: 3px solid var(--border-grey);
-  margin: 1em 0;
   border-radius: var(--border-radius);
 }
 
@@ -436,14 +443,15 @@ body .footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 0 .9rem 0;
+  padding-bottom: 2rem;
+  padding-left: .5rem;
 }
 
 .keyframes-con .code-title .copy-alert {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding-bottom: .4rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   letter-spacing: 3px;
   color: var(--font-grey);
   display: none;
@@ -549,6 +557,7 @@ body .footer p {
   font-family: var(--font);
   font-size: 2rem;
   letter-spacing: 3px;
+  padding: .6rem 0;
 }
 
 .container h2 {

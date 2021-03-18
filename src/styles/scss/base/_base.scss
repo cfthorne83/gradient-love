@@ -80,6 +80,10 @@ body {
         // backdrop-filter: blur(5px);
         // background-color: #707070a1;
 
+        .palette-header {
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+        }
     }
 
     .sect3 {
@@ -101,6 +105,8 @@ body {
             .anim-sim {
                 // background-color: red;
                 align-self: flex-start;
+                padding-bottom: 2rem;
+                padding-left: 1rem;
             }
         }
         
@@ -117,14 +123,16 @@ body {
 
             .anim-control {
                 // background-color: red;  
-                align-self: flex-start;  
+                align-self: flex-start;
+                padding-bottom: 2rem;
+                padding-left: 1rem;  
                 // margin-left: 1rem;        
             }
 
         
 
             .slider-con {
-                margin: 1em 0;
+                // margin: 1em 0;
                 box-sizing: border-box;
                 display: flex;
                 align-items: center;
