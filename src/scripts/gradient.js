@@ -779,18 +779,7 @@ function handleLinear() {
 let copyElementText = document.querySelector(".clip-copy");
 copyElementText.addEventListener("click", myFunction)
 function myFunction() {
-  /* Get the text field */
-//   var copyText = document.getElementById("myInput");
-//   linearKeyframes
-
-  /* Select the text field */
-//   linearKeyframes.select();
-//   copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-  /* Copy the text inside the text field */
-//   document.execCommand("copy");
-
-  /* Alert the copied text */
+  
     window.navigator.clipboard.writeText(linearKeyframes.innerText);
     
     alert("CSS code copied to clipboard.");
