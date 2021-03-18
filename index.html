@@ -108,8 +108,10 @@
 
             <div class="keyframes-con">
                 <h1>css code</h1>
-                <ul id="keyframes">
-                    <input type="text" placeholder="Enter animation name" class="name-input" onInput="nameChange(this.value)">
+                <button class="clip-copy">Copy code</button>
+
+                <input type="text" placeholder="Enter animation name" class="name-input" onInput="nameChange(this.value)">
+                <ul id="keyframes" style="user-select: all">
                     <li>
                         .selector { background-size: 400% 400%;
                     </li>
@@ -123,15 +125,6 @@
                 
                     <li>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <!-- background: linear-gradient(
-                            <span class="angle-display">0</span>deg,
-                            <span>
-                                <span>#0011FF</span>,
-                                <span>#8100D6</span>,
-                                <span>#FF00BB</span>,
-                                <span>#E1FF00</span>,
-                                <span>#00EEFF </span>);
-                            </span> -->
                             background: <span class="color-code"></span>
                     </li>
 
@@ -142,7 +135,6 @@
                     
                     <br>
 
-                    <!-- keyframes -->
                     <li>
                         @keyframes <span class="animation-name2"></span> {
                     </li>
