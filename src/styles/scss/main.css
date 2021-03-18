@@ -421,7 +421,7 @@ body .footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: antiquewhite;
+  background-color: var(--border-grey);
 }
 
 .keyframes-con .copy-alert {
@@ -432,7 +432,7 @@ body .footer p {
 }
 
 .keyframes-con button {
-  background-color: red;
+  background-color: white;
   border: none;
 }
 
@@ -452,11 +452,11 @@ body .footer p {
 }
 
 .name-input {
-  background-color: var(--back-g);
+  background-color: white;
   font-family: var(--code-font);
   font-size: 1rem;
   color: #ffffff;
-  padding: .8em;
+  padding: .6em;
   border: none;
   -webkit-backdrop-filter: var(--blur);
           backdrop-filter: var(--blur);
