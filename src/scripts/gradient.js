@@ -462,7 +462,11 @@ resetClrBtn.addEventListener("click", resetColors);
 //speed change
 let speedStatusRadial = document.querySelector("#speedStatus2")
 
-function speedChange(val) {
+const speedInput = document.querySelector(".speed-input");
+speedInput.oninput = speedChange;
+
+function speedChange(e) {
+    const val = e.target.value;
     speedStatus.innerText = val;
     speedStatus2.innerText = val;
     // body.style.animation = gradientVar + " " + val + "s ease infinite";
@@ -475,7 +479,11 @@ function speedChange(val) {
 let angleDisplay = document.querySelector(".angle-display");
 let angle = false;
 
-function angleChange(val) {
+// const speedInput = document.querySelector(".speed-input");
+gradientAngle.oninput = angleChange;
+
+function angleChange(e) {
+    const val = e.target.value;
     angleStatus.innerText = val;
 
     angle = true;
@@ -582,9 +590,15 @@ let midTopText = document.querySelector(".mid-top");
 // bigKeyframes.innerText = animation.cssText;
 
 let knobValue = document.querySelector(".knob-value");
+let scrollAngle = document.querySelector(".scroll-angle");
 
-function scrollChange(val) {
+
+scrollAngle.oninput = scrollChange;
+
+function scrollChange(e) {
     
+    const val = e.target.value;
+
     if (val >= 0 && val <= 50) {
         startLeft = 50 + parseInt(val);
         startTop = 0;
@@ -681,7 +695,12 @@ function scrollChange(val) {
 //animation name change
 let animationName3 = document.querySelector(".animation-name3");
 
-function nameChange(val){
+let nameInput = document.querySelector(".name-input");
+nameInput.oninput = nameChange;
+
+function nameChange(e){
+
+    const val = e.target.value;
     // animationName = document.querySelector(".animation-name");
     let animationNames = document.querySelectorAll(".animation-name");
 
@@ -693,14 +712,13 @@ function nameChange(val){
     // animationName3.innerText = val;  
 }
 
-// let name = document.querySelector(".name-input");
+
 
 //------------------------------------------------------------------------------
 //Gradient handlers
 // let gradientStatus = document.querySelector("#gradient-status");
 // gradientStatus.innerText = gradientVar;
 
-let scrollAngle = document.querySelector(".scroll-angle");
 let gradAngleText = document.querySelector(".grad-ang");
 let scrollAngleText = document.querySelector(".scroll-angle");
 let linearKeyframes = document.querySelector("#keyframes");
