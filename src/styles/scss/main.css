@@ -508,6 +508,7 @@ body .footer p {
   font-size: .9rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 0 1em;
 }
 
 .color-tiles label {
