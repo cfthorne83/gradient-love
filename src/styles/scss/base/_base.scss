@@ -96,9 +96,11 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 0 2rem;
             
-            h1 {
-                
+            .anim-sim {
+                // background-color: red;
+                align-self: flex-start;
             }
         }
         
@@ -116,7 +118,7 @@ body {
             .anim-control {
                 // background-color: red;  
                 align-self: flex-start;  
-                // margin-left: 2rem;        
+                // margin-left: 1rem;        
             }
 
         
