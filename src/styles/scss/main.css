@@ -448,6 +448,7 @@ body .footer p {
   font-size: 1.2rem;
   color: var(--font-grey);
   padding: .8em;
+  border-radius: var(--border-radius) 0 0 0;
   border: none;
   -webkit-backdrop-filter: var(--blur);
           backdrop-filter: var(--blur);
@@ -464,7 +465,7 @@ body .footer p {
   background-color: rgba(19, 19, 19, 0.801);
   -webkit-backdrop-filter: var(--blur);
           backdrop-filter: var(--blur);
-  padding: 1em;
+  padding: 2em;
   font-family: var(--code-font);
   color: #cecece;
   font-size: 1rem;

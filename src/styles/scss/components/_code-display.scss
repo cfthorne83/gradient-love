@@ -32,7 +32,7 @@
             font-size: 1.2rem;
             color: var(--font-grey);
             padding: .8em;
-            // border-radius: var(--border-radius);
+            border-radius: var(--border-radius) 0 0 0;
             border: none;
             // margin-bottom: 1em;
             backdrop-filter: var(--blur);
@@ -54,12 +54,13 @@
 #keyframes, .keyframes-radial  {
     background-color: rgba(19, 19, 19, 0.801);
     backdrop-filter: var(--blur);
-    padding: 1em;
+    padding: 2em;
     font-family: var(--code-font);
     color: #cecece;
     font-size: 1rem;
     list-style: none;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
+
 }
 
 .keyframes-radial{
