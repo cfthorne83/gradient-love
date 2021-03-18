@@ -7,6 +7,19 @@
     .code-title {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 0 0 .7rem 0;
+
+        .copy-alert {
+            align-self: flex-end;
+            padding-bottom: .4rem;
+            font-size: 1.1rem;
+            letter-spacing: 3px;
+            color: var(--font-grey);
+            // color: white;
+            display: none;
+            font-family: var(--code-font);
+        }
     }
 
     .code-header {
@@ -42,18 +55,7 @@
             // margin-bottom: 1em;
             backdrop-filter: var(--blur);
         }
-
-
     }
-
-    .copy-alert {
-        color: var(--font-grey);
-        font-size: 1rem;
-        display: none;
-        font-family: var(--code-font);
-    }
-
-    
 }
 
 #keyframes, .keyframes-radial  {

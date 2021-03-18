@@ -782,7 +782,7 @@ let copyBtn = document.querySelector(".clip-copy");
 
 copyBtn.addEventListener("click", async (e) => {
     // alert("CSS code copied to clipboard.");
-    
+
     copyAlert.style.display = "inline-block";
     setTimeout(function(){ copyAlert.style.display = "none"; }, 3000);
 
