@@ -791,6 +791,6 @@ function myFunction() {
 //   document.execCommand("copy");
 
   /* Alert the copied text */
-//   alert("Copied the text: " + linearKeyframes.value);
+    alert("CSS code copied to clipboard.");
     window.navigator.clipboard.writeText(linearKeyframes.innerText);
 }
