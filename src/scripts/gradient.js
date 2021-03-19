@@ -616,7 +616,7 @@ let scrollAngle = document.querySelector(".scroll-angle");
 scrollAngle.oninput = scrollChange;
 
 function scrollChange(e) {
-let scrollAngle = document.querySelector(".scroll-angle");
+scrollAngle = document.querySelector(".scroll-angle");
     
     const val = e.target.value;
 
