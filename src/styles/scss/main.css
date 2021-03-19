@@ -61,43 +61,6 @@ body {
   /* animation: radial-gradient 25s ease infinite;     */
 }
 
-body .footer {
-  width: 100%;
-  background-color: #777777;
-  background-image: url(./img/splat5.png);
-  color: white;
-}
-
-body .footer .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body .footer img {
-  width: 6%;
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
-}
-
-body .footer h1 {
-  font-family: var(--font);
-  font-size: 3rem;
-  padding: 1.3rem;
-  letter-spacing: 3px;
-}
-
-body .footer h2 {
-  font-family: var(--code-font);
-  font-size: 1.5rem;
-  padding: 0 1.3rem;
-}
-
-body .footer p {
-  padding: 0 1.3rem;
-  font-family: var(--code-font);
-}
-
 .gradient-back {
   min-height: 100vh;
   width: 100vw;
@@ -745,6 +708,43 @@ input[type="color"]::-webkit-color-swatch {
   width: 70%;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
+}
+
+.footer {
+  width: 100%;
+  background-color: #777777;
+  background-image: url(./img/splat5.png);
+  color: white;
+}
+
+.footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer img {
+  width: 6%;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.footer h1 {
+  font-family: var(--font);
+  font-size: 3rem;
+  padding: 1.3rem;
+  letter-spacing: 3px;
+}
+
+.footer h2 {
+  font-family: var(--code-font);
+  font-size: 1.5rem;
+  padding: 0 1.3rem;
+}
+
+.footer p {
+  padding: 0 1.3rem;
+  font-family: var(--code-font);
 }
 
 .button {

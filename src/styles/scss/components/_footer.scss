@@ -1,0 +1,42 @@
+.footer {
+        // height: 200px;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+
+        width: 100%;
+        background-color: rgb(119, 119, 119);
+
+        background-image: url(./img/splat5.png);
+        color: white;
+
+        .links {
+            display: flex;
+            // justify-content: center;
+            // width: 50%;
+        }
+        
+        img {
+            width: 6%;
+            filter: brightness(0) invert(1);
+        }
+
+        h1 {
+            font-family: var(--font);
+            font-size: 3rem;
+            padding: 1.3rem;
+            letter-spacing: 3px;
+        }
+
+        h2 {
+            font-family: var(--code-font);
+            font-size: 1.5rem;
+            padding: 0 1.3rem;
+            // color: rgb(238, 255, 2);
+            // font-weight: 600;
+        }
+        p {
+            padding: 0 1.3rem;
+            font-family: var(--code-font);
+        }
+    }
