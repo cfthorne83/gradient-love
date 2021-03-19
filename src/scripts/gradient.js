@@ -247,6 +247,7 @@ function addColorTile() {
     let clrDiv = document.createElement("div");
     createEditBtn();
     createDltClrBtn();
+    colorLabel.style.backgroundColor = colorTile.value;
     
     colorContainer.append(colorLabel);
     colorLabel.append(clrHex);
