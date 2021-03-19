@@ -625,6 +625,7 @@ body {
   text-align: center;
   margin-top: 1em;
   font-size: .9rem;
+  padding: .5rem;
 }
 
 input[type="color"] {
