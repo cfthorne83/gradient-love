@@ -84,12 +84,31 @@ function updateClrArr(e) {
     swatchHash[id] = e.target.value;
 }
 
+// const setBg = () => {
+//   const randomColor = Math.floor(Math.random()*16777215).toString(16);
+//   document.body.style.backgroundColor = "#" + randomColor;
+//   color.innerHTML = "#" + randomColor;
+// }
+
+// function genRandomClr() {
+//     const randomColor = Math.floor(Math.random()*16777215).toString(16);
+//     return "#" + randomColor;
+//     // color.innerHTML = "#" + randomColor;
+// }
+
+// function test() {
+//     console.log("asf");
+// }
+
 function createColorTile(color) {
 
-    
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    // "#" + randomColor;
+
     colorTile = document.createElement("input");
     colorTile.type = "color";
-    colorTile.value = "#FFFFFF";
+    // colorTile.value = "#FFFFFF";
+    colorTile.value = "#" + randomColor;
     
     // colorTile.setAttribute("id", `a${colorsArr.length}`);
     colorTile.setAttribute("id", `a${clrId}`);
