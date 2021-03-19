@@ -723,6 +723,7 @@ input[type="color"]::-webkit-color-swatch {
 
 .footer p {
   font-family: var(--code-font);
+  padding-bottom: 1rem;
 }
 
 .footer .one {
@@ -737,7 +738,14 @@ input[type="color"]::-webkit-color-swatch {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 2rem;
+  padding-left: 5rem;
+}
+
+.footer .one h1 {
+  font-family: var(--font);
+  font-size: 3.3rem;
+  letter-spacing: 3px;
+  padding-bottom: 1.5rem;
 }
 
 .footer .two {
@@ -775,18 +783,13 @@ input[type="color"]::-webkit-color-swatch {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-right: 5rem;
 }
 
-.footer h1 {
+.footer .three h1 {
+  font-size: 2.5rem;
   font-family: var(--font);
-  font-size: 3.3rem;
   letter-spacing: 3px;
-  padding-bottom: 1.5rem;
-}
-
-.footer h2 {
-  font-family: var(--code-font);
-  font-size: 1.5rem;
 }
 
 .button {

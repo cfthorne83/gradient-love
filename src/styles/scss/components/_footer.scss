@@ -13,7 +13,9 @@
 
         p {
             // padding: 0 1.3rem;
-            font-family: var(--code-font);  
+            font-family: var(--code-font); 
+                padding-bottom: 1rem;
+
         }
 
         .one {
@@ -22,9 +24,15 @@
             // background-color: red;
             width: 33.3%;
             justify-content: center;
-            padding-left: 2rem;
+            padding-left: 5rem;
 
-            
+            h1 {
+                font-family: var(--font);
+                font-size: 3.3rem;
+                // padding: 1.3rem;
+                letter-spacing: 3px;
+                padding-bottom: 1.5rem;
+            }
         }
 
         .two {
@@ -49,25 +57,14 @@
             width: 33.3%;
             align-items: flex-end;
             justify-content: center;
+            padding-right: 5rem;
             // justify-self: flex-end;
             // text-align: end;
-        }
 
-        
-
-        h1 {
-            font-family: var(--font);
-            font-size: 3.3rem;
-            // padding: 1.3rem;
-            letter-spacing: 3px;
-            padding-bottom: 1.5rem;
+            h1 {
+                font-size: 2.5rem;
+                font-family: var(--font);
+                letter-spacing: 3px;
+            }
         }
-
-        h2 {
-            font-family: var(--code-font);
-            font-size: 1.5rem;
-            // padding: 0 1.3rem;
-            // color: rgb(238, 255, 2);
-            // font-weight: 600;
-        }
-    }
+}
