@@ -78,7 +78,7 @@
     }
 
     h2 {
-        color: rgb(200, 200, 200);
+        color: var(--font-grey);
         font-family: var(--code-font);
         font-size: 1.1rem;
         letter-spacing: 3px;

@@ -4,7 +4,7 @@
   --blur: blur(20px);
   --code-font: Menlo, Monaco, 'Courier New', monospace;
   --font: Arial, Helvetica, sans-serif;
-  --font-grey:#dcdef1;
+  --font-grey:#e4d4ba;
   --drk-grey: rgba(37, 37, 37, 0.74);
   --mid-grey: rgb(59, 59, 59);
   --border-grey: #979797;
@@ -535,7 +535,7 @@ body {
 }
 
 .container h2 {
-  color: #c8c8c8;
+  color: var(--font-grey);
   font-family: var(--code-font);
   font-size: 1.1rem;
   letter-spacing: 3px;
@@ -725,6 +725,8 @@ input[type="color"]::-webkit-color-swatch {
 .footer p {
   font-family: var(--code-font);
   padding-bottom: 1rem;
+  color: var(--font-grey);
+  font-size: 1.1rem;
 }
 
 .footer .one {
