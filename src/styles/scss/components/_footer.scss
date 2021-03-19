@@ -37,8 +37,6 @@
 
         .two {
             display: flex;
-            // background-color: green;
-
             justify-content: center;
             align-items: center;
             width: 33.3%;
@@ -46,13 +44,16 @@
             a {
                 width: 16%;
                 height: 50px;
-                // background-color: red;
                 filter: brightness(0) invert(1);
                 padding: 1rem;
 
                 img {
                     width: 100%;
                 }
+            }
+
+            a:hover {
+                transform: scale(1.3);
             }
         }
 

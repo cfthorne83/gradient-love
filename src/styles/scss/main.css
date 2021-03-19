@@ -774,6 +774,11 @@ input[type="color"]::-webkit-color-swatch {
   width: 100%;
 }
 
+.footer .two a:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
 .footer .three {
   display: -webkit-box;
   display: -ms-flexbox;
