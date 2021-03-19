@@ -11,17 +11,20 @@
         background-image: url(./img/splat5.png);
         color: white;
 
+        p {
+            // padding: 0 1.3rem;
+            font-family: var(--code-font);  
+        }
+
         .one {
             display: flex;
             flex-direction: column;
             // background-color: red;
             width: 33.3%;
             justify-content: center;
+            padding-left: 2rem;
 
-            p {
-            // padding: 0 1.3rem;
-            font-family: var(--code-font);  
-        }
+            
         }
 
         .two {
@@ -33,19 +36,23 @@
             width: 33.3%;
 
             img {
-                width: 15%;
+                width: 16%;
                 filter: brightness(0) invert(1);
+                padding: 1rem;
             }
         }
 
         .three {
             display: flex;
             flex-direction: column;
-            // background-color: yellow;
+            // background-color: purple;
             width: 33.3%;
-            align-items: center;
-            justify-content: flex-end;
+            align-items: flex-end;
+            justify-content: center;
+            // justify-self: flex-end;
+            // text-align: end;
         }
+
         
 
         h1 {
