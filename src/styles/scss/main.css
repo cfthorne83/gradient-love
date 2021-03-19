@@ -761,11 +761,16 @@ input[type="color"]::-webkit-color-swatch {
   width: 33.3%;
 }
 
-.footer .two img {
+.footer .two a {
   width: 16%;
+  height: 50px;
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
   padding: 1rem;
+}
+
+.footer .two a img {
+  width: 100%;
 }
 
 .footer .three {
