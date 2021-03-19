@@ -16,9 +16,9 @@ body {
 
     .footer {
         // height: 200px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
 
         width: 100%;
         background-color: rgb(119, 119, 119);
@@ -28,17 +28,20 @@ body {
 
         .links {
             display: flex;
-            justify-content: center;
+            // justify-content: center;
+            // width: 50%;
         }
         
         img {
-            width: 7%;
+            width: 6%;
+            filter: brightness(0) invert(1);
         }
 
         h1 {
             font-family: var(--font);
             font-size: 3rem;
             padding: 1.3rem;
+            letter-spacing: 3px;
         }
 
         h2 {
