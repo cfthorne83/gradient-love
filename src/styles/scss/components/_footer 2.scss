@@ -1,0 +1,65 @@
+.footer {
+        // height: 200px;
+        display: flex;
+        padding: 4rem 0;
+        // justify-content: space-between;
+        // align-items: center;
+
+        width: 100%;
+        background-color: rgb(119, 119, 119);
+
+        background-image: url(./img/splat5.png);
+        color: white;
+
+        .one {
+            display: flex;
+            flex-direction: column;
+            // background-color: red;
+            width: 33.3%;
+            justify-content: center;
+
+            p {
+            // padding: 0 1.3rem;
+            font-family: var(--code-font);  
+        }
+        }
+
+        .two {
+            display: flex;
+            // background-color: green;
+
+            justify-content: center;
+            align-items: center;
+            width: 33.3%;
+
+            img {
+                width: 15%;
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        .three {
+            display: flex;
+            flex-direction: column;
+            // background-color: yellow;
+            width: 33.3%;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+
+        h1 {
+            font-family: var(--font);
+            font-size: 3rem;
+            // padding: 1.3rem;
+            letter-spacing: 3px;
+        }
+
+        h2 {
+            font-family: var(--code-font);
+            font-size: 1.5rem;
+            // padding: 0 1.3rem;
+            // color: rgb(238, 255, 2);
+            // font-weight: 600;
+        }
+    }

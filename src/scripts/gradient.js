@@ -621,7 +621,7 @@ scrollAngle = document.querySelector(".scroll-angle");
     const val = e.target.value;
 
     if (val >= 0 && val <= 50) {
-        startLeft = 50 + parseInt(val);
+        startLeft = 50 
         startTop = 0;
         midLeft = 50 - parseInt(val);
         midTop = 100;
