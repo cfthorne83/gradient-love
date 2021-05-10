@@ -1,31 +1,20 @@
-# js_project
-##Background and Overview
-- An interactive perpetually moving digital painting
-- The painting will have 3 interactive layers
-- The painting will have geometric patterned background that will move left to right or change tile color 
-- the middle ground will be biomorpic or cuvilear abstract shape that move in more randomized directions
-- foreground paint splatter shapes will fade in and out 
+# Gradient Love
+## Background and Overview
+- Gradient Love is a tool allowing users to dynamically create custom animated gradient backgrounds with immediate responses to user preferences.
 
-##Functionality and MVPs
-- When users clicks or utilizes a dial the moving painting will
-- change direction: the background will move up, down, left or right at increasing or decreasing speed; the middleground shape will will increase/decrease in density, size, and speed; the foreground splatter will increase in speed of fade/ size. 
-- users will be able to change the color scheme of any individual layer element
+## Functionality and MVPs
+- Users may toggle between linear or radial gradient types.
+- Users may add, edit, or delete color swatches to be applied to the gradient.
+- Users may change the speed of the gradient animation.
+- Users may change the angle of the gradient.
+- Users may change the direction (scroll angle) of the animation.
+- A CSS animation code display with real time response to user controls allows for effortless code copy and personal reuse.
+- An animation simulator immediately mimics the speed, trajectory, and visualization of the gradient animation.  
 
-##Wireframe
-https://wireframe.cc/pro/pp/67fd859a7413016
-
-##Architecture and Technology
-- JavaScript 
-- Canvas
+## Architecture and Technology
+- JavaScript
+- HTML
+- Sass
 - Webpack for bundling JS files
 
-##Timeline
-- day 1: project skeleton
-- day 2: implement shape rendering
-- day 3: implement capability to change direction
-- day 4: implement capability to change colors
-- day 5: implement capability to change shapes
-
-##Bonus
-- users can increase the density of any one layer element
 # cfthorne83.github.io
