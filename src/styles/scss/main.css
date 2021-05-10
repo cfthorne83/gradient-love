@@ -9,6 +9,7 @@
   --mid-grey: rgb(59, 59, 59);
   --border-grey: #979797;
   --seperator: #bdbdbd;
+  overflow-x: hidden;
 }
 
 html, body, div, span, applet, object, iframe,
