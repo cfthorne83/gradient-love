@@ -1,5 +1,5 @@
 # Gradient Love
-<img src="assets/readme.jpeg" />
+<img src="assets/readme.jpeg" width="800"/>
 
 
 ## Background and Overview
@@ -11,7 +11,9 @@
 - Users may control the speed of the gradient animation, the angle of the gradient, and the direction of the scroll angle.
 - A CSS animation code display with real time response to user controls allows for effortless code copy and personal reuse.
 - An animation simulator immediately mimics the speed, trajectory, and visualization of the gradient animation.  
+
 <img src="assets/js.gif" width="500" />
+
 ## Architecture and Technology
 - JavaScript
 - HTML
