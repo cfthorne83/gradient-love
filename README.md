@@ -1,4 +1,4 @@
-# Gradient Love
+# [Gradient Love](https://cfthorne83.github.io/gradient-love/)
 <img src="assets/readme.jpeg" width="800"/>
 
 
