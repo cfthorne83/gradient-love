@@ -17,7 +17,7 @@
 ## Architecture and Technology
 - JavaScript
 - HTML
-- Sass
+- Sa
 - Webpack for bundling JS files
 
 # cfthorne83.github.io
