@@ -15,7 +15,7 @@
 <img src="assets/js.gif" width="500" />
 
 ## Architecture and Technology
-- JavaScript
+- JavaScri
 - HTML
 - Sass
 - Webpack for bundling JS files
