@@ -16,7 +16,7 @@
 
 ## Architecture and Technology
 - JavaScript
-- HTML
+- HT
 - Sass
 - Webpack for bundling JS files
 
