@@ -2,7 +2,7 @@
 <img src="assets/readme.jpeg" width="800"/>
 
 
-## Background and Overview
+## Background and Overviewr
 - [Gradient Love](https://cfthorne83.github.io/gradient-love/) is a tool allowing users to dynamically create custom animated gradient backgrounds.
 
 ## Functionality and MVPs
