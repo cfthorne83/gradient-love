@@ -3,7 +3,7 @@
 
 
 ## Background and Overview
-- [Gradient Love](https://cfthorne83.github.io/gradient-love/) is a tool allowing users to dynamically create custom animated gradient backgrounds.ddddddd
+- [Gradient Love](https://cfthorne83.github.io/gradient-love/) is a tool allowing users to dynamically create custom animated gradient backgrounds.dddddd
 
 ## Functionality and MVPs
 - Users may toggle between linear or radial gradient types.
