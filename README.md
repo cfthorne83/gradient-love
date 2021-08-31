@@ -9,6 +9,7 @@
 ## Functionality and MVPs
 - Users may toggle between linear or radial gradient types.
 - Users may add, edit, or delete color swatches to be applied to the gradient.
+<img src="assets/swatch_code.png" width="500" />
 - Users may control the speed of the gradient animation, the angle of the gradient, and the direction of the scroll angle.
 <img src="assets/scroll_code.png" width="500" />
 <img src="assets/scroll_code2.png" width="500" />
