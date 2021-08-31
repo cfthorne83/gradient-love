@@ -1,6 +1,6 @@
 # [Gradient Love](https://cfthorne83.github.io/gradient-love/)
 <!-- <img src="assets/readme.jpeg" width="800"/> -->
-<img src="assets/js.gif" width="800" />
+<img src="assets/js.gif" width="600" />
 
 
 ## Background and Overview
