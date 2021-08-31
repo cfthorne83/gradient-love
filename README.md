@@ -1,5 +1,6 @@
 # [Gradient Love](https://cfthorne83.github.io/gradient-love/)
-<img src="assets/readme.jpeg" width="800"/>
+<!-- <img src="assets/readme.jpeg" width="800"/> -->
+<img src="assets/js.gif" width="800" />
 
 
 ## Background and Overview
@@ -13,7 +14,6 @@
 - A CSS animation code display with real time response to user controls allows for effortless code copy and personal reuse.
 - An animation simulator immediately mimics the speed, trajectory, and visualization of the gradient animation.  
 
-<img src="assets/js.gif" width="500" />
 
 ## Architecture and Technology
 - JavaScript
