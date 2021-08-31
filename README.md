@@ -11,6 +11,7 @@
 - Users may add, edit, or delete color swatches to be applied to the gradient.
 - Users may control the speed of the gradient animation, the angle of the gradient, and the direction of the scroll angle.
 <img src="assets/scroll_code.png" width="500" />
+<img src="assets/scroll_code2.png" width="500" />
 - A CSS animation code display with real time response to user controls allows for effortless code copy and personal reuse.
 - An animation simulator immediately mimics the speed, trajectory, and visualization of the gradient animation.  
 
