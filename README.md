@@ -1,6 +1,6 @@
 # [Gradient Love](https://cfthorne83.github.io/gradient-love/)
 <!-- <img src="assets/readme.jpeg" width="800"/> -->
-<img src="assets/js.gif" width="600" />ffff
+<img src="assets/js.gif" width="600" />fff
 
 ## Background and Overview
 - [Gradient Love](https://cfthorne83.github.io/gradient-love/) is a tool allowing users to dynamically create custom animated gradient backgrounds.
