@@ -6,7 +6,7 @@
 - [Gradient Love](https://cfthorne83.github.io/gradient-love/) is a tool allowing users to dynamically create custom animated gradient backgrounds.
 
 ## Functionality and MVPs
-- Users may toggle between linear or radial gradient types.nn
+- Users may toggle between linear or radial gradient types.
 - Users may add, edit, or delete color swatches to be applied to the gradient.
 <img src="assets/swatch_code.png" width="500" />
 - Users may control the speed of the gradient animation, the angle of the gradient, and the direction of the scroll angle.
