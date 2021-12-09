@@ -658,13 +658,19 @@ scrollAngle = document.querySelector(".scroll-angle");
     miniMidLeft = midLeft * 3;
     miniMidTop = midTop * 3;
 
-    animation.deleteRule("0%");
-    animation.deleteRule("50%");
-    animation.deleteRule("100%");
+    // animation.deleteRule("0%");
+    // animation.deleteRule("50%");
+    // animation.deleteRule("100%");
+    // animation.deleteRule(0);
+    // animation.deleteRule(1);
+    // animation.deleteRule(2);
 
-    miniAnimation.deleteRule("0%");
-    miniAnimation.deleteRule("50%");
-    miniAnimation.deleteRule("100%");
+    // miniAnimation.deleteRule("0%");
+    // miniAnimation.deleteRule("50%");
+    // miniAnimation.deleteRule("100%");
+    // miniAnimation.deleteRule(0);
+    // miniAnimation.deleteRule(1);
+    // miniAnimation.deleteRule(2);
     
     animation.appendRule(`0%{background-position:${startLeft}% ${startTop}%}`);
     animation.appendRule(`50%{background-position:${midLeft}% ${midTop}%}`);
