@@ -21,6 +21,5 @@
 - HTML
 - Sass
 - Webpack for bundling JS files
-- dljsadf
 
 # cfthorne83.github.io
