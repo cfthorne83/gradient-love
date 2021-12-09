@@ -17,9 +17,10 @@ clrCode.innerText = gradient.style.background;
 radClrCode.innerText = gradient.style.background;
 
 // linearBtn.focus();
-
-let animation = (document.styleSheets[2].cssRules[0]);
-let miniAnimation = (document.styleSheets[2].cssRules[1]);
+// let animation = (document.styleSheets[2].cssRules[0]);
+let animation = (document.styleSheets[0].cssRules[0]);
+// let miniAnimation = (document.styleSheets[2].cssRules[1]);
+let miniAnimation = (document.styleSheets[0].cssRules[1]);
 
 let gradientVar = "linear-gradient";
 gradient.style.animation = gradientVar + " " + speedStatus.innerText + "s ease infinite";
